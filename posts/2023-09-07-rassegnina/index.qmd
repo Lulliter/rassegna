@@ -1,0 +1,27 @@
+---
+title: "Rassegnina 9 sett 2023"
+subtitle: "test new post"
+description:  |
+  description
+author: ""
+date: "2023-09-07"
+categories: [rassegna]
+date-modified: "2023-09-07"
+toc: TRUE
+draft: FALSE
+image: "giornalicup.jpg"
+image-alt: ""
+# twitter-card:
+#   image:  "giornalicup.jpg"
+#   card-style: summary_large_image
+
+---
+
+# Leggere
+xcvbcvb
+
+# Guardare 
+cxbcvxbvcxb
+
+# Ricordare 
+xcvbcvbvcxcvb

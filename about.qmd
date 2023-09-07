@@ -1,9 +1,74 @@
 ---
-title: "About"
+twitter-card:
+  image: images/profile-preview.png
+  creator: "@thomas_mock"
+open-graph: true
+title: "Luisa M. Mimmi"
+description: |
+  Be humble, hungry and kind. 
+  Be so good they can't ignore you.
+image: images/portrait.jpg
+about:
+  template: trestles
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:lmm76@georgetown.edu
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/lulliter
+    - icon: github
+      text: Github
+      href: https://github.com/lulliter
+    # - icon: mastodon
+    #   text: Fosstodon
+    #   href: https://fosstodon.org/@thomas_mock
+
 ---
 
-About this site
-
-```{r}
-1 + 1
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
 ```
+
+## Analista di Politiche Pubbliche e Data Scientist {#it}
+
+<!-- ***Contattami per verificare come posso collaborare al tuo progetto*** -->
+
+La mia esperienza (e passione) è all'incrocio tra Economia, Politiche Pubbliche e *Data Science*. In 20 anni di esperienza, ho acquisito una vasta esperienza nella raccolta-analisi-presentazione di dati acquisita lavorando in ambiti molto diversi ---dalla consulenza privata, alle banche multilaterali di sviluppo, alle ONG. Utilizzo prevalentemente `r fontawesome::fa("r-project", fill = "#5F85A7")`, ma ho familiarità con altri linguaggi di programmazione/analisi di dati (`SQL`, `SAS`, `Stata`).
+
+<!-- Potrei assistere in progetti come [*questi*](http://luisamimmi.org/Consulting_ITA.html) -->
+
+<!-- ### Chi sono -->
+
+<!-- Di formazione, sono un economista con un solido *background* in statistica ed econometria. In oltre 15 anni di esperienza, ho acquisito una significativa esperienza pratica nella progettazione e implementazione di strumenti diagnostici, analisi avanzate e visualizzazioni di dati applicati alle politiche pubbliche e allo sviluppo economico. -->
+
+<!-- Sono una persona curiosa (e anche un po' *nerd*) che continua a imparare e a sperimentare strumenti e tecniche di *data science* che consentono di analizzare empiricamente aspetti complessi di politica pubblica. Mi affido prevalentemente a software *open source* e cerco, per quanto possibile, di rendere il mio lavoro analitico automatizzato, aperto, collaborativo e riproducibile. -->
+
+<!-- Qui ci sono maggiori dettagli sul mio percorso professionale: <a href="images/LMMimmi_RES_ITA_sanitized.pdf"> <img src="images/it.png"/> CV (ITA) </a> -->
+
+------------------------------------------------------------------------
+
+<!-- <p style="font-size:10pt"> -->
+
+<!-- [*[Torna all'italiano]*](#it) -->
+
+<!-- </p> -->
+
+## Independent Policy Analyst and consulting Data Scientist {#en}
+
+<!-- ***Get in touch if you have a project in mind. I'd love to discuss how I can help you.*** -->
+
+My expertise (and passion) is at the intersection of Economics, Public Policy and Data Science. Through almost 20 years of experience, I acquired an extensive hands-on experience in data collection-analysis-presentation acquired working in very different settings ---from private consulting to multilateral development banks, to NGOs. These days, my favorite software for statistics is `r fontawesome::fa("r-project", fill = "#5F85A7")`, but I'm familiar with other relevant programming languages (`SQL`,`SAS`, `Stata`).
+
+<!-- I could help you with projects like [*these*](http://luisamimmi.org/Consulting_ENG.html) -->
+
+<!-- ### My story -->
+
+<!-- I am an economist by training with a solid background in statistics and econometrics. Through over 15 years of experience, I acquired a hands-on expertise in designing and implementing diagnostic tools, advanced analytics and data visualizations applied to public policy and economic development. -->
+
+<!-- As a life-long learner (and massive nerd!), I especially enjoy discovering new data science tools and techniques that can help tackling complex policy issues in a data-driven manner. I rely on open source software and I strive ---to the extent possible--- to make my own analytical work automated, open, collaborative and reproducible. -->
+
+<!-- Here are more details about my professional journey: <a href="images/LMMimmi_RES_ENG_sanitized.pdf"> <img src="images/gb.png"/> CV (ENG) </a>  -->
+
+
+<!-- <a href="https://raw.githubusercontent.com/Lulliter/cv/master/03_CV_vitae/twentysecondsRES.pdf"> --> <!--   <img src="images/icons8-great-britain-40.png" alt=""> Résumé-1pg (ENG)  --> <!-- </a> -->

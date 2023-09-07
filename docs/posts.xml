@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>A glitch in the matrix</title>
+<link>https://lulliter.github.io/rassegna/posts.html</link>
+<atom:link href="https://lulliter.github.io/rassegna/posts.xml" rel="self" type="application/rss+xml"/>
+<description>Spunti e idee per sollevare lo sguardo dalla simulazione... </description>
+<generator>quarto-1.3.433</generator>
+<lastBuildDate>Wed, 06 Sep 2023 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Rassegnina 9 sett 2023</title>
+  <link>https://lulliter.github.io/rassegna/posts/2023-09-07-rassegnina/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="leggere" class="level1">
+<h1>Leggere</h1>
+<p>xcvbcvb</p>
+</section>
+<section id="guardare" class="level1">
+<h1>Guardare</h1>
+<p>cxbcvxbvcxb</p>
+</section>
+<section id="ricordare" class="level1">
+<h1>Ricordare</h1>
+<p>xcvbcvbvcxcvb</p>
+
+
+</section>
+
+ ]]></description>
+  <category>rassegna</category>
+  <guid>https://lulliter.github.io/rassegna/posts/2023-09-07-rassegnina/index.html</guid>
+  <pubDate>Wed, 06 Sep 2023 22:00:00 GMT</pubDate>
+  <media:content url="https://lulliter.github.io/rassegna/posts/2023-09-07-rassegnina/giornalicup.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

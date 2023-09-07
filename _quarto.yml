@@ -1,25 +1,75 @@
 project:
   type: website
   output-dir: docs
-  render:
-    - "*.qmd"
-  resources:
-    - "files/"
-    - "projects/"
+  # render:
+  #   - "*.qmd"
+  # resources:
+  #   - "files/"
+  #   - "projects/"
+
+execute:
+  freeze: auto  # re-render only when source changes
 
 website:
   title: "A glitch in the matrix"
+  description: "Spunti e idee per sollevare lo sguardo dalla simulazione... "
+  site-url: "https://lulliter.github.io/rassegna"
+  # repo-url: "https://github.com/Lulliter/rassegna"
+  favicon: favicon.jpg
+  page-footer:
+    left: "Made with [Quarto](https://quarto.org/), by Luisa M. Mimmi. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+    right:
+    - icon: github
+      href: https://github.com/Lulliter/rassegna
+    # - icon: twitter
+    #   href: https://twitter.com/lulliter
+    - icon: envelope
+      href: mailto:lmm76@georgetown.edu
+
+
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    search: true
+    right:
+      - text: "Blog"
+        file: posts.qmd
+      - text: "TIL"
+        file: til.qmd
+      # - text: "Resources"
+      #   file: static/resources/resources.qmd
+      - text: "About"
+        file: about.qmd
+      # - icon: github
+      #   href: https://github.com/jthomasmock
+      # - icon: twitter
+      #   href: https://twitter.com/thomas_mock
+
+# format:
+#   html:
+#     theme: cosmo
+#     css: styles.css
+#     toc: true
+
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    # author: "Luisa M. Mimmi"
+    # twitter-card:
+    #   creator: "@thomas_mock"
+    #   image: "https://themockup.blog/themockup.png"
+    #   card-style: summary_large_image
+
+    # comments:
+    #   utterances:
+    #     repo: jthomasmock/themockup-blog
     toc: true
-
-
-
+    toc-location: "left"
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    mainfont: "Lato"
+    monofont: "Fira Mono"
+    footnotes-hover: true
+    fontsize: 1em
+    theme: my-litera.scss
+    css: styles.css

@@ -9,6 +9,14 @@ quarto preview
 quarto render
 # render a single file only
 
+project:
+  render:
+    - section1.qmd
+    - section2.qmd
+    - "*.qmd"
+    - "!ignored.qmd"
+    - "!ignored-dir/"
+
 # ====== PUBLISH
 # quarto publish  # quasto stronzo mi crea la git branch "gh-pages" -->  FIX delete branch
 			#git branch -d branch_to_delete # { not allowed IF I am on it}

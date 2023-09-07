@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.433">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="Be humble, hungry and kind. Be so good they can’t ignore you.">
-<title>A glitch in the matrix - Luisa M. Mimmi</title>
+<title>A glitch in the matrix – posts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -28,9 +27,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./favicon.jpg" rel="icon" type="image/jpeg">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -54,18 +56,37 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="A glitch in the matrix - Luisa M. Mimmi">
-<meta property="og:description" content="Be humble, hungry and kind. Be so good they can’t ignore you.">
-<meta property="og:image" content="https://lulliter.github.io/rassegna/images/portrait.jpg">
-<meta property="og:site-name" content="A glitch in the matrix">
-<meta name="twitter:title" content="A glitch in the matrix - Luisa M. Mimmi">
-<meta name="twitter:description" content="Be humble, hungry and kind. Be so good they can’t ignore you.">
-<meta name="twitter:image" content="https://lulliter.github.io/rassegna/images/profile-preview.png">
-<meta name="twitter:creator" content="@thomas_mock">
-<meta name="twitter:card" content="summary_large_image">
-</head>
-<body class="floating nav-fixed fullcontent">
+}</script><script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="styles.css">
+<link rel="alternate" type="application/rss+xml" title="A glitch in the matrix" href="posts.xml"></head>
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
@@ -81,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item">
-    <a class="nav-link" href="./posts.html" rel="" target="">
+    <a class="nav-link active" href="./posts.html" rel="" target="" aria-current="page">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -89,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">TIL</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -97,72 +118,70 @@ ul.task-list li input[type="checkbox"] {
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
-  <ul>
-<li><a href="#it" id="toc-it" class="nav-link active" data-scroll-target="#it">Analista di Politiche Pubbliche e Data Scientist</a></li>
-  <li><a href="#en" id="toc-en" class="nav-link" data-scroll-target="#en">Independent Policy Analyst and consulting Data Scientist</a></li>
-  </ul></nav>
-</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rassegna">rassegna <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="images/portrait.jpg" class="about-image
-  rounded " style="width: 20em;">
-<header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Luisa M. Mimmi</h1>
+<main class="content column-page-left" id="quarto-document-content"><!-- Want to support my blog? <a href="https://www.buymeacoffee.com/thomasmock" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="30"></a> --><!-- <a rel="me" href="https://fosstodon.org/@thomas_mock"></a> --><div class="cell">
+
 </div>
-<div>
-  <div class="description">
-    <p>Be humble, hungry and kind. Be so good they can’t ignore you.</p>
-  </div>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="mailto:lmm76@georgetown.edu" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://twitter.com/lulliter" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-  <a href="https://github.com/lulliter" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content"><section id="it" class="level2"><h2 data-anchor-id="it">Analista di Politiche Pubbliche e Data Scientist</h2>
-<!-- ***Contattami per verificare come posso collaborare al tuo progetto*** -->
-<p>La mia esperienza (e passione) è all’incrocio tra Economia, Politiche Pubbliche e <em>Data Science</em>. In 20 anni di esperienza, ho acquisito una vasta esperienza nella raccolta-analisi-presentazione di dati acquisita lavorando in ambiti molto diversi —dalla consulenza privata, alle banche multilaterali di sviluppo, alle ONG. Utilizzo prevalentemente <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#5F85A7;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg>, ma ho familiarità con altri linguaggi di programmazione/analisi di dati (<code>SQL</code>, <code>SAS</code>, <code>Stata</code>).</p>
-<!-- Potrei assistere in progetti come [*questi*](http://luisamimmi.org/Consulting_ITA.html) -->
-<!-- ### Chi sono -->
-<!-- Di formazione, sono un economista con un solido *background* in statistica ed econometria. In oltre 15 anni di esperienza, ho acquisito una significativa esperienza pratica nella progettazione e implementazione di strumenti diagnostici, analisi avanzate e visualizzazioni di dati applicati alle politiche pubbliche e allo sviluppo economico. -->
-<!-- Sono una persona curiosa (e anche un po' *nerd*) che continua a imparare e a sperimentare strumenti e tecniche di *data science* che consentono di analizzare empiricamente aspetti complessi di politica pubblica. Mi affido prevalentemente a software *open source* e cerco, per quanto possibile, di rendere il mio lavoro analitico automatizzato, aperto, collaborativo e riproducibile. -->
-<!-- Qui ci sono maggiori dettagli sul mio percorso professionale: <a href="images/LMMimmi_RES_ITA_sanitized.pdf"> <img src="images/it.png"/> CV (ITA) </a> -->
-<hr>
-<!-- <p style="font-size:10pt"> --><!-- [*[Torna all'italiano]*](#it) --><!-- </p> --></section><section id="en" class="level2"><h2 data-anchor-id="en">Independent Policy Analyst and consulting Data Scientist</h2>
-<!-- ***Get in touch if you have a project in mind. I'd love to discuss how I can help you.*** -->
-<p>My expertise (and passion) is at the intersection of Economics, Public Policy and Data Science. Through almost 20 years of experience, I acquired an extensive hands-on experience in data collection-analysis-presentation acquired working in very different settings —from private consulting to multilateral development banks, to NGOs. These days, my favorite software for statistics is <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#5F85A7;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg>, but I’m familiar with other relevant programming languages (<code>SQL</code>,<code>SAS</code>, <code>Stata</code>).</p>
-<!-- I could help you with projects like [*these*](http://luisamimmi.org/Consulting_ENG.html) -->
-<!-- ### My story -->
-<!-- I am an economist by training with a solid background in statistics and econometrics. Through over 15 years of experience, I acquired a hands-on expertise in designing and implementing diagnostic tools, advanced analytics and data visualizations applied to public policy and economic development. -->
-<!-- As a life-long learner (and massive nerd!), I especially enjoy discovering new data science tools and techniques that can help tackling complex policy issues in a data-driven manner. I rely on open source software and I strive ---to the extent possible--- to make my own analytical work automated, open, collaborative and reproducible. -->
-<!-- Here are more details about my professional journey: <a href="images/LMMimmi_RES_ENG_sanitized.pdf"> <img src="images/gb.png"/> CV (ENG) </a>  -->
-<!-- <a href="https://raw.githubusercontent.com/Lulliter/cv/master/03_CV_vitae/twentysecondsRES.pdf"> -->
-<!--   <img src="images/icons8-great-britain-40.png" alt=""> Résumé-1pg (ENG)  -->
-<!-- </a> -->
 
 
-</section></main></div>
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})"><option value="" disabled="" selected="" hidden="">Order By</option>
+<option value="index" data-direction="asc">Default</option>
+<option value="listing-title" data-direction="asc">
+          Title
+        </option>
+<option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+<option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option></select>
 </div>
-<!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</div>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="rassegna" data-listing-date-sort="1694037600000" data-listing-file-modified-sort="1694102317123" data-listing-date-modified-sort="1694037600000" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./posts/2023-09-07-rassegnina/index.html"> <img src="./posts/2023-09-07-rassegnina/giornalicup.jpg" class="thumbnail-image" style="height: 150px;"></a></p>
+</div>
+<div class="body">
+<a href="./posts/2023-09-07-rassegnina/index.html">
+<h3 class="no-anchor listing-title">
+Rassegnina 9 sett 2023
+</h3>
+<div class="listing-subtitle">
+test new post
+</div>
+<div class="listing-description">
+<p>description</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2023-09-07-rassegnina/index.html">
+<div class="listing-date">
+2023-09-07
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -182,6 +201,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
