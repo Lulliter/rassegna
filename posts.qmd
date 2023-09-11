@@ -1,16 +1,17 @@
 ---
 listing:
-  contents: posts
-  feed: true
-  sort-ui: true
+  contents: posts/**/*.qmd # If your posts directory will only contain .qmd-files, then you may as well just write contents: posts
+  type: default
+  categories: true
+  sort-ui: true # enable sorting & filtering
   sort: 
     - "date desc"
-    - "title desc"
-  type: default
+    # - "title desc"
+  filter-ui: true   
+  fields: [date, title, reading-time, description, categories] #[image, title, description, date, reading-time]
+  feed: true # generate an RSS-feed. works only if we set the site-url in our _quarto.yml file. 
   image-height: 150px
-  image-placeholder: "themockup.png"
-  fields: [image, title, description, date, reading-time]
-  categories: true
+#  image-placeholder: "themockup.png"
   date-format: "YYYY-MM-DD"
   page-size: 9
 toc: false

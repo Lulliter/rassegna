@@ -66,9 +66,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -105,6 +105,11 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./posts.html" rel="" target="" aria-current="page">
  <span class="menu-text">Blog</span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="./posts.xml" rel="" target=""><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./til.html" rel="" target="">
  <span class="menu-text">TIL</span></a>
@@ -122,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rassegna">rassegna <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ITA 🇮🇹">ITA 🇮🇹 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rassegna">rassegna <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content"><!-- Want to support my blog? <a href="https://www.buymeacoffee.com/thomasmock" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="30"></a> --><!-- <a rel="me" href="https://fosstodon.org/@thomas_mock"></a> --><div class="cell">
 
@@ -147,22 +152,33 @@ ul.task-list li input[type="checkbox"] {
           Date - Newest
         </option></select>
 </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+</div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="rassegna" data-listing-date-sort="1694037600000" data-listing-file-modified-sort="1694102317123" data-listing-date-modified-sort="1694037600000" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/2023-09-07-rassegnina/index.html"> <img src="./posts/2023-09-07-rassegnina/giornalicup.jpg" class="thumbnail-image" style="height: 150px;"></a></p>
-</div>
+<div class="quarto-post image-right" data-index="0" data-categories="rassegna,ITA 🇮🇹" data-listing-date-sort="1694037600000" data-listing-file-modified-sort="1694421844232" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="./posts/2023-09-07-rassegnina/index.html">
 <h3 class="no-anchor listing-title">
 Rassegnina 9 sett 2023
 </h3>
 <div class="listing-subtitle">
-test new post
+
 </div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('rassegna'); return false;">
+rassegna
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ITA 🇮🇹'); return false;">
+ITA 🇮🇹
+</div>
+</div>
+<a href="./posts/2023-09-07-rassegnina/index.html">
 <div class="listing-description">
-<p>description</p>
+<p>1a rassegna della serie</p>
 </div>
 </a>
 </div>
@@ -425,12 +441,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/Lulliter/rassegna">
       <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="mailto:lmm76@georgetown.edu">
-      <i class="bi bi-envelope" role="img">
 </i> 
     </a>
   </li>  

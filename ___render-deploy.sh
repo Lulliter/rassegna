@@ -30,17 +30,17 @@ git status
 git add docs/* # specific
 git add -A # ALL
 git add -u # tracked
+git add posts/*
+git add docs/*
+  git add _R/
+  git add favicon.jpg
+  git add images/
+  git add my-litera.scss
+  git add posts.qmd
+  git add themockup.png
+  git add til.qmd
+  git add til/
 
-
-
- git add 02_carico_ind.qmd
- git add  03_analisi_PE.qmd
- git add  R/*
- git add  data_raw/AL_Anagr_Impegno.csv
- git add  data_raw/AL_IndProg.csv
- git add  data_raw/AL_mappa_IC_mis.csv
- git add  data_raw/AL_mappa_ind_mis.csv
- git add  data_raw/RAN_Localizz.csv
 
 =======
 
@@ -51,7 +51,7 @@ if [ $# -eq 1 ]
 fi
 # ... Commit Those changes.
 git commit -m "$msg"
-		# git commit -m "01"
+		# git commit -m "02"
 		# git commit -m "revision + addition"   -m "01_... + 00_carico_tab-contesto.qmd "
 
 # Push source and build repos.

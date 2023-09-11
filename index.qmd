@@ -1,5 +1,5 @@
 ---
-title: "Mini-sito per rassegna stampa di Luisa M. Mimmi"
+title: "Mini-sito per rassegna stampa a cura di [Luisa M. Mimmi](https://lulliter.github.io/rassegna/about.html)"
 # listing:
 #   - id: posts-en
 #     contents: posts/**/en/*.qmd
@@ -52,9 +52,14 @@ comments: false
 toc: true
 ---
 
+> spunti per sollevare lo sguardo dalla simulazione 
+
+![](images/matrix.jpg)
+
 <!-- ## Recent posts / Posts recentes -->
 
 <!-- ::: {#posts} -->
+
 <!-- ::: -->
 
 <!-- <a href="../posts/index.html"> <button type="button" class="btn btn-primary float-end btn-sm">See all/Ver todos</button></a> -->
@@ -66,6 +71,7 @@ toc: true
 <!-- <a href="../talks/index.html"> <button type="button" class="btn btn-danger float-end btn-sm">Next activities/Atividades futuras</button></a><br> -->
 
 <!-- ::: {#talks} -->
+
 <!-- ::: -->
 
 <!-- <a href="../talks/index.html"> <button type="button" class="btn btn-primary float-end btn-sm">See all/Ver todas</button></a> -->
@@ -73,6 +79,7 @@ toc: true
 <!-- ## Posts in English -->
 
 <!-- ::: {#posts-en} -->
+
 <!-- ::: -->
 
 <!-- <a href="../posts/en.html"> <button type="button" class="btn btn-primary float-end btn-sm">See all posts in English</button></a> -->
@@ -80,6 +87,7 @@ toc: true
 <!-- ## Posts em Português -->
 
 <!-- ::: {#posts-ptbr} -->
+
 <!-- ::: -->
 
 <!-- <a href="../posts/pt.html"> <button type="button" class="btn btn-primary float-end btn-sm">Ver posts em Português</button></a> -->
@@ -87,4 +95,5 @@ toc: true
 <!-- ## Posts en Español -->
 
 <!-- ::: {#posts-es} -->
+
 <!-- ::: -->

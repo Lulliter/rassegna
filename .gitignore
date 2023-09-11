@@ -15,11 +15,9 @@
 
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
 .httr-oauth
-
 # knitr and R markdown default cache directories
 *_cache/
 /cache/
-
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
@@ -27,8 +25,8 @@
 # pkgdown site
 # docs/      # SE NON COME FACCIO A PUBBLICARE ???
 
-# translation temp files
-po/*~
+# DRAFT POSTS
+posts/_*
 
 # ANDREW HEISS COPIA
 # you don’t need to check your _site or _book directory into version control

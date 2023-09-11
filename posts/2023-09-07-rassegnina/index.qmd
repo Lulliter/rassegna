@@ -1,20 +1,22 @@
 ---
 title: "Rassegnina 9 sett 2023"
-subtitle: "test new post"
+# subtitle: "test new post"
+## [Description compare in listing page ]
 description:  |
-  description
+  1a rassegna della serie
 author: ""
-date: "2023-09-07"
-categories: [rassegna]
-date-modified: "2023-09-07"
-toc: TRUE
-draft: FALSE
+date: "2023-09-07" # Published
+#date-modified: "2023-09-07" # Modified
+categories: [rassegna, ITA 🇮🇹] # [Quarto, R, MEDS]
 image: "giornalicup.jpg"
 image-alt: ""
+# citation: 
+#   url: https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/ 
+toc: TRUE
+draft: FALSE
 # twitter-card:
 #   image:  "giornalicup.jpg"
 #   card-style: summary_large_image
-
 ---
 
 # Leggere
@@ -24,4 +26,4 @@ xcvbcvb
 cxbcvxbvcxb
 
 # Ricordare 
-xcvbcvbvcxcvb
++ Benedetto XVI  ["SANTA MESSA A CONCLUSIONE DELL’INCONTRO CON IL "RATZINGER SCHÜLERKREIS" - OMELIA DEL SANTO PADRE BENEDETTO XVI - Centro Mariapoli, Castel Gandolfo Domenica, 2 settembre 2012"](https://www.vatican.va/content/benedict-xvi/it/homilies/2012/documents/hf_ben-xvi_hom_20120902_ratzinger-schuelerkreis.html)
