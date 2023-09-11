@@ -1,0 +1,13 @@
+---
+title: "README"
+# README
+---
+
+# Rassegna stampa website
+
+MADE WITH QUARTO
+
+
+# Resources
++ [Adding a blog to your existing Quarto website, by Sam Csik Rapp](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/)
++ [The ultimate guide to starting a Quarto blog, by Albert Rapp](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html)
