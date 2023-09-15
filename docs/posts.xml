@@ -10,10 +10,10 @@
 <atom:link href="https://lulliter.github.io/rassegna/posts.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.433</generator>
-<lastBuildDate>Wed, 06 Sep 2023 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 15 Sep 2023 22:00:00 GMT</lastBuildDate>
 <item>
-  <title>Rassegnina 9 sett 2023</title>
-  <link>https://lulliter.github.io/rassegna/posts/2023-09-07-rassegnina/index.html</link>
+  <title>Rassegnina 16 sett 2023</title>
+  <link>https://lulliter.github.io/rassegna/posts/2023-09-16-rassegnina/index.html</link>
   <description><![CDATA[ 
 
 
@@ -21,11 +21,20 @@
 
 <section id="leggere" class="level1">
 <h1>Leggere</h1>
-<p>xcvbcvb</p>
+<ul>
+<li>Jeffrey Sachs - dal suo blog del 17 luglio scorso - discute le responsabilità di NATO e USA nell’attuale conflitto in corso in Ucraina. Particolarmente utile la cronologia che riporta le tappe che hanno condotto a questa pericolosa <em>escalation.</em>
+<ul>
+<li><a href="https://www.jeffsachs.org/newspaper-articles/history-of-war-in-ukraine">link originale in ENG 🇺🇸</a></li>
+<li><a href="https://www.sabinopaciolla.com/la-vera-storia-della-guerra-in-ucraina-una-cronologia-degli-eventi-e-un-caso-per-la-diplomazia/">link traduzione in ITA 🇮🇹</a></li>
+</ul></li>
+<li>Roberto Iannuzzi - dal suo substack dell’8 settembre 2023 - offre un’analisi del BRICS+ (cioè il gruppo in prossima allargamento), la ragion d’essere e soprattutto le ragioni e i propositi dell’inclusione di ben sei nuovi membri nell’organizzazione: Arabia Saudita, Argentina, Egitto, Emirati Arabi Uniti (EAU), Etiopia e Iran
+<ul>
+<li><a href="https://robertoiannuzzi.substack.com/p/lespansione-dei-brics-e-la-battaglia">link</a></li>
+</ul></li>
+</ul>
 </section>
 <section id="guardare" class="level1">
 <h1>Guardare</h1>
-<p>cxbcvxbvcxb</p>
 </section>
 <section id="ricordare" class="level1">
 <h1>Ricordare</h1>
@@ -39,9 +48,10 @@
  ]]></description>
   <category>rassegna</category>
   <category>ITA 🇮🇹</category>
-  <guid>https://lulliter.github.io/rassegna/posts/2023-09-07-rassegnina/index.html</guid>
-  <pubDate>Wed, 06 Sep 2023 22:00:00 GMT</pubDate>
-  <media:content url="https://lulliter.github.io/rassegna/posts/2023-09-07-rassegnina/giornalicup.jpg" medium="image" type="image/jpeg"/>
+  <category>ENG 🇺🇸</category>
+  <guid>https://lulliter.github.io/rassegna/posts/2023-09-16-rassegnina/index.html</guid>
+  <pubDate>Fri, 15 Sep 2023 22:00:00 GMT</pubDate>
+  <media:content url="https://lulliter.github.io/rassegna/posts/2023-09-16-rassegnina/giornalicup.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

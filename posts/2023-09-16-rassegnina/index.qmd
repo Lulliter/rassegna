@@ -1,0 +1,36 @@
+---
+title: "Rassegnina 16 sett 2023"
+# subtitle: "test new post"
+## [Description compare in listing page ]
+description:  |
+  1a rassegna della serie
+author: ""
+date: "2023-09-16" # Published
+#date-modified: "2023-09-07" # Modified
+categories: [rassegna, ITA 🇮🇹, ENG 🇺🇸] # [Quarto, R, MEDS]
+image: "giornalicup.jpg"
+image-alt: ""
+# citation: 
+#   url: https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/ 
+toc: TRUE
+draft: FALSE
+# twitter-card:
+#   image:  "giornalicup.jpg"
+#   card-style: summary_large_image
+---
+
+# Leggere
++ Jeffrey Sachs - dal suo blog del 17 luglio scorso - discute le responsabilità di NATO e USA nell’attuale conflitto in corso in Ucraina. Particolarmente utile la cronologia che riporta le tappe che hanno condotto a questa pericolosa *escalation.* 
+	- [link originale in ENG 🇺🇸](https://www.jeffsachs.org/newspaper-articles/history-of-war-in-ukraine)
+	- [link traduzione in ITA 🇮🇹](https://www.sabinopaciolla.com/la-vera-storia-della-guerra-in-ucraina-una-cronologia-degli-eventi-e-un-caso-per-la-diplomazia/)
+
++ Roberto Iannuzzi - dal suo substack dell'8 settembre 2023 - offre un'analisi del BRICS+ (cioè il gruppo in prossima allargamento), la ragion d'essere e soprattutto le ragioni e i propositi dell'inclusione di ben sei nuovi membri nell’organizzazione: Arabia Saudita, Argentina, Egitto, Emirati Arabi Uniti (EAU), Etiopia e Iran
+	- [link](https://robertoiannuzzi.substack.com/p/lespansione-dei-brics-e-la-battaglia)
+
+
+
+# Guardare 
+ 
+
+# Ricordare 
++ Benedetto XVI  ["SANTA MESSA A CONCLUSIONE DELL’INCONTRO CON IL "RATZINGER SCHÜLERKREIS" - OMELIA DEL SANTO PADRE BENEDETTO XVI - Centro Mariapoli, Castel Gandolfo Domenica, 2 settembre 2012"](https://www.vatican.va/content/benedict-xvi/it/homilies/2012/documents/hf_ben-xvi_hom_20120902_ratzinger-schuelerkreis.html)

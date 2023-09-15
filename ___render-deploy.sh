@@ -31,15 +31,10 @@ git add docs/* # specific
 git add -A # ALL
 git add -u # tracked
 git add posts/*
-git add docs/*
-  git add _R/
-  git add favicon.jpg
-  git add images/
-  git add my-litera.scss
-  git add posts.qmd
-  git add themockup.png
-  git add til.qmd
-  git add til/
+git add images/*
+git add         .nojekyll
+git add  ReadMe.md
+
 
 
 =======
@@ -51,6 +46,8 @@ if [ $# -eq 1 ]
 fi
 # ... Commit Those changes.
 git commit -m "$msg"
+
+		# git commit -m "README.MD"
 		# git commit -m "02"
 		# git commit -m "revision + addition"   -m "01_... + 00_carico_tab-contesto.qmd "
 

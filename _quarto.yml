@@ -33,8 +33,8 @@ website:
         file: posts.qmd
       - icon: rss
         href: posts.xml
-      - text: "TIL"
-        file: til.qmd
+      # - text: "TIL"
+      #   file: til.qmd
       # - text: "Resources"
       #   file: static/resources/resources.qmd
       - text: "About"

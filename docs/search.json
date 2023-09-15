@@ -4,7 +4,42 @@
     "href": "posts.html",
     "title": "A glitch in the matrix",
     "section": "",
-    "text": "Order By\nDefault\n\n          Title\n        \n\n          Date - Oldest\n        \n\n          Date - Newest\n        \n\n    \n      \n      \n\n\n\n\n\n\n\nRassegnina 9 sett 2023\n\n\n\n\n\n\n\nrassegna\n\n\nITA 🇮🇹\n\n\n\n\n1a rassegna della serie\n\n\n\n\n\n\n2023-09-07\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\nDefault\n\n          Title\n        \n\n          Date - Oldest\n        \n\n          Date - Newest\n        \n\n    \n      \n      \n\n\n\n\n\n\n\nRassegnina 16 sett 2023\n\n\n\n\n\n\n\nrassegna\n\n\nITA 🇮🇹\n\n\nENG 🇺🇸\n\n\n\n\n1a rassegna della serie\n\n\n\n\n\n\n2023-09-16\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Luisa M. Mimmi",
+    "section": "",
+    "text": "Benvenuti!\nIl proposito di questo sito è raccogliere articoli, idee e spunti di riflessione critica su realtà e attualità: insomma fissare quelle sollecitazioni che fanno alzare la testa dalla “simulazione” in cui siamo spesso immersi…"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mini-sito per rassegna stampa a cura di Luisa M. Mimmi",
+    "section": "",
+    "text": "spunti per sollevare lo sguardo dalla simulazione"
+  },
+  {
+    "objectID": "posts/2023-09-16-rassegnina/index.html",
+    "href": "posts/2023-09-16-rassegnina/index.html",
+    "title": "Rassegnina 16 sett 2023",
+    "section": "",
+    "text": "Leggere\n\nJeffrey Sachs - dal suo blog del 17 luglio scorso - discute le responsabilità di NATO e USA nell’attuale conflitto in corso in Ucraina. Particolarmente utile la cronologia che riporta le tappe che hanno condotto a questa pericolosa escalation.\n\nlink originale in ENG 🇺🇸\nlink traduzione in ITA 🇮🇹\n\nRoberto Iannuzzi - dal suo substack dell’8 settembre 2023 - offre un’analisi del BRICS+ (cioè il gruppo in prossima allargamento), la ragion d’essere e soprattutto le ragioni e i propositi dell’inclusione di ben sei nuovi membri nell’organizzazione: Arabia Saudita, Argentina, Egitto, Emirati Arabi Uniti (EAU), Etiopia e Iran\n\nlink\n\n\n\n\nGuardare\n\n\nRicordare\n\nBenedetto XVI “SANTA MESSA A CONCLUSIONE DELL’INCONTRO CON IL”RATZINGER SCHÜLERKREIS” - OMELIA DEL SANTO PADRE BENEDETTO XVI - Centro Mariapoli, Castel Gandolfo Domenica, 2 settembre 2012”"
+  },
+  {
+    "objectID": "til.html",
+    "href": "til.html",
+    "title": "Things I’ve learned and want to remember",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n\n2022-11-27\n\n\ndata.table::rleid() is pretty cool!\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "ReadMe.html",
+    "href": "ReadMe.html",
+    "title": "README",
+    "section": "",
+    "text": "Rassegna stampa website\nMADE WITH QUARTO\n\n\nTO DO (content)\n\n☑️ articolo x Ticino su natalita e famiglia al centro nel fisco (delega fiscale?)\n☑️ entita del debito (in funzione del PIL) | quanto ci condiziona in realta? sole 24 14sett2023 | Donato Masciandaro (Bocconi)\n☑️ entita e variazione dei flussi migratori …. (sito istituzionale)\n\n\n\nTO DO (nerd)\n\n☑️ funzione (o Github action x fare un nuovo post)\n✅ …\n\n\n\nResources\n\nAdding a blog to your existing Quarto website, by Sam Csik Rapp\nThe ultimate guide to starting a Quarto blog, by Albert Rapp"
   },
   {
     "objectID": "til/rleid.html",
@@ -47,40 +82,5 @@
     "title": "data.table::rleid() is pretty cool!",
     "section": "Recover the original data",
     "text": "Recover the original data\n\n# we can create a summary\n# and then recover the original data\nfinal_df &lt;- ex_df %&gt;% \n  summarize(\n    lengths = rle(x)$lengths,\n    values =rle(x)$values\n    ) %T&gt;% print() %&gt;% \n  summarize(\n    x = rep(values, times=lengths),\n    num = 1:sum(lengths)\n    )\n\nWarning: Returning more (or less) than 1 row per `summarise()` group was deprecated in\ndplyr 1.1.0.\nℹ Please use `reframe()` instead.\nℹ When switching from `summarise()` to `reframe()`, remember that `reframe()`\n  always returns an ungrouped data frame and adjust accordingly.\n\n\n# A tibble: 3 × 2\n  lengths values\n    &lt;int&gt; &lt;chr&gt; \n1       2 a     \n2       3 b     \n3       5 a     \n\n\nWarning: Returning more (or less) than 1 row per `summarise()` group was deprecated in\ndplyr 1.1.0.\nℹ Please use `reframe()` instead.\nℹ When switching from `summarise()` to `reframe()`, remember that `reframe()`\n  always returns an ungrouped data frame and adjust accordingly.\n\n\n\nfinal_df\n\n# A tibble: 10 × 2\n   x       num\n   &lt;chr&gt; &lt;int&gt;\n 1 a         1\n 2 a         2\n 3 b         3\n 4 b         4\n 5 b         5\n 6 a         6\n 7 a         7\n 8 a         8\n 9 a         9\n10 a        10\n\n# original and recreation are identical\nall.equal(final_df, ex_df)\n\n[1] TRUE\n\n\n\n\n\n\n\n\nExpand for Session Info\n\n\n\n\n\n\n\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.2.2 (2022-10-31)\n os       macOS Big Sur ... 10.16\n system   x86_64, darwin17.0\n ui       X11\n language (EN)\n collate  en_US.UTF-8\n ctype    en_US.UTF-8\n tz       Europe/Rome\n date     2023-09-07\n pandoc   3.1.1 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/ (via rmarkdown)\n quarto   1.3.433 @ /usr/local/bin/quarto\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version date (UTC) lib source\n data.table  * 1.14.6  2022-11-16 [2] CRAN (R 4.2.0)\n dplyr       * 1.1.0   2023-01-29 [2] CRAN (R 4.2.0)\n forcats     * 1.0.0   2023-01-29 [1] CRAN (R 4.2.0)\n ggplot2     * 3.4.1   2023-02-10 [1] CRAN (R 4.2.0)\n lubridate   * 1.9.2   2023-02-10 [1] CRAN (R 4.2.0)\n magrittr    * 2.0.3   2022-03-30 [2] CRAN (R 4.2.0)\n purrr       * 1.0.1   2023-01-10 [2] CRAN (R 4.2.0)\n readr       * 2.1.4   2023-02-10 [1] CRAN (R 4.2.0)\n sessioninfo * 1.2.2   2021-12-06 [1] CRAN (R 4.2.0)\n stringr     * 1.5.0   2022-12-02 [2] CRAN (R 4.2.0)\n tibble      * 3.2.1   2023-03-20 [1] CRAN (R 4.2.0)\n tidyr       * 1.3.0   2023-01-24 [2] CRAN (R 4.2.0)\n tidyverse   * 2.0.0   2023-02-22 [1] CRAN (R 4.2.2)\n\n [1] /Users/luisamimmi/Library/R/x86_64/4.2/library\n [2] /Library/Frameworks/R.framework/Versions/4.2/Resources/library\n\n──────────────────────────────────────────────────────────────────────────────"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mini-sito per rassegna stampa a cura di Luisa M. Mimmi",
-    "section": "",
-    "text": "spunti per sollevare lo sguardo dalla simulazione"
-  },
-  {
-    "objectID": "posts/2023-09-07-rassegnina/index.html",
-    "href": "posts/2023-09-07-rassegnina/index.html",
-    "title": "Rassegnina 9 sett 2023",
-    "section": "",
-    "text": "Leggere\nxcvbcvb\n\n\nGuardare\ncxbcvxbvcxb\n\n\nRicordare\n\nBenedetto XVI “SANTA MESSA A CONCLUSIONE DELL’INCONTRO CON IL”RATZINGER SCHÜLERKREIS” - OMELIA DEL SANTO PADRE BENEDETTO XVI - Centro Mariapoli, Castel Gandolfo Domenica, 2 settembre 2012”"
-  },
-  {
-    "objectID": "til.html",
-    "href": "til.html",
-    "title": "Things I’ve learned and want to remember",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n\n2022-11-27\n\n\ndata.table::rleid() is pretty cool!\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Luisa M. Mimmi",
-    "section": "",
-    "text": "Benvenuti!\nIl proposito di questo sito è raccogliere articoli, idee e spunti di riflessione critica su realtà e attualità: insomma fissare quelle sollecitazioni che fanno alzare la testa dalla “simulazione” in cui siamo spesso immersi…"
-  },
-  {
-    "objectID": "ReadMe.html",
-    "href": "ReadMe.html",
-    "title": "README",
-    "section": "",
-    "text": "Resources\n\nAdding a blog to your existing Quarto website, by Sam Csik Rapp\nThe ultimate guide to starting a Quarto blog, by Albert Rapp"
   }
 ]
