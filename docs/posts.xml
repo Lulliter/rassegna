@@ -10,7 +10,56 @@
 <atom:link href="https://lulliter.github.io/rassegna/posts.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.433</generator>
-<lastBuildDate>Fri, 15 Sep 2023 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 17 Sep 2023 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Natalità, famiglia e fisco</title>
+  <link>https://lulliter.github.io/rassegna/posts/2023-09-18-natalita-e-fisco/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<!-- ```{r} -->
+<!-- #devtools::install_github("benmarwick/wordcountaddin",  type = "source", dependencies = TRUE) -->
+<!-- library(wordcountaddin) -->
+<!-- ``` -->
+<section id="ridisegnare-il-fisco-intorno-alla-famiglia" class="level1 page-columns page-full">
+<h1>Ridisegnare il fisco intorno alla famiglia</h1>
+<p>L’edizione 2023 del Meeting di Rimini (dal tema “L’esistenza umana è un’amicizia inesauribile”) ha dato molto risalto ai temi della natalità e della famiglia, discussi in vari incontri e sotto varie angolature. Ho trovato particolarmente stimolante un <em>webinar</em>, proposto a margine del Meeting, dal titolo <em>“Finalmente una pro-community tax?”</em>. La tavola rotonda è partita dalla considerazione/provocazione lanciata da <strong>Domenico Menorello</strong> (del network associativo “Ditelo sui tetti”): il vigente diritto tributario italiano è di fatto iper-individualista, ovvero non riconosce la famiglia come formazione sociale fondamentale per la vita (anche economica e sociale) della persona. Pare promettente invece, sempre secondo Menorello, che la stessa Delega Fiscale (la legge che ha affidato al Governo la revisione del sistema tributario entro 2 anni) abbia esplicitato tra i principi ispiratori “la riduzione del carico fiscale, soprattutto al fine di sostenere le famiglie, in particolare quelle in cui sia presente una persona con disabilità”.</p>
+<p>Vari altri relatori (tra cui il Presidente dell’Associazione Famiglie numerose) hanno discusso alcune modalità concrete con cui il fisco potrebbe (e dovrebbe) effettivamente essere re-impostato alla luce di una necessaria politica familiare — tra cui l’assegno unico o giuste deduzioni del costo del lavoro per compensare aziende che impiegano lavoratrici madri di figli piccoli. A questo proposito è stato illuminante anche l’intervento di <strong>Francesco Farri</strong>. Il docente di diritto tributario ha evidenziato come “la famiglia si fa carico di sostenere in modo stabile una serie di bisogni fondamentali” (e.g.&nbsp;la cura di bambini, anziani e persone fragili) che rappresenta un contributo sostanziale, pur “in natura”, al bene comune (e un corrispettivo risparmio per la finanza pubblica). Per questo, sosteneva il docente, non si può non considerare numerosità e composizione della famiglia nel momento in cui si chiede alla stessa di contribuire alle spese pubbliche tramite le imposte. Occorrerebbe però un cambio di paradigma (anche a livello di UE che regola la contabilità pubblica) per smettere di considerarea le agevolazioni fiscali assicurate a famiglie ed enti del terzo settore come “spese fiscali” quando rappresentano delle “entrate” sotto forma di servizi garantiti.</p>
+<div class="page-columns page-full"><p>Un altro aspetto incoraggiante di questo evento<sup>1</sup>, è stata la partecipazione pacata e costruttiva di interlocutori politici di diversi schieramenti a questo dialogo con tecnici e rappresentanti di formazioni sociali. Infatti anche il Viceministro <strong>Leo</strong> (con delega al fisco) e i deputati <strong>Osnato</strong> e <strong>Del Barba</strong> (Presidente e Segretario della Commissione Finanze) hanno offerto riflessioni e chiarimenti sulla riforma fiscale in preparazione. Sarebbe auspicabile e necessario alimentare un simile dialogo ricco e costruttivo perchè il nostro paese definisca adeguate misure fiscali, previdenziali e giuslavoristiche incentrate sulla valorizzazione della famiglia, nonchè della natalità e della maternità. Infatti la stessa esistenza del paese e il benessere collettivo non possono prescindere da queste assolute priorità.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Il video è reperibile sul <a href="https://www.meetingrimini.org/eventi-totale/webinar-finalmente-una-pro-community-tax/">canale Youtube del Meeting</a></p></li></div></div>
+</section>
+<section id="note" class="level1">
+<h1>Note</h1>
+</section>
+<section id="fonti" class="level1">
+<h1>Fonti</h1>
+<p><a href="https://www.meetingrimini.org/eventi-totale/webinar-finalmente-una-pro-community-tax/">WEBINAR – FINALMENTE UNA PRO-COMMUNITY TAX?</a> <em>Gian Carlo Blangiardo</em>, già Presidente ISTAT; <em>Alfredo Caltabiano</em>, Presidente Associazione Famiglie numerose; <em>Mauro Del Barba</em>, Segretario Commissione Finanze Camera deputati; <em>Francesco Farri</em>, Docente di Diritto tributario, Università di Genova, Centro Studi Livatino; <em>Maurizio Leo</em>, Viceministro con delega al fisco; <em>Domenico Menorello</em>, network associativo “Ditelo sui tetti”; <em>Marco Osnato</em>, Presidente Commissione Finanze Camera dei Deputati. Modera <em>Maria Soave</em>, giornalista, caposervizio TG1.</p>
+<p>Dialoghi perché la riforma fiscale divenga volano di libertà per famiglie, comunità e relazioni di solidarietà.</p>
+<!-- sussidiarietà orizzontale in materia tributaria (famiglie ed enti del terzo settore ) -->
+<!-- misure fiscali compensare i datori di lavoro che sostengono costi aumento della riduzione del costo del lavoro per le lavoratrici madri  -->
+<!--  + *Assegno unico* è stato visto come positivo pur presentando alcune criticità (Isee aumenta per casa di proprietà e son state tolte le detrazioni) NON è ASSISTENZIALISMO MA UNA POLITICA FAMILIARE....   -->
+<!--  - ISEE mischia patrimonio e reddito  -->
+<!-- Quanto valgono i servizi e gli oneri che la famiglia sostiene ..... sostituto di spesa pubblica ..... -->
+<!-- Il reddito della famiglia non può essere considerato come un reddito di singolo (assurde scale di equivalnezza) .... come riconoscerlo : -->
+<!--    - quoziente familiare -->
+<!--    - fattore familiare -->
+<!--    - splitting alla tedesca -->
+<!--    - notax area x ogni figlio -->
+<!--    - deduzione del costo di accrescimento dei figli ....  -->
+<!-- aiuti alla maternità .... il costo del lavoro di una mamma x i figli dovrebbe essere il vero superbonus (questo è un investimento per tutti)    -->
+
+
+</section>
+
+
+ ]]></description>
+  <category>spunti</category>
+  <category>ITA 🇮🇹</category>
+  <guid>https://lulliter.github.io/rassegna/posts/2023-09-18-natalita-e-fisco/index.html</guid>
+  <pubDate>Sun, 17 Sep 2023 22:00:00 GMT</pubDate>
+  <media:content url="https://lulliter.github.io/rassegna/posts/2023-09-18-natalita-e-fisco/stack.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Rassegnina 16 sett 2023</title>
   <link>https://lulliter.github.io/rassegna/posts/2023-09-16-rassegnina/index.html</link>

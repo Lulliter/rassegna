@@ -49,7 +49,7 @@ git commit -m "$msg"
 
 		# git commit -m "README.MD"
 		# git commit -m "02"
-		# git commit -m "revision + addition"   -m "01_... + 00_carico_tab-contesto.qmd "
+		# git commit -m "revision + addition of post"  -m "01_... + 00_carico_tab-contesto.qmd "
 
 # Push source and build repos.
 #cd .

@@ -14,7 +14,7 @@ website:
   title: "A glitch in the matrix"
   site-url: "https://lulliter.github.io/rassegna"
   # repo-url: "https://github.com/Lulliter/rassegna"
-  favicon: favicon.jpg
+  favicon: images/favicon.jpg
   page-footer:
     left: "Made with [Quarto](https://quarto.org/), by Luisa M. Mimmi. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
     right:
@@ -31,16 +31,15 @@ website:
     right:
       - text: "Blog"
         file: posts.qmd
-      - icon: rss
-        href: posts.xml
-      # - text: "TIL"
-      #   file: til.qmd
+# # MUST HAVE feed:true in posts
+#       - icon: rss
+#         href: posts.xml
       # - text: "Resources"
       #   file: static/resources/resources.qmd
       - text: "About"
         file: about.qmd
       # - icon: github
-      #   href: https://github.com/jthomasmock
+      #   href: https://github.com/Lulliter/rassegna
       # - icon: twitter
       #   href: https://twitter.com/thomas_mock
 

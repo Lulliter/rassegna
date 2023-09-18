@@ -1,12 +1,12 @@
 ---
 title: "Luisa M. Mimmi"
-image: images/portrait.jpg
+image: images/stack.jpeg
 description: |
   *"E’ la verità che ci possiede, è qualcosa di vivente! Noi non siamo suoi possessori, bensì siamo afferrati da lei. Solo se ci lasciamo guidare e muovere da lei, rimaniamo in lei, solo se siamo, con lei e in lei, pellegrini della verità, allora è in noi e per noi."* (Benedetto XVI)
 about:
-  template: trestles
-  image-width: 15em
-  image-shape: round
+  template: trestles #solana
+  # image-width: 15em
+  # image-shape: round
   links:
     - icon: envelope
       text: Email
@@ -30,7 +30,11 @@ toc: FALSE
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-### Benvenuti!  
+
+<br>
+<br>
+
+# Benvenuti!  
 
 Il proposito di questo sito è raccogliere articoli, idee e spunti di riflessione critica su realtà e attualità: insomma fissare quelle sollecitazioni che fanno alzare la testa dalla "simulazione" in cui siamo spesso immersi...  
 
