@@ -7,6 +7,9 @@ title: "README"
 
 MADE WITH QUARTO
 
+# Notes
+
++ ✅ Per creare un nuovo post ho salvato una funzione apposta in `_R/new_post.R` r reata e condivisa da [Tom Mock](https://themockup.blog/posts/2022-11-08-use-r-to-generate-a-quarto-blogpost/) 🙌
 
 # TO DO (content)
 
@@ -17,7 +20,7 @@ MADE WITH QUARTO
 
 # TO DO (nerd)
 + ☑️ funzione (o Github action x fare un nuovo post)
-+ ✅ ...
++ ✅ . 
 
 
 # Resources

@@ -1,3 +1,12 @@
+
+# Pckgs -------------------------------------------------------------------
+library(rstudioapi) # interface for interacting with the RStudio IDE
+library(stringr)	  # easy string manipulation
+library(glue)  	  # easy adding of string together
+library(fs)    	  # easy file manipulation
+library(cli)   	  # easy and beautiful messages/warnings
+library(yesno) 	  # easy binary decision prompts
+
 # Function 2 create post  -------------------------------------------------
 new_post <- function(
 		title,
@@ -10,6 +19,7 @@ new_post <- function(
 		open_file = TRUE
 ){
 
+	# ----  TITLE
 	# convert to kebab case and remove non space or alphanumeric characters
 	title_kebab <- stringr::str_to_lower(title) |>
 		stringr::str_remove_all("[^[:alnum:][:space:]]") |>
@@ -29,12 +39,14 @@ new_post <- function(
 		slug <- glue::glue("posts/{date}-{title_kebab}")
 	}
 
+	# ----  FOLDER
 	# create and alert about directory
 	fs::dir_create(
 		path = slug
 	)
 	cli::cli_alert_success("Folder created at {.file {slug}}")
 
+	# ----  BLOG POST
 	# wrap description at 77 characters
 	description <- stringr::str_wrap(description, width = 77) |>
 		stringr::str_replace_all("[\n]", "\n  ")
@@ -42,6 +54,7 @@ new_post <- function(
 	# start generating file
 	new_post_file <- glue::glue("{slug}/{file}")
 
+	# ----  YAML
 	# build yaml core
 	new_post_core <- c(
 		"---",
@@ -92,10 +105,16 @@ new_post <- function(
 
 
 
-# Example use function  ---------------------------------------------------
+# # Example use function  ---------------------------------------------------
+# new_post(
+# 	"Rassegnina del 16 sett 2023",
+# 	description = "nuova rassegna stampa",
+# 	draft = TRUE
+# )
+#
+# Example 2 use function  ---------------------------------------------------
 new_post(
-	"Rassegnina del 16 sett 2023",
-	description = "nuova rassegna stampa",
+	"Revisione libro: Il Sistema invisibile, di Marcello Foa del 15 Novembre 2023",
+	description = "libri",
 	draft = TRUE
 )
-

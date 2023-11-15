@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.433">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
 <meta name="author" content="Tom Mock">
 <meta name="dcterms.date" content="2022-11-08">
 <meta name="description" content="The {cli} and {fs} packages make life easy!">
-<title>A glitch in the matrix – Use R to generate a Quarto blogpost</title>
+
+<title>Use R to generate a Quarto blogpost</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -56,135 +58,79 @@ div.sourceCode
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
-<!-- htmldependencies:E3FAD763 --><script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script><link rel="stylesheet" href="../../styles.css">
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
 </head>
+
 <body>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="/index.html">
-    <span class="navbar-title">A glitch in the matrix</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item">
-    <a class="nav-link" href="/posts.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="/til.html" rel="" target="">
- <span class="menu-text">TIL</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="/about.html" rel="" target="">
- <span class="menu-text">About</span></a>
-  </li>  
-</ul>
-<div class="quarto-navbar-tools">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
 </div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div id="quarto-toc-target"></div>
-</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default toc-left"><div class="quarto-title-banner">
-    <div class="quarto-title column-body">
-      <h1 class="title">Use R to generate a Quarto blogpost</h1>
-                  <div>
-        <div class="description">
-          <p>The {cli} and {fs} packages make life easy!</p>
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">meta</div>
-                <div class="quarto-category">quarto</div>
-              </div>
-                  </div>
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Use R to generate a Quarto blogpost</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">meta</div>
+    <div class="quarto-category">quarto</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>The {cli} and {fs} packages make life easy!</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Tom Mock </p>
+          </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 8, 2022</p>
+    </div>
+  </div>
   
-  <div class="quarto-title-meta">
+    
+  </div>
+  
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Tom Mock </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">November 8, 2022</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><nav id="TOC" role="doc-toc"><h2 id="toc-title">On this page</h2>
-   
-  <ul>
-<li><a href="#title-of-post" id="toc-title-of-post">Title of post</a></li>
-  <li><a href="#create-folder" id="toc-create-folder">Create folder</a></li>
-  <li>
-<a href="#create-blogpost-file-as-index.qmd" id="toc-create-blogpost-file-as-index.qmd">Create blogpost file as <code>index.qmd</code></a>
-  <ul>
-<li><a href="#add-description-and-wrap" id="toc-add-description-and-wrap">Add description and wrap</a></li>
-  </ul>
-</li>
-  <li>
-<a href="#start-file" id="toc-start-file">Start file</a>
-  <ul>
-<li><a href="#build-yaml-core" id="toc-build-yaml-core">Build YAML core</a></li>
-  </ul>
-</li>
-  <li><a href="#write-out-to-the-file" id="toc-write-out-to-the-file">Write out to the file</a></li>
-  <li><a href="#all-together" id="toc-all-together">All together</a></li>
-  </ul></nav><p>I am a Quarto super fan for many reasons, and use Quarto for my personal blog. As such, I wanted to simplify the process of creating new blog posts for myself, so I wrote a quick function to do just that!</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># possible arguments listed below</span></span>
-<span><span class="va">new_post</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span></span>
-<span>    <span class="va">title</span>, </span>
-<span>    <span class="va">file</span> <span class="op">=</span> <span class="st">"index.qmd"</span>,</span>
-<span>    <span class="va">description</span> <span class="op">=</span> <span class="st">""</span>,</span>
-<span>    <span class="va">author</span> <span class="op">=</span> <span class="st">"Tom Mock"</span>, </span>
-<span>    <span class="va">date</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>, </span>
-<span>    <span class="va">draft</span> <span class="op">=</span> <span class="cn">FALSE</span>, </span>
-<span>    <span class="va">title_limit</span> <span class="op">=</span> <span class="fl">45</span>,</span>
-<span>    <span class="va">open_file</span> <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span>    <span class="op">)</span><span class="op">{</span><span class="va">some_code</span><span class="op">}</span></span></code></pre></div>
+</header>
+
+<p>I am a Quarto super fan for many reasons, and use Quarto for my personal blog. As such, I wanted to simplify the process of creating new blog posts for myself, so I wrote a quick function to do just that!</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># possible arguments listed below</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>new_post <span class="ot">&lt;-</span> <span class="cf">function</span>(</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    title, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">file =</span> <span class="st">"index.qmd"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">description =</span> <span class="st">""</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">author =</span> <span class="st">"Tom Mock"</span>, </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">date =</span> <span class="fu">Sys.Date</span>(), </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">draft =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">title_limit =</span> <span class="dv">45</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">open_file =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    ){some_code}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -198,103 +144,102 @@ Expand for Full Code
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">new_post</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span></span>
-<span>    <span class="va">title</span>, </span>
-<span>    <span class="va">file</span> <span class="op">=</span> <span class="st">"index.qmd"</span>,</span>
-<span>    <span class="va">description</span> <span class="op">=</span> <span class="st">""</span>,</span>
-<span>    <span class="va">author</span> <span class="op">=</span> <span class="st">"Tom Mock"</span>, </span>
-<span>    <span class="va">date</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>, </span>
-<span>    <span class="va">draft</span> <span class="op">=</span> <span class="cn">FALSE</span>, </span>
-<span>    <span class="va">title_limit</span> <span class="op">=</span> <span class="fl">40</span>,</span>
-<span>    <span class="va">open_file</span> <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span>    <span class="op">)</span><span class="op">{</span></span>
-<span></span>
-<span>  <span class="co"># convert to kebab case and remove non space or alphanumeric characters</span></span>
-<span>  <span class="va">title_kebab</span> <span class="op">&lt;-</span> <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/case.html">str_to_lower</a></span><span class="op">(</span><span class="va">title</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>    <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_remove.html">str_remove_all</a></span><span class="op">(</span><span class="st">"[^[:alnum:][:space:]]"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>    <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_replace.html">str_replace_all</a></span><span class="op">(</span><span class="st">" "</span>, <span class="st">"-"</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># warn if a very long slug</span></span>
-<span>  <span class="kw">if</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nchar.html">nchar</a></span><span class="op">(</span><span class="va">title_kebab</span><span class="op">)</span> <span class="op">&gt;=</span> <span class="va">title_limit</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_warning</a></span><span class="op">(</span><span class="st">"Warning: Title slug is longer than {.val {title_limit}} characters!"</span><span class="op">)</span></span>
-<span>  <span class="op">}</span></span>
-<span>  </span>
-<span>  <span class="co"># generate the slug as draft, prefix with _ which prevents</span></span>
-<span>  <span class="co"># quarto from rendering/recognizing the folder</span></span>
-<span>  <span class="kw">if</span><span class="op">(</span><span class="va">draft</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="va">slug</span> <span class="op">&lt;-</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"posts/_{date}-{title_kebab}"</span><span class="op">)</span></span>
-<span>    <span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_info</a></span><span class="op">(</span><span class="st">"Appending a '_' to folder name to avoid render while a draft, remove '_' when finished."</span><span class="op">)</span></span>
-<span>  <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
-<span>    <span class="va">slug</span> <span class="op">&lt;-</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"posts/{date}-{title_kebab}"</span><span class="op">)</span></span>
-<span>  <span class="op">}</span></span>
-<span>  </span>
-<span>  <span class="co"># create and alert about directory</span></span>
-<span>  <span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/create.html">dir_create</a></span><span class="op">(</span></span>
-<span>    path <span class="op">=</span> <span class="va">slug</span></span>
-<span>  <span class="op">)</span></span>
-<span>  <span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_success</a></span><span class="op">(</span><span class="st">"Folder created at {.file {slug}}"</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># wrap description at 77 characters</span></span>
-<span>  <span class="va">description</span> <span class="op">&lt;-</span> <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_wrap.html">str_wrap</a></span><span class="op">(</span><span class="va">description</span>, width <span class="op">=</span> <span class="fl">77</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>    <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_replace.html">str_replace_all</a></span><span class="op">(</span><span class="st">"[\n]"</span>, <span class="st">"\n  "</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># start generating file</span></span>
-<span>  <span class="va">new_post_file</span> <span class="op">&lt;-</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"{slug}/{file}"</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># build yaml core</span></span>
-<span>  <span class="va">new_post_core</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
-<span>    <span class="st">"---"</span>,</span>
-<span>    <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">'title: "{title}"'</span><span class="op">)</span>,</span>
-<span>    <span class="st">"description: |"</span>,</span>
-<span>    <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">'  {description}'</span><span class="op">)</span>,</span>
-<span>    <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"author: {author}"</span><span class="op">)</span>,</span>
-<span>    <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"date: {date}"</span><span class="op">)</span></span>
-<span>  <span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># add draft if draft</span></span>
-<span>  <span class="kw">if</span><span class="op">(</span><span class="va">draft</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="va">new_post_text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
-<span>      <span class="va">new_post_core</span>,</span>
-<span>      <span class="st">"draft: true"</span>,</span>
-<span>      <span class="st">"---\n"</span></span>
-<span>      <span class="op">)</span></span>
-<span>  <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
-<span>    <span class="va">new_post_text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
-<span>      <span class="va">new_post_core</span>,</span>
-<span>      <span class="st">"---\n"</span></span>
-<span>    <span class="op">)</span></span>
-<span>  <span class="op">}</span></span>
-<span>  </span>
-<span>  <span class="co"># finalize new post text</span></span>
-<span>  <span class="va">new_post_text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span><span class="op">(</span></span>
-<span>    <span class="va">new_post_text</span>,</span>
-<span>    collapse <span class="op">=</span> <span class="st">"\n"</span></span>
-<span>    <span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># create file and alert</span></span>
-<span>  <span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/create.html">file_create</a></span><span class="op">(</span><span class="va">new_post_file</span><span class="op">)</span></span>
-<span>  <span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_success</a></span><span class="op">(</span><span class="st">"File created at {.file {new_post_file}}"</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># print new post information</span></span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span><span class="op">(</span><span class="va">new_post_text</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="kw">if</span><span class="op">(</span><span class="fu">yesno</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/yesno/man/yesno2.html">yesno2</a></span><span class="op">(</span><span class="st">"Are you ready to write that to disk?"</span><span class="op">)</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span></span>
-<span>    text <span class="op">=</span> <span class="va">new_post_text</span>,</span>
-<span>    con <span class="op">=</span> <span class="va">new_post_file</span></span>
-<span>    <span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="fu">rstudioapi</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/rstudioapi/reference/rstudio-documents.html">documentOpen</a></span><span class="op">(</span><span class="va">new_post_file</span>, line <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">new_post_text</span><span class="op">)</span><span class="op">)</span></span>
-<span>  <span class="op">}</span></span>
-<span>  </span>
-<span><span class="op">}</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>new_post <span class="ot">&lt;-</span> <span class="cf">function</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    title, </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">file =</span> <span class="st">"index.qmd"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">description =</span> <span class="st">""</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">author =</span> <span class="st">"Tom Mock"</span>, </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">date =</span> <span class="fu">Sys.Date</span>(), </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">draft =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">title_limit =</span> <span class="dv">40</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">open_file =</span> <span class="cn">TRUE</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    ){</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># convert to kebab case and remove non space or alphanumeric characters</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  title_kebab <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_to_lower</span>(title) <span class="sc">|&gt;</span> </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    stringr<span class="sc">::</span><span class="fu">str_remove_all</span>(<span class="st">"[^[:alnum:][:space:]]"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    stringr<span class="sc">::</span><span class="fu">str_replace_all</span>(<span class="st">" "</span>, <span class="st">"-"</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># warn if a very long slug</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">nchar</span>(title_kebab) <span class="sc">&gt;=</span> title_limit){</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    cli<span class="sc">::</span><span class="fu">cli_alert_warning</span>(<span class="st">"Warning: Title slug is longer than {.val {title_limit}} characters!"</span>)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="co"># generate the slug as draft, prefix with _ which prevents</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># quarto from rendering/recognizing the folder</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(draft){</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    slug <span class="ot">&lt;-</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"posts/_{date}-{title_kebab}"</span>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    cli<span class="sc">::</span><span class="fu">cli_alert_info</span>(<span class="st">"Appending a '_' to folder name to avoid render while a draft, remove '_' when finished."</span>)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    slug <span class="ot">&lt;-</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"posts/{date}-{title_kebab}"</span>)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="co"># create and alert about directory</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  fs<span class="sc">::</span><span class="fu">dir_create</span>(</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">path =</span> slug</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  cli<span class="sc">::</span><span class="fu">cli_alert_success</span>(<span class="st">"Folder created at {.file {slug}}"</span>)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="co"># wrap description at 77 characters</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  description <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_wrap</span>(description, <span class="at">width =</span> <span class="dv">77</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    stringr<span class="sc">::</span><span class="fu">str_replace_all</span>(<span class="st">"[</span><span class="sc">\n</span><span class="st">]"</span>, <span class="st">"</span><span class="sc">\n</span><span class="st">  "</span>)</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  <span class="co"># start generating file</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  new_post_file <span class="ot">&lt;-</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"{slug}/{file}"</span>)</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  <span class="co"># build yaml core</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>  new_post_core <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>    <span class="st">"---"</span>,</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">'title: "{title}"'</span>),</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">"description: |"</span>,</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">'  {description}'</span>),</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"author: {author}"</span>),</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"date: {date}"</span>)</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add draft if draft</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(draft){</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    new_post_text <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>      new_post_core,</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>      <span class="st">"draft: true"</span>,</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>      <span class="st">"---</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>    new_post_text <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>      new_post_core,</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>      <span class="st">"---</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>  <span class="co"># finalize new post text</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>  new_post_text <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>    new_post_text,</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>    <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>  <span class="co"># create file and alert</span></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>  fs<span class="sc">::</span><span class="fu">file_create</span>(new_post_file)</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>  cli<span class="sc">::</span><span class="fu">cli_alert_success</span>(<span class="st">"File created at {.file {new_post_file}}"</span>)</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>  <span class="co"># print new post information</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(new_post_text)</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(yesno<span class="sc">::</span><span class="fu">yesno2</span>(<span class="st">"Are you ready to write that to disk?"</span>)){</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>    <span class="fu">writeLines</span>(</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>    <span class="at">text =</span> new_post_text,</span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>    <span class="at">con =</span> new_post_file</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>  rstudioapi<span class="sc">::</span><span class="fu">documentOpen</span>(new_post_file, <span class="at">line =</span> <span class="fu">length</span>(new_post_text))</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
 <p>I used it to write this meta blogpost:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">new_post</span>(</span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">new_post</span>(</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Use R to generate a Quarto blogpost"</span>, </span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">description =</span> <span class="st">"The {cli} and {fs} package make life easy!"</span>,</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">draft =</span> <span class="cn">FALSE</span></span>
@@ -308,114 +253,110 @@ Expand for Full Code
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  The {cli} and {fs} package make life easy<span class="sc">!</span></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>author<span class="sc">:</span> Tom Mock</span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>date<span class="sc">:</span> <span class="dv">2022-11-08</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This function generates the core skeleton of a Quarto post, including the directory, the <code>index.qmd</code> and writes out some boilerplate information.</p>
 <p>We’ll use a few packages to get this done.</p>
 <div class="cell">
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://stringr.tidyverse.org">stringr</a></span><span class="op">)</span> <span class="co"># easy string manipulation</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/tidyverse/glue">glue</a></span><span class="op">)</span>    <span class="co"># easy adding of string together</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://fs.r-lib.org">fs</a></span><span class="op">)</span>      <span class="co"># easy file manipulation</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://cli.r-lib.org">cli</a></span><span class="op">)</span>     <span class="co"># easy and beautiful messages/warnings</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/poissonconsulting/yesno">yesno</a></span><span class="op">)</span>   <span class="co"># easy binary decision prompts</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr) <span class="co"># easy string manipulation</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glue)    <span class="co"># easy adding of string together</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fs)      <span class="co"># easy file manipulation</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cli)     <span class="co"># easy and beautiful messages/warnings</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(yesno)   <span class="co"># easy binary decision prompts</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="title-of-post" class="level2"><h2>Title of post</h2>
+<section id="title-of-post" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="title-of-post">Title of post</h2>
 <p>For the title, we want to convert a proper title to a kebab case title (<code>kebab-case-like-this</code>), with the date attached as well for easy sorting of folders.</p>
 <div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">title</span> <span class="op">&lt;-</span> <span class="st">"Use R to generate a Quarto blogpost"</span></span>
-<span><span class="co"># convert to kebab case and remove non space or alphanumeric characters</span></span>
-<span><span class="va">title_kebab</span> <span class="op">&lt;-</span> <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/case.html">str_to_lower</a></span><span class="op">(</span><span class="va">title</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_remove.html">str_remove_all</a></span><span class="op">(</span><span class="st">"[^[:alnum:][:space:]]"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_replace.html">str_replace_all</a></span><span class="op">(</span><span class="st">" "</span>, <span class="st">"-"</span><span class="op">)</span></span>
-<span><span class="va">title_kebab</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>title <span class="ot">&lt;-</span> <span class="st">"Use R to generate a Quarto blogpost"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># convert to kebab case and remove non space or alphanumeric characters</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>title_kebab <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_to_lower</span>(title) <span class="sc">|&gt;</span> </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  stringr<span class="sc">::</span><span class="fu">str_remove_all</span>(<span class="st">"[^[:alnum:][:space:]]"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  stringr<span class="sc">::</span><span class="fu">str_replace_all</span>(<span class="st">" "</span>, <span class="st">"-"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>title_kebab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "use-r-to-generate-a-quarto-blogpost"</code></pre>
 </div>
 </div>
-<p>We can add a warning with <a href="https://cli.r-lib.org">cli</a> if the title is too long. Too long is subjective, but we can arbitrary say 80 characters. My blog is at <code>https://themockup.blog/posts/</code> and we want to add the date, so we have about 40 characters to work with.</p>
+<p>We can add a warning with <code>{cli}</code> if the title is too long. Too long is subjective, but we can arbitrary say 80 characters. My blog is at <code>https://themockup.blog/posts/</code> and we want to add the date, so we have about 40 characters to work with.</p>
 <div class="cell">
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fl">80</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/nchar.html">nchar</a></span><span class="op">(</span><span class="st">"https://themockup.blog/posts/2022-11-08-"</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dv">80</span> <span class="sc">-</span> <span class="fu">nchar</span>(<span class="st">"https://themockup.blog/posts/2022-11-08-"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 40</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">title_limit</span> <span class="op">&lt;-</span> <span class="fl">40</span></span>
-<span><span class="co"># we can put that into an if() to add the warning if criterion met</span></span>
-<span><span class="kw">if</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nchar.html">nchar</a></span><span class="op">(</span><span class="va">title_kebab</span><span class="op">)</span> <span class="op">&gt;=</span> <span class="va">title_limit</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_warning</a></span><span class="op">(</span><span class="st">"Warning: Title slug is longer than {.val {title_limit}} characters!"</span><span class="op">)</span></span>
-<span><span class="op">}</span></span>
-<span></span>
-<span><span class="co"># we can force it to print like below</span></span>
-<span><span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_warning</a></span><span class="op">(</span><span class="st">"Warning: Title slug is longer than {.val {title_limit}} characters!"</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>title_limit <span class="ot">&lt;-</span> <span class="dv">40</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># we can put that into an if() to add the warning if criterion met</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="fu">nchar</span>(title_kebab) <span class="sc">&gt;=</span> title_limit){</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    cli<span class="sc">::</span><span class="fu">cli_alert_warning</span>(<span class="st">"Warning: Title slug is longer than {.val {title_limit}} characters!"</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># we can force it to print like below</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>cli<span class="sc">::</span><span class="fu">cli_alert_warning</span>(<span class="st">"Warning: Title slug is longer than {.val {title_limit}} characters!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>! Warning: Title slug is longer than 40 characters!</code></pre>
 </div>
 </div>
-<p>After that, we can add the date and optionally the draft prefix, files with <code>_</code> at the head are ignored by Quarto. <span class="column-margin">This is largely redundant with the <code>draft: true</code> YAML option - but this safeguards against additional files that could be rendered in that folder.</span></p>
+<div class="page-columns page-full"><p>After that, we can add the date and optionally the draft prefix, files with <code>_</code> at the head are ignored by Quarto. </p><div class="no-row-height column-margin column-container"><span class="">This is largely redundant with the <code>draft: true</code> YAML option - but this safeguards against additional files that could be rendered in that folder.</span></div></div>
 <div class="cell">
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">draft</span> <span class="op">&lt;-</span> <span class="cn">FALSE</span></span>
-<span><span class="va">date</span> <span class="op">&lt;-</span> <span class="st">"2022-11-08"</span> <span class="co">#&lt; Sys.Date() for ISO date</span></span>
-<span><span class="kw">if</span><span class="op">(</span><span class="va">draft</span><span class="op">)</span><span class="op">{</span></span>
-<span>  <span class="va">slug</span> <span class="op">&lt;-</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"posts/_{date}-{title_kebab}"</span><span class="op">)</span></span>
-<span>  <span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_info</a></span><span class="op">(</span><span class="st">"Appending a '_' to folder name to avoid render while a draft, remove '_' when finished."</span><span class="op">)</span></span>
-<span><span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
-<span>  <span class="va">slug</span> <span class="op">&lt;-</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"posts/{date}-{title_kebab}"</span><span class="op">)</span></span>
-<span><span class="op">}</span></span>
-<span></span>
-<span><span class="va">slug</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>draft <span class="ot">&lt;-</span> <span class="cn">FALSE</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>date <span class="ot">&lt;-</span> <span class="st">"2022-11-08"</span> <span class="co">#&lt; Sys.Date() for ISO date</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(draft){</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  slug <span class="ot">&lt;-</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"posts/_{date}-{title_kebab}"</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  cli<span class="sc">::</span><span class="fu">cli_alert_info</span>(<span class="st">"Appending a '_' to folder name to avoid render while a draft, remove '_' when finished."</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  slug <span class="ot">&lt;-</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"posts/{date}-{title_kebab}"</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>slug</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>posts/2022-11-08-use-r-to-generate-a-quarto-blogpost</code></pre>
 </div>
 </div>
-</section><section id="create-folder" class="level2"><h2>Create folder</h2>
+</section>
+<section id="create-folder" class="level2">
+<h2 class="anchored" data-anchor-id="create-folder">Create folder</h2>
 <p>The folder name is what will end up as the URL “slug”, so we will end up with a url like:</p>
 <p><code>https://themockup.blog/posts/2022-11-08-use-r-to-generate-a-quarto-blogpost</code></p>
 <div class="cell">
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># create and alert about directory</span></span>
-<span><span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/create.html">dir_create</a></span><span class="op">(</span></span>
-<span>  path <span class="op">=</span> <span class="va">slug</span></span>
-<span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create and alert about directory</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_create</span>(</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">path =</span> slug</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># print alert</span></span>
-<span><span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_success</a></span><span class="op">(</span><span class="st">"Folder created at {.file {slug}}"</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print alert</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>cli<span class="sc">::</span><span class="fu">cli_alert_success</span>(<span class="st">"Folder created at {.file {slug}}"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <pre><code>✔ Folder created at posts/2022-11-08-use-r-to-generate-a-quarto-blogpost</code></pre>
-</section><section id="create-blogpost-file-as-index.qmd" class="level2"><h2>Create blogpost file as <code>index.qmd</code>
-</h2>
+</section>
+<section id="create-blogpost-file-as-index.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="create-blogpost-file-as-index.qmd">Create blogpost file as <code>index.qmd</code></h2>
 <p>We want to name our file <code>index.qmd</code> so that our slug is clean as:</p>
 <p><code>https://themockup.blog/posts/2022-11-08-use-r-to-generate-a-quarto-blogpost</code></p>
 <p>instead of:</p>
 <p><code>https://themockup.blog/posts/2022-11-08-use-r-to-generate-a-quarto-blogpost/some-file.html</code></p>
-<section id="add-description-and-wrap" class="level3"><h3>Add description and wrap</h3>
+<section id="add-description-and-wrap" class="level3">
+<h3 class="anchored" data-anchor-id="add-description-and-wrap">Add description and wrap</h3>
 <p>We can take the description and limit the width to &lt;= 80 characters (includes the spacing that YAML needs). We will replace the line breaks <code>\n</code> with leading spaces AND line breaks <code>"  \n"</code> so that the alignment in the YAML is ok.</p>
 <div class="cell">
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">description</span> <span class="op">&lt;-</span> <span class="st">"The {cli} and {fs} package make life easy!"</span></span>
-<span><span class="co"># wrap description at 77 characters</span></span>
-<span><span class="va">description</span> <span class="op">&lt;-</span> <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_wrap.html">str_wrap</a></span><span class="op">(</span><span class="va">description</span>, width <span class="op">=</span> <span class="fl">77</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_replace.html">str_replace_all</a></span><span class="op">(</span><span class="st">"[\n]"</span>, <span class="st">"\n  "</span><span class="op">)</span></span>
-<span><span class="va">description</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>description <span class="ot">&lt;-</span> <span class="st">"The {cli} and {fs} package make life easy!"</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># wrap description at 77 characters</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>description <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_wrap</span>(description, <span class="at">width =</span> <span class="dv">77</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  stringr<span class="sc">::</span><span class="fu">str_replace_all</span>(<span class="st">"[</span><span class="sc">\n</span><span class="st">]"</span>, <span class="st">"</span><span class="sc">\n</span><span class="st">  "</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>description</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "The {cli} and {fs} package make life easy!"</code></pre>
 </div>
 </div>
 <p>If the description were long…</p>
 <div class="cell">
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">long_desc</span> <span class="op">&lt;-</span> <span class="st">"  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_wrap.html">str_wrap</a></span><span class="op">(</span>width <span class="op">=</span> <span class="fl">77</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_replace.html">str_replace_all</a></span><span class="op">(</span><span class="st">"[\n]"</span>, <span class="st">"\n  "</span><span class="op">)</span> </span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span><span class="op">(</span><span class="st">"description: |\n  "</span>, <span class="va">long_desc</span><span class="op">)</span><span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>long_desc <span class="ot">&lt;-</span> <span class="st">"  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"</span> <span class="sc">|&gt;</span> </span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  stringr<span class="sc">::</span><span class="fu">str_wrap</span>(<span class="at">width =</span> <span class="dv">77</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  stringr<span class="sc">::</span><span class="fu">str_replace_all</span>(<span class="st">"[</span><span class="sc">\n</span><span class="st">]"</span>, <span class="st">"</span><span class="sc">\n</span><span class="st">  "</span>) </span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span>(<span class="st">"description: |</span><span class="sc">\n</span><span class="st">  "</span>, long_desc)<span class="sc">|&gt;</span> </span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>description: |
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -426,33 +367,35 @@ Expand for Full Code
   proident, sunt in culpa qui officia deserunt mollit anim id est laborum</code></pre>
 </div>
 </div>
-</section></section><section id="start-file" class="level2"><h2>Start file</h2>
+</section>
+</section>
+<section id="start-file" class="level2">
+<h2 class="anchored" data-anchor-id="start-file">Start file</h2>
 <p>We are using our default <code>index.qmd</code> to again avoid increasing the length of the slug.</p>
 <div class="cell">
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="st">"index.qmd"</span></span>
-<span><span class="co"># start generating file</span></span>
-<span><span class="va">new_post_file</span> <span class="op">&lt;-</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"{slug}/{file}"</span><span class="op">)</span></span>
-<span><span class="va">new_post_file</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>file <span class="ot">&lt;-</span> <span class="st">"index.qmd"</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># start generating file</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>new_post_file <span class="ot">&lt;-</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"{slug}/{file}"</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>new_post_file</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>posts/2022-11-08-use-r-to-generate-a-quarto-blogpost/index.qmd</code></pre>
 </div>
 </div>
-<section id="build-yaml-core" class="level3"><h3>Build YAML core</h3>
-<p>Now we can start building up the YAML, using the <a href="https://github.com/tidyverse/glue">glue</a> package to insert the inputs:</p>
+<section id="build-yaml-core" class="level3">
+<h3 class="anchored" data-anchor-id="build-yaml-core">Build YAML core</h3>
+<p>Now we can start building up the YAML, using the <code>{glue}</code> package to insert the inputs:</p>
 <div class="cell">
-<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">author</span> <span class="op">&lt;-</span> <span class="st">"Tom Mock"</span></span>
-<span><span class="va">new_post_core</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
-<span>  <span class="st">"---"</span>,</span>
-<span>  <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">'title: "{title}"'</span><span class="op">)</span>,</span>
-<span>  <span class="st">"description: |"</span>,</span>
-<span>  <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">'  {description}'</span><span class="op">)</span>,</span>
-<span>  <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"author: {author}"</span><span class="op">)</span>,</span>
-<span>  <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"date: {date}"</span><span class="op">)</span></span>
-<span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">new_post_core</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>author <span class="ot">&lt;-</span> <span class="st">"Tom Mock"</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>new_post_core <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"---"</span>,</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">'title: "{title}"'</span>),</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"description: |"</span>,</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">'  {description}'</span>),</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"author: {author}"</span>),</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"date: {date}"</span>)</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>new_post_core</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "---"                                           
 [2] "title: \"Use R to generate a Quarto blogpost\""
@@ -464,31 +407,29 @@ Expand for Full Code
 </div>
 <p>Optionally adding the <code>draft: true</code> YAML option if needed…</p>
 <div class="cell">
-<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># add draft if draft</span></span>
-<span><span class="kw">if</span><span class="op">(</span><span class="va">draft</span><span class="op">)</span><span class="op">{</span></span>
-<span>  <span class="va">new_post_text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
-<span>    <span class="va">new_post_core</span>,</span>
-<span>    <span class="st">"draft: true"</span>,</span>
-<span>    <span class="st">"---\n"</span></span>
-<span>    <span class="op">)</span></span>
-<span><span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
-<span>  <span class="va">new_post_text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
-<span>    <span class="va">new_post_core</span>,</span>
-<span>    <span class="st">"---\n"</span></span>
-<span>  <span class="op">)</span></span>
-<span><span class="op">}</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># add draft if draft</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(draft){</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  new_post_text <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    new_post_core,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"draft: true"</span>,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"---</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>  new_post_text <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    new_post_core,</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"---</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Then we throw it all together and collapse with new lines (<code>\n</code>):</p>
 <div class="cell">
-<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># finalize new post text</span></span>
-<span><span class="va">new_post_text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span><span class="op">(</span></span>
-<span>  <span class="va">new_post_text</span>,</span>
-<span>  collapse <span class="op">=</span> <span class="st">"\n"</span></span>
-<span>  <span class="op">)</span></span>
-<span></span>
-<span><span class="va">new_post_text</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># finalize new post text</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>new_post_text <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  new_post_text,</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>new_post_text <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>---
 title: "Use R to generate a Quarto blogpost"
@@ -499,28 +440,28 @@ date: 2022-11-08
 ---</code></pre>
 </div>
 </div>
-</section></section><section id="write-out-to-the-file" class="level2"><h2>Write out to the file</h2>
+</section>
+</section>
+<section id="write-out-to-the-file" class="level2">
+<h2 class="anchored" data-anchor-id="write-out-to-the-file">Write out to the file</h2>
 <p>We can create a new file and then write out the YAML, I have this chunk as <code>eval: false</code> right now so that it doesn’t clobber our existing blog post…</p>
 <div class="cell">
-<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/create.html">file_create</a></span><span class="op">(</span><span class="va">new_post_file</span><span class="op">)</span> <span class="co"># &lt;- don't want to recreate it :)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span></span>
-<span>  text <span class="op">=</span> <span class="va">new_post_text</span>,</span>
-<span>  con <span class="op">=</span> <span class="va">new_post_file</span></span>
-<span>  <span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">file_create</span>(new_post_file) <span class="co"># &lt;- don't want to recreate it :)</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">writeLines</span>(</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> new_post_text,</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">con =</span> new_post_file</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># create file and alert</span></span>
-<span><span class="co"># fs::file_create(new_post_file) &lt;- don't want to recreate it :)</span></span>
-<span><span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_success</a></span><span class="op">(</span><span class="st">"File created at {.file {new_post_file}}"</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create file and alert</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co"># fs::file_create(new_post_file) &lt;- don't want to recreate it :)</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>cli<span class="sc">::</span><span class="fu">cli_alert_success</span>(<span class="st">"File created at {.file {new_post_file}}"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <pre><code>✔ Folder created at posts/2022-11-08-use-r-to-generate-a-quarto-blogpost</code></pre>
-<p>Just for funsies we can also print out the raw text using <code><a href="https://rdrr.io/r/base/cat.html">cat()</a></code> to accurately reflect what we’re adding with the new lines and spacing.</p>
+<p>Just for funsies we can also print out the raw text using <code>cat()</code> to accurately reflect what we’re adding with the new lines and spacing.</p>
 <div class="cell">
-<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># print new post information</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span><span class="op">(</span><span class="va">new_post_text</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print new post information</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(new_post_text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>---
 title: "Use R to generate a Quarto blogpost"
@@ -533,20 +474,18 @@ date: 2022-11-08
 </div>
 <p>Then we can have RStudio open the file we just wrote out!</p>
 <div class="cell">
-<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">rstudioapi</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/rstudioapi/reference/rstudio-documents.html">documentOpen</a></span><span class="op">(</span><span class="va">new_post_file</span>, line <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">new_post_text</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>rstudioapi<span class="sc">::</span><span class="fu">documentOpen</span>(new_post_file, <span class="at">line =</span> <span class="fu">length</span>(new_post_text))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>For safety, we could use the {<code>yesno</code>} package to prompt the user that the <code><a href="https://rdrr.io/r/base/cat.html">cat()</a></code> output looks correct:</p>
+<p>For safety, we could use the {<code>yesno</code>} package to prompt the user that the <code>cat()</code> output looks correct:</p>
 <div class="cell">
-<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw">if</span><span class="op">(</span><span class="fu">yesno</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/yesno/man/yesno2.html">yesno2</a></span><span class="op">(</span><span class="st">"\nDoes that look correct and are you ready to write to disk?"</span><span class="op">)</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span></span>
-<span>    text <span class="op">=</span> <span class="va">new_post_text</span>,</span>
-<span>    con <span class="op">=</span> <span class="va">new_post_file</span></span>
-<span>    <span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="fu">rstudioapi</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/rstudioapi/reference/rstudio-documents.html">documentOpen</a></span><span class="op">(</span><span class="va">new_post_file</span>, line <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">new_post_text</span><span class="op">)</span><span class="op">)</span></span>
-<span>  <span class="op">}</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(yesno<span class="sc">::</span><span class="fu">yesno2</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Does that look correct and are you ready to write to disk?"</span>)){</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">writeLines</span>(</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">text =</span> new_post_text,</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">con =</span> new_post_file</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>  rstudioapi<span class="sc">::</span><span class="fu">documentOpen</span>(new_post_file, <span class="at">line =</span> <span class="fu">length</span>(new_post_text))</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <pre><code>yesno::yesno2("\nDoes that look correct and are you ready to write to disk?")
 Are you ready to write that to disk?
@@ -555,15 +494,16 @@ Are you ready to write that to disk?
 
 Selection: 1
 [1] TRUE</code></pre>
-</section><section id="all-together" class="level2"><h2>All together</h2>
+</section>
+<section id="all-together" class="level2">
+<h2 class="anchored" data-anchor-id="all-together">All together</h2>
 <p>Putting it all together, we can create a new blogpost rapidly!</p>
 <div class="cell">
-<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">new_post</span><span class="op">(</span></span>
-<span>  <span class="st">"Use R to generate a Quarto blogpost"</span>, </span>
-<span>  description <span class="op">=</span> <span class="st">"The {cli} and {fs} package make life easy!"</span>,</span>
-<span>  draft <span class="op">=</span> <span class="cn">FALSE</span></span>
-<span>  <span class="op">)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">new_post</span>(</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Use R to generate a Quarto blogpost"</span>, </span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">description =</span> <span class="st">"The {cli} and {fs} package make life easy!"</span>,</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">draft =</span> <span class="cn">FALSE</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <pre><code>✔ Folder created at posts/2022-11-08-use-r-to-generate-a-quarto-blogpost
 ✔ File created at posts/2022-11-08-use-r-to-generate-a-quarto-blogpost/index.qmd
@@ -576,107 +516,104 @@ date: 2022-11-08
 ---</code></pre>
 <p>The full function!</p>
 <div class="cell">
-<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">new_post</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span></span>
-<span>    <span class="va">title</span>, </span>
-<span>    <span class="va">file</span> <span class="op">=</span> <span class="st">"index.qmd"</span>,</span>
-<span>    <span class="va">description</span> <span class="op">=</span> <span class="st">""</span>,</span>
-<span>    <span class="va">author</span> <span class="op">=</span> <span class="st">"Tom Mock"</span>, </span>
-<span>    <span class="va">date</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>, </span>
-<span>    <span class="va">draft</span> <span class="op">=</span> <span class="cn">FALSE</span>, </span>
-<span>    <span class="va">title_limit</span> <span class="op">=</span> <span class="fl">40</span>,</span>
-<span>    <span class="va">open_file</span> <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span>    <span class="op">)</span><span class="op">{</span></span>
-<span></span>
-<span>  <span class="co"># convert to kebab case and remove non space or alphanumeric characters</span></span>
-<span>  <span class="va">title_kebab</span> <span class="op">&lt;-</span> <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/case.html">str_to_lower</a></span><span class="op">(</span><span class="va">title</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>    <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_remove.html">str_remove_all</a></span><span class="op">(</span><span class="st">"[^[:alnum:][:space:]]"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>    <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_replace.html">str_replace_all</a></span><span class="op">(</span><span class="st">" "</span>, <span class="st">"-"</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># warn if a very long slug</span></span>
-<span>  <span class="kw">if</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nchar.html">nchar</a></span><span class="op">(</span><span class="va">title_kebab</span><span class="op">)</span> <span class="op">&gt;=</span> <span class="va">title_limit</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_warning</a></span><span class="op">(</span><span class="st">"Warning: Title slug is longer than {.val {title_limit}} characters!"</span><span class="op">)</span></span>
-<span>  <span class="op">}</span></span>
-<span>  </span>
-<span>  <span class="co"># generate the slug as draft, prefix with _ which prevents</span></span>
-<span>  <span class="co"># quarto from rendering/recognizing the folder</span></span>
-<span>  <span class="kw">if</span><span class="op">(</span><span class="va">draft</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="va">slug</span> <span class="op">&lt;-</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"posts/_{date}-{title_kebab}"</span><span class="op">)</span></span>
-<span>    <span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_info</a></span><span class="op">(</span><span class="st">"Appending a '_' to folder name to avoid render while a draft, remove '_' when finished."</span><span class="op">)</span></span>
-<span>  <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
-<span>    <span class="va">slug</span> <span class="op">&lt;-</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"posts/{date}-{title_kebab}"</span><span class="op">)</span></span>
-<span>  <span class="op">}</span></span>
-<span>  </span>
-<span>  <span class="co"># create and alert about directory</span></span>
-<span>  <span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/create.html">dir_create</a></span><span class="op">(</span></span>
-<span>    path <span class="op">=</span> <span class="va">slug</span></span>
-<span>  <span class="op">)</span></span>
-<span>  <span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_success</a></span><span class="op">(</span><span class="st">"Folder created at {.file {slug}}"</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># wrap description at 77 characters</span></span>
-<span>  <span class="va">description</span> <span class="op">&lt;-</span> <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_wrap.html">str_wrap</a></span><span class="op">(</span><span class="va">description</span>, width <span class="op">=</span> <span class="fl">77</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>    <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_replace.html">str_replace_all</a></span><span class="op">(</span><span class="st">"[\n]"</span>, <span class="st">"\n  "</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># start generating file</span></span>
-<span>  <span class="va">new_post_file</span> <span class="op">&lt;-</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"{slug}/{file}"</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># build yaml core</span></span>
-<span>  <span class="va">new_post_core</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
-<span>    <span class="st">"---"</span>,</span>
-<span>    <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">'title: "{title}"'</span><span class="op">)</span>,</span>
-<span>    <span class="st">"description: |"</span>,</span>
-<span>    <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">'  {description}'</span><span class="op">)</span>,</span>
-<span>    <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"author: {author}"</span><span class="op">)</span>,</span>
-<span>    <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"date: {date}"</span><span class="op">)</span></span>
-<span>  <span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># add draft if draft</span></span>
-<span>  <span class="kw">if</span><span class="op">(</span><span class="va">draft</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="va">new_post_text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
-<span>      <span class="va">new_post_core</span>,</span>
-<span>      <span class="st">"draft: true"</span>,</span>
-<span>      <span class="st">"---\n"</span></span>
-<span>      <span class="op">)</span></span>
-<span>  <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
-<span>    <span class="va">new_post_text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
-<span>      <span class="va">new_post_core</span>,</span>
-<span>      <span class="st">"---\n"</span></span>
-<span>    <span class="op">)</span></span>
-<span>  <span class="op">}</span></span>
-<span>  </span>
-<span>  <span class="co"># finalize new post text</span></span>
-<span>  <span class="va">new_post_text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span><span class="op">(</span></span>
-<span>    <span class="va">new_post_text</span>,</span>
-<span>    collapse <span class="op">=</span> <span class="st">"\n"</span></span>
-<span>    <span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># create file and alert</span></span>
-<span>  <span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/create.html">file_create</a></span><span class="op">(</span><span class="va">new_post_file</span><span class="op">)</span></span>
-<span>  <span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/cli_alert.html">cli_alert_success</a></span><span class="op">(</span><span class="st">"File created at {.file {new_post_file}}"</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="co"># print new post information</span></span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span><span class="op">(</span><span class="va">new_post_text</span><span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="kw">if</span><span class="op">(</span><span class="fu">yesno</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/yesno/man/yesno2.html">yesno2</a></span><span class="op">(</span><span class="st">"Are you ready to write that to disk?"</span><span class="op">)</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span></span>
-<span>    text <span class="op">=</span> <span class="va">new_post_text</span>,</span>
-<span>    con <span class="op">=</span> <span class="va">new_post_file</span></span>
-<span>    <span class="op">)</span></span>
-<span>  </span>
-<span>  <span class="fu">rstudioapi</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/rstudioapi/reference/rstudio-documents.html">documentOpen</a></span><span class="op">(</span><span class="va">new_post_file</span>, line <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">new_post_text</span><span class="op">)</span><span class="op">)</span></span>
-<span>  <span class="op">}</span> </span>
-<span>  </span>
-<span><span class="op">}</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>new_post <span class="ot">&lt;-</span> <span class="cf">function</span>(</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>    title, </span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">file =</span> <span class="st">"index.qmd"</span>,</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">description =</span> <span class="st">""</span>,</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">author =</span> <span class="st">"Tom Mock"</span>, </span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">date =</span> <span class="fu">Sys.Date</span>(), </span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">draft =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">title_limit =</span> <span class="dv">40</span>,</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">open_file =</span> <span class="cn">TRUE</span></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    ){</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># convert to kebab case and remove non space or alphanumeric characters</span></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>  title_kebab <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_to_lower</span>(title) <span class="sc">|&gt;</span> </span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>    stringr<span class="sc">::</span><span class="fu">str_remove_all</span>(<span class="st">"[^[:alnum:][:space:]]"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>    stringr<span class="sc">::</span><span class="fu">str_replace_all</span>(<span class="st">" "</span>, <span class="st">"-"</span>)</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># warn if a very long slug</span></span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">nchar</span>(title_kebab) <span class="sc">&gt;=</span> title_limit){</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>    cli<span class="sc">::</span><span class="fu">cli_alert_warning</span>(<span class="st">"Warning: Title slug is longer than {.val {title_limit}} characters!"</span>)</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>  <span class="co"># generate the slug as draft, prefix with _ which prevents</span></span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># quarto from rendering/recognizing the folder</span></span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(draft){</span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a>    slug <span class="ot">&lt;-</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"posts/_{date}-{title_kebab}"</span>)</span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a>    cli<span class="sc">::</span><span class="fu">cli_alert_info</span>(<span class="st">"Appending a '_' to folder name to avoid render while a draft, remove '_' when finished."</span>)</span>
+<span id="cb37-27"><a href="#cb37-27" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb37-28"><a href="#cb37-28" aria-hidden="true" tabindex="-1"></a>    slug <span class="ot">&lt;-</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"posts/{date}-{title_kebab}"</span>)</span>
+<span id="cb37-29"><a href="#cb37-29" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb37-30"><a href="#cb37-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-31"><a href="#cb37-31" aria-hidden="true" tabindex="-1"></a>  <span class="co"># create and alert about directory</span></span>
+<span id="cb37-32"><a href="#cb37-32" aria-hidden="true" tabindex="-1"></a>  fs<span class="sc">::</span><span class="fu">dir_create</span>(</span>
+<span id="cb37-33"><a href="#cb37-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">path =</span> slug</span>
+<span id="cb37-34"><a href="#cb37-34" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb37-35"><a href="#cb37-35" aria-hidden="true" tabindex="-1"></a>  cli<span class="sc">::</span><span class="fu">cli_alert_success</span>(<span class="st">"Folder created at {.file {slug}}"</span>)</span>
+<span id="cb37-36"><a href="#cb37-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-37"><a href="#cb37-37" aria-hidden="true" tabindex="-1"></a>  <span class="co"># wrap description at 77 characters</span></span>
+<span id="cb37-38"><a href="#cb37-38" aria-hidden="true" tabindex="-1"></a>  description <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_wrap</span>(description, <span class="at">width =</span> <span class="dv">77</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb37-39"><a href="#cb37-39" aria-hidden="true" tabindex="-1"></a>    stringr<span class="sc">::</span><span class="fu">str_replace_all</span>(<span class="st">"[</span><span class="sc">\n</span><span class="st">]"</span>, <span class="st">"</span><span class="sc">\n</span><span class="st">  "</span>)</span>
+<span id="cb37-40"><a href="#cb37-40" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-41"><a href="#cb37-41" aria-hidden="true" tabindex="-1"></a>  <span class="co"># start generating file</span></span>
+<span id="cb37-42"><a href="#cb37-42" aria-hidden="true" tabindex="-1"></a>  new_post_file <span class="ot">&lt;-</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"{slug}/{file}"</span>)</span>
+<span id="cb37-43"><a href="#cb37-43" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-44"><a href="#cb37-44" aria-hidden="true" tabindex="-1"></a>  <span class="co"># build yaml core</span></span>
+<span id="cb37-45"><a href="#cb37-45" aria-hidden="true" tabindex="-1"></a>  new_post_core <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb37-46"><a href="#cb37-46" aria-hidden="true" tabindex="-1"></a>    <span class="st">"---"</span>,</span>
+<span id="cb37-47"><a href="#cb37-47" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">'title: "{title}"'</span>),</span>
+<span id="cb37-48"><a href="#cb37-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">"description: |"</span>,</span>
+<span id="cb37-49"><a href="#cb37-49" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">'  {description}'</span>),</span>
+<span id="cb37-50"><a href="#cb37-50" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"author: {author}"</span>),</span>
+<span id="cb37-51"><a href="#cb37-51" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"date: {date}"</span>)</span>
+<span id="cb37-52"><a href="#cb37-52" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb37-53"><a href="#cb37-53" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-54"><a href="#cb37-54" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add draft if draft</span></span>
+<span id="cb37-55"><a href="#cb37-55" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(draft){</span>
+<span id="cb37-56"><a href="#cb37-56" aria-hidden="true" tabindex="-1"></a>    new_post_text <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb37-57"><a href="#cb37-57" aria-hidden="true" tabindex="-1"></a>      new_post_core,</span>
+<span id="cb37-58"><a href="#cb37-58" aria-hidden="true" tabindex="-1"></a>      <span class="st">"draft: true"</span>,</span>
+<span id="cb37-59"><a href="#cb37-59" aria-hidden="true" tabindex="-1"></a>      <span class="st">"---</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb37-60"><a href="#cb37-60" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb37-61"><a href="#cb37-61" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb37-62"><a href="#cb37-62" aria-hidden="true" tabindex="-1"></a>    new_post_text <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb37-63"><a href="#cb37-63" aria-hidden="true" tabindex="-1"></a>      new_post_core,</span>
+<span id="cb37-64"><a href="#cb37-64" aria-hidden="true" tabindex="-1"></a>      <span class="st">"---</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb37-65"><a href="#cb37-65" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb37-66"><a href="#cb37-66" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb37-67"><a href="#cb37-67" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-68"><a href="#cb37-68" aria-hidden="true" tabindex="-1"></a>  <span class="co"># finalize new post text</span></span>
+<span id="cb37-69"><a href="#cb37-69" aria-hidden="true" tabindex="-1"></a>  new_post_text <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
+<span id="cb37-70"><a href="#cb37-70" aria-hidden="true" tabindex="-1"></a>    new_post_text,</span>
+<span id="cb37-71"><a href="#cb37-71" aria-hidden="true" tabindex="-1"></a>    <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb37-72"><a href="#cb37-72" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb37-73"><a href="#cb37-73" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-74"><a href="#cb37-74" aria-hidden="true" tabindex="-1"></a>  <span class="co"># create file and alert</span></span>
+<span id="cb37-75"><a href="#cb37-75" aria-hidden="true" tabindex="-1"></a>  fs<span class="sc">::</span><span class="fu">file_create</span>(new_post_file)</span>
+<span id="cb37-76"><a href="#cb37-76" aria-hidden="true" tabindex="-1"></a>  cli<span class="sc">::</span><span class="fu">cli_alert_success</span>(<span class="st">"File created at {.file {new_post_file}}"</span>)</span>
+<span id="cb37-77"><a href="#cb37-77" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-78"><a href="#cb37-78" aria-hidden="true" tabindex="-1"></a>  <span class="co"># print new post information</span></span>
+<span id="cb37-79"><a href="#cb37-79" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(new_post_text)</span>
+<span id="cb37-80"><a href="#cb37-80" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-81"><a href="#cb37-81" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(yesno<span class="sc">::</span><span class="fu">yesno2</span>(<span class="st">"Are you ready to write that to disk?"</span>)){</span>
+<span id="cb37-82"><a href="#cb37-82" aria-hidden="true" tabindex="-1"></a>    <span class="fu">writeLines</span>(</span>
+<span id="cb37-83"><a href="#cb37-83" aria-hidden="true" tabindex="-1"></a>    <span class="at">text =</span> new_post_text,</span>
+<span id="cb37-84"><a href="#cb37-84" aria-hidden="true" tabindex="-1"></a>    <span class="at">con =</span> new_post_file</span>
+<span id="cb37-85"><a href="#cb37-85" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb37-86"><a href="#cb37-86" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-87"><a href="#cb37-87" aria-hidden="true" tabindex="-1"></a>  rstudioapi<span class="sc">::</span><span class="fu">documentOpen</span>(new_post_file, <span class="at">line =</span> <span class="fu">length</span>(new_post_text))</span>
+<span id="cb37-88"><a href="#cb37-88" aria-hidden="true" tabindex="-1"></a>  } </span>
+<span id="cb37-89"><a href="#cb37-89" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-90"><a href="#cb37-90" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <!-- ```{r, echo=FALSE, child="/Users/thomasmock/themockup-blog/_R/footer.qmd"} -->
 <!-- ``` -->
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden" data-render-id="quarto-int-sidebar-title">A glitch in the matrix</span> <span class="hidden" data-render-id="quarto-int-navbar-title">A glitch in the matrix</span> <span class="hidden" data-render-id="quarto-int-navbar:Blog">Blog</span> <span class="hidden" data-render-id="quarto-int-navbar:/posts.html">/posts.html</span> <span class="hidden" data-render-id="quarto-int-navbar:TIL">TIL</span> <span class="hidden" data-render-id="quarto-int-navbar:/til.html">/til.html</span> <span class="hidden" data-render-id="quarto-int-navbar:About">About</span> <span class="hidden" data-render-id="quarto-int-navbar:/about.html">/about.html</span> <span class="hidden" data-render-id="footer-left">Made with <a href="https://quarto.org/">Quarto</a>, by Luisa M. Mimmi. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</span></p>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden" data-render-id="quarto-metatitle">A glitch in the matrix - Use R to generate a Quarto blogpost</span> <span class="hidden" data-render-id="quarto-twittercardtitle">A glitch in the matrix - Use R to generate a Quarto blogpost</span> <span class="hidden" data-render-id="quarto-ogcardtitle">A glitch in the matrix - Use R to generate a Quarto blogpost</span> <span class="hidden" data-render-id="quarto-metasitename">A glitch in the matrix</span> <span class="hidden" data-render-id="quarto-twittercarddesc">The {cli} and {fs} packages make life easy!</span> <span class="hidden" data-render-id="quarto-ogcardddesc">The {cli} and {fs} packages make life easy!</span></p>
-</div>
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -910,30 +847,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">
-      <div class="footer-contents">Made with [Quarto](https://quarto.org/), by Luisa M. Mimmi. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).</div>  
-    </div>   
-    <div class="nav-footer-center">
-       
-    </div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-<li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/Lulliter/rassegna">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="mailto:lmm76@georgetown.edu">
-      <i class="bi bi-envelope" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-</div>
-  </div>
-</footer>
-</body>
-</html>
+
+
+
+</body></html>
