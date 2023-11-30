@@ -1,0 +1,43 @@
+---
+title: "Rassegnina del 30 nov 2023"
+description: |
+  nuova rassegna stampa
+author: Luisa M. Mimmi
+date: 2023-11-30
+draft: false
+categories: [rassegna, ITA 🇮🇹, ENG 🇺🇸] # [Quarto, R, MEDS]
+image: "giornalicup.jpg"
+image-alt: ""
+# citation: 
+#   url: https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/ 
+toc: TRUE
+
+---
+
+# Leggere
++ **Fernando del Pino Calvo-Sotelo** - blog post che rilegge criticamente la [Laudate Deum o nuovo dogma climatico](https://www.brigataperladifesadellovvio.com/blog/laudate-deum-o-nuovo-dogma-climatico)
+
+
+
+# Guardare 
+...
+
+
+# Ascoltare 
+
++ "UnHerd" Podcast Episode on [🎙Busting the Bill Gates myth](https://open.spotify.com/show/13ZOVT9rEh2EvcsikrdPIq)
+"Through the Gates Foundation Bill Gates is not donating money as much as he is buying policy influence". Investigative journalist  **Tim Schwab** challenges the mith of the _good philanthropist billionaire_: do their foundations sustain good public goals set by (elected) public officials or unduly influence the destination of taxpayer money by way of their outsized leverage on international and supranational organizations (e.g. Gavi Alliance - WHO - big pharma)?  
+
+
+# Ricordare 
++ **Marcello Foa** - "Il sistema Invisibile"  
+
+> (V. Volkoff in "Le montage" 1982) Quando si parla di mobilitare le masse, in realtà non si ha che uno scopo: immobilizzarle.
+
+
+<!-- # Istruzioni -->
+
+<!-- + **FOOTNOTES** I am going to insert a footnote here[^1]. -->
+
+<!-- [^1]: Here is the associated footnote, which will appear at the bottom of my document in a "Footnotes" section. -->
+
