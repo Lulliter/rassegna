@@ -7,8 +7,8 @@ quarto preview
 
 # ====== RENDER the entire site
 quarto render
-# render a single file only
 
+# render a single file only
 project:
   render:
     - section1.qmd
@@ -27,10 +27,10 @@ project:
 git status
 
 # Add changes to git Index.
-git add docs/* # specific
 git add -A # ALL
 git add -u # tracked
 git add posts/*
+git add docs/* # specific
 git add images/*
 git add         .nojekyll
 git add  ReadMe.md
@@ -48,8 +48,8 @@ fi
 git commit -m "$msg"
 
 		# git commit -m "README.MD"
-		# git commit -m "02"
-		# git commit -m "revision + addition of post"  -m "01_... + 00_carico_tab-contesto.qmd "
+		# git commit -m "New rassegna 30 nov "
+		# git commit -m "revision + addition of DRAFT post"  -m "01_... + 00_carico_tab-contesto.qmd "
 
 # Push source and build repos.
 #cd .

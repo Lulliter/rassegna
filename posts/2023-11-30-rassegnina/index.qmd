@@ -11,7 +11,6 @@ image-alt: ""
 # citation: 
 #   url: https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/ 
 toc: TRUE
-
 ---
 
 # Leggere
@@ -30,9 +29,9 @@ toc: TRUE
 
 
 # Ricordare 
-+ **Marcello Foa** - "Il sistema Invisibile"  
++ Su **Marcello Foa** - "Il sistema Invisibile"  
 
-> (V. Volkoff in "Le montage" 1982) Quando si parla di mobilitare le masse, in realtà non si ha che uno scopo: immobilizzarle.
+> Quando si parla di mobilitare le masse, in realtà non si ha che uno scopo: immobilizzarle.  <br><br>(V. Volkoff in "Le montage" 1982) 
 
 
 <!-- # Istruzioni -->

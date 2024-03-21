@@ -1,0 +1,37 @@
+---
+title: "Rassegnina del 21 Marzo 2024"
+description: |
+  nuova rassegna stampa
+author: Luisa M. Mimmi
+date: 2024-03-21
+draft: false
+categories: [rassegna, ITA 🇮🇹] # [Quarto, R, MEDS]
+---
+
+# Leggere
++ **Robi Ronza** - blog post che rilegge la *governance* dell'UE in chiave storica [Europa sì, ma quale Europa?](https://lisandermag.substack.com/p/europa-si-ma-quale-europa)
+
+
+
+# Guardare 
++ **Dario Fabbri** - Incontro di Rotary Club Belluno con l’analista geopolitico DARIO FABBRI, direttore della rivista “Domino”. [L'Europa nella guerra mondiale a "pezzi"](https://www.youtube.com/watch?v=kSoK1C6R1yY&t=3738s) Martedì 5 marzo 2024, ore 18.00, Teatro "Giovanni XXIII" Belluno. 
+
+
+
+# Ascoltare 
+
++ ...
+
+
+# Ricordare 
++ Su **Marcello Foa** - "Il sistema Invisibile"  
+
+> Per attaccare il pensiero, è opportuno attaccare la lingua (...) Se il pensiero non trova più, per esprimersi, lo sbocco di una lingua sufficientemente rigorosa e articolata, soffoca e deperisce. (...) Perciò dobbiamo stringerela morsa il più possibile sugli ambienti degli scrittori, dall'altra su quelli dell'insegnamento. Quando i nostri avversari avranno disimparato l'ortografia noi sapremo che la vittoria è vicino. <br><br>(V. Volkoff in "Le montage" 1982) 
+
+
+<!-- # Istruzioni -->
+
+<!-- + **FOOTNOTES** I am going to insert a footnote here[^1]. -->
+
+<!-- [^1]: Here is the associated footnote, which will appear at the bottom of my document in a "Footnotes" section. -->
+

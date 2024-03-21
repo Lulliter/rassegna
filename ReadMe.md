@@ -9,11 +9,11 @@ MADE WITH QUARTO
 
 # Notes
 
-+ ✅ Per creare un nuovo post ho salvato una funzione apposta in `_R/new_post.R` r reata e condivisa da [Tom Mock](https://themockup.blog/posts/2022-11-08-use-r-to-generate-a-quarto-blogpost/) 🙌
++ ✅ Per creare un nuovo post ho salvato una funzione apposta in `_R/new_post.R` creata  e condivisa da [Tom Mock](https://themockup.blog/posts/2022-11-08-use-r-to-generate-a-quarto-blogpost/) 🙌
 
 # TO DO (content)
 
-+ ☑️ articolo x Ticino su natalita e famiglia al centro nel fisco (delega fiscale?) 
++ ✅  Articolo x  Il Ticino su natalita e famiglia al centro nel fisco (delega fiscale?) 
 + ☑️  entita del debito (in funzione del PIL) | quanto ci condiziona in realta?  sole 24 14sett2023 | Donato Masciandaro (Bocconi)
 + ☑️ entita e variazione dei flussi migratori .... (sito istituzionale)  
 

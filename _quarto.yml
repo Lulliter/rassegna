@@ -16,7 +16,7 @@ website:
   # repo-url: "https://github.com/Lulliter/rassegna"
   favicon: images/favicon.jpg
   page-footer:
-    left: "Made with [Quarto](https://quarto.org/), by Luisa M. Mimmi. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+    left: "Made with [Quarto](https://quarto.org/), by Luisa M. Mimmi. License: [CC BY-SA 4.0 Deed](https://creativecommons.org/licenses/by-sa/4.0/)"
     right:
     - icon: github
       href: https://github.com/Lulliter/rassegna

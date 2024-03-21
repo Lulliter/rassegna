@@ -106,15 +106,15 @@ new_post <- function(
 
 
 # # Example use function  ---------------------------------------------------
-# new_post(
-# 	"Rassegnina del 16 sett 2023",
-# 	description = "nuova rassegna stampa",
-# 	draft = TRUE
-# )
-#
-# Example 2 use function  ---------------------------------------------------
 new_post(
-	"Revisione libro: Il Sistema invisibile, di Marcello Foa del 15 Novembre 2023",
-	description = "libri",
+	"Rassegnina del 21 Marzo 2024",
+	description = "nuova rassegna stampa",
 	draft = TRUE
 )
+
+# # Example 2 use function  ---------------------------------------------------
+# new_post(
+# 	"Revisione libro: Il Sistema invisibile, di Marcello Foa del 15 Novembre 2023",
+# 	description = "libri",
+# 	draft = TRUE
+# )
