@@ -11,6 +11,60 @@ $theme: "litera" !default;
 // use Lato font if available
 $font-family-sans-serif:  "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
+
+/*--------------------- RULES ---------------------*/
+// see https://quarto.org/docs/output-formats/html-themes.html#sass-variables
+// in realta non mi funzionano !?!?
+/*--------------------- MY COLORS ---------------------*/
+// Define Color variables `$var-name: value;`
+$darkblue: #163342;
+$darkred: #7f173d;
+$teal: #17717f;
+$cream: #FDFBF7;
+$lightgrey : #d3d3d3;
+$darkgray: #7a7a7a;
+
+$nav_head_bckg: #3881a5;   //    #b78a92	#72aed8
+$nav_foot_bckg: #BDD5E1;	//			  #e7d8da	#e3eff7
+
+$theme_main_dark: #0a222e;
+$theme_main: #23749b;
+$theme_main_light: #BDD5E1;
+$theme_main_extralight:#f6f9fb;
+
+$theme_related1: #3b7697;
+$theme_related2: #3d8085;
+
+$theme_link: #9b2374;
+$theme_link_light: #e1bdd5;
+$theme_link_extralight: #ebd3e3;
+
+$theme_comp1: #239b86;
+$theme_comp1_light: #bde1da;
+
+$theme_comp2: #A55C38;
+$theme_comp2_light: #e4cec3;
+
+$gold:#7f6b00;
+
+// The page text color.
+$body-color: $theme_main_dark;
+// The page background color.
+$body-bg: $theme_main_extralight;
+// The link color.
+$link-color: $darkred;
+// The background color for HTML inputs.
+$input-bg: $cream;
+// The background color for popovers (for example, when a citation preview is shown).
+$popover-bg: $theme_comp1;
+
+// The background color of the navbar. (Defaults to the theme’s $primary color.)
+$navbar-bg: $theme_related1;
+// The color of foreground elements (text and navigation) on the navbar. If not specified, a contrasting color is automatically computed.
+$navbar-fg: $theme_main_extralight;
+// The highlight color for links in the navbar. If not specified, the $link-color is used or a contrasting color is automatically computed.
+$navbar-hl: $darkred;
+
 /*-- scss:rules --*/
 
 // litera is serif by default: revert to san-serif

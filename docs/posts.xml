@@ -203,6 +203,37 @@
   <media:content url="https://lulliter.github.io/rassegna/posts/2023-09-16-rassegnina/giornalicup.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>Senza verità non c’è riconciliazione: un racconto dal New York Encounter</title>
+  <link>https://lulliter.github.io/rassegna/posts/2022-04-01-senza-verita/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<!-- ```{r} -->
+<!-- #devtools::install_github("benmarwick/wordcountaddin",  type = "source", dependencies = TRUE) -->
+<!-- library(wordcountaddin) -->
+<!-- ``` -->
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="https://lulliter.github.io/rassegna/posts/2022-04-01-senza-verita/stevenson.jpg" class="img-fluid figure-img"></p>
+<figcaption class="margin-caption">Avv. Bryan Stevenson (a destra)</figcaption>
+</figure>
+</div>
+<p>Dal 18 al 20 Febbraio scorsi, ho potuto partecipare al New York Encounter, un evento culturale che, da oltre 10 anni, la comunità statunitense di CL organizza nel cuore di Manhattan. Si tratta di tre giorni di tavole rotonde, concerti, mostre e amicizia che testimoniano la vita che nasce dalla fede ed offrono un’occasione di approfondimento e di dialogo sui temi più scottanti della vita del paese. Qui ho assistito all’incontro con Bryan Stevenson, un avvocato che sin dagli anni ’80 si prodiga per difendere persone povere incarcerate, in particolare persone condannate all’ergastolo o alla pena di morte, tuttora applicata in vari stati americani. Innanzitutto mi hanno sorpreso lo sguardo luminoso, il sorriso pronto e il calore umano di quest’uomo. Com’è possibile, mi chiedevo, lavorare per decenni a stretto contatto col male e la violenza (che purtroppo continuano anche in carcere) e non esserne schiacciati? Lui stesso in un momento di crisi, dopo l’esecuzione di un cliente che non era riuscito a strappare dalla sedia elettrica, aveva pensato “rappresento persone ‘spezzate’ (broken) dalla povertà o dagli abusi subiti, dentro a un sistema di giustizia ‘rotto’ e spesso iniquo. Non ce la faccio più!”. Ma è proprio allora che ha realizzato di essere lui stesso ‘spezzato’ e che tutti, in qualche misura, siamo feriti o abbiamo ferito. In realtà, questa comune fragilità è il fondamento della capacità di compassione per cui possiamo sperimentare grazia, redenzione e guarigione. L’avvocato Stevenson ha poi raccontato del museo recentemente inaugurato a Montgomery, in Alabama, vicinissimo a un antico mercato di schiavi (“Legacy Museum”). Questo luogo, ora dedicato alla memoria, traccia una linea storica dalla schiavitù all’attuale fenomeno dell’incarcerazione di massa in USA, che colpisce sproporzionatamente la popolazione afroamericana. L’orrore della schiavitù, così come lo sterminio dei nativi, sono ferite non ancora rimarginate in questa società. Lo stesso Stevenson, la cui famiglia ha subito schiavitù e segregazione, ha però sottolineato che il senso del museo “non è recriminare o dividere ulteriormente, ma liberare il paese”, perché per riparare agli errori della propria storia occorre innanzitutto guardarla e rendere onore alle vittime dell’ingiustizia e della violenza. Ma il coraggio della memoria poggia sulla speranza che le cose possono migliorare e sulla convinzione che: “ognuno di noi è di più del suo peggior crimine”.</p>
+<p>(Per approfondire: <a href="https://eji.org/">https://eji.org/</a>)</p>
+
+
+
+ ]]></description>
+  <category>spunti</category>
+  <category>ITA 🇮🇹</category>
+  <guid>https://lulliter.github.io/rassegna/posts/2022-04-01-senza-verita/</guid>
+  <pubDate>Thu, 31 Mar 2022 22:00:00 GMT</pubDate>
+  <media:content url="https://lulliter.github.io/rassegna/posts/2022-04-01-senza-verita/stevenson.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Open spatial data for resilience in Tanzania: Lessons learned from Dar Ramani Huria
 </title>
   <dc:creator>Luisa M. Mimmi</dc:creator>

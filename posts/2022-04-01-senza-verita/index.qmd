@@ -1,0 +1,34 @@
+---
+title: "Senza verità non c’è riconciliazione: un racconto dal New York Encounter"
+# subtitle: "test new post"
+## [Description compare in listing page ]
+description:  |
+  Spunti da un incontro al New York Encounter 2022
+author: ""
+date: "2022-04-01" # Published
+#date-modified: "2023-09-07" # Modified
+categories: [spunti, ITA 🇮🇹] # [Quarto, R, MEDS]
+image: "stevenson.jpg"
+image-alt: "Bryan Stevenson"
+# citation: 
+#   url: https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/ 
+toc: TRUE
+draft: FALSE
+# twitter-card:
+#   image:  "giornalicup.jpg"
+#   card-style: summary_large_image
+---
+
+
+<!-- ```{r} -->
+<!-- #devtools::install_github("benmarwick/wordcountaddin",  type = "source", dependencies = TRUE) -->
+<!-- library(wordcountaddin) -->
+<!-- ``` -->
+![Avv. Bryan Stevenson (a destra)](stevenson.jpg) 
+
+
+Dal 18 al 20 Febbraio scorsi, ho potuto partecipare al New York Encounter, un evento culturale che, da oltre 10 anni, la comunità statunitense di CL organizza nel cuore di Manhattan. Si tratta di tre giorni di tavole rotonde, concerti, mostre e amicizia che testimoniano la vita che nasce dalla fede ed offrono un’occasione di approfondimento e di dialogo sui temi più scottanti della vita del paese. Qui ho assistito all’incontro con Bryan Stevenson, un avvocato che sin dagli anni ’80 si prodiga per difendere persone povere incarcerate, in particolare persone condannate all’ergastolo o alla pena di morte, tuttora applicata in vari stati americani.
+Innanzitutto mi hanno sorpreso lo sguardo luminoso, il sorriso pronto e il calore umano di quest’uomo. Com’è possibile, mi chiedevo, lavorare per decenni a stretto contatto col male e la violenza (che purtroppo continuano anche in carcere) e non esserne schiacciati? Lui stesso in un momento di crisi, dopo l’esecuzione di un cliente che non era riuscito a strappare dalla sedia elettrica, aveva pensato “rappresento persone ‘spezzate’ (broken) dalla povertà o dagli abusi subiti, dentro a un sistema di giustizia ‘rotto’ e spesso iniquo. Non ce la faccio più!”. Ma è proprio allora che ha realizzato di essere lui stesso ‘spezzato’ e che tutti, in qualche misura, siamo feriti o abbiamo ferito. In realtà, questa comune fragilità è il fondamento della capacità di compassione per cui possiamo sperimentare grazia, redenzione e guarigione.
+L’avvocato Stevenson ha poi raccontato del museo recentemente inaugurato a Montgomery, in Alabama, vicinissimo a un antico mercato di schiavi (“Legacy Museum”). Questo luogo, ora dedicato alla memoria, traccia una linea storica dalla schiavitù all’attuale fenomeno dell’incarcerazione di massa in USA, che colpisce sproporzionatamente la popolazione afroamericana. L’orrore della schiavitù, così come lo sterminio dei nativi, sono ferite non ancora rimarginate in questa società. Lo stesso Stevenson, la cui famiglia ha subito schiavitù e segregazione, ha però sottolineato che il senso del museo “non è recriminare o dividere ulteriormente, ma liberare il paese”, perché per riparare agli errori della propria storia occorre innanzitutto guardarla e rendere onore alle vittime dell’ingiustizia e della violenza. Ma il coraggio della memoria poggia sulla speranza che le cose possono migliorare e sulla convinzione che: “ognuno di noi è di più del suo peggior crimine”.
+
+(Per approfondire: [https://eji.org/](https://eji.org/))

@@ -48,7 +48,7 @@ fi
 git commit -m "$msg"
 
 		# git commit -m "README.MD"
-		# git commit -m "New rassegna 30 nov "
+		# git commit -m "migration of 2 blogs from lulliter  🤛🏻 "
 		# git commit -m "revision + addition of DRAFT post"  -m "01_... + 00_carico_tab-contesto.qmd "
 
 # Push source and build repos.
