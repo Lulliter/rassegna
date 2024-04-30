@@ -19,6 +19,7 @@ $font-family-sans-serif:  "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
 // Define Color variables `$var-name: value;`
 $darkblue: #163342;
 $darkred: #7f173d;
+$darkred_light: #d8b9c4;
 $teal: #17717f;
 $cream: #FDFBF7;
 $lightgrey : #d3d3d3;
@@ -33,6 +34,7 @@ $theme_main_light: #BDD5E1;
 $theme_main_extralight:#f6f9fb;
 
 $theme_related1: #3b7697;
+$theme_related1_light: #c4d5df;
 $theme_related2: #3d8085;
 
 $theme_link: #9b2374;
@@ -46,6 +48,8 @@ $theme_comp2: #A55C38;
 $theme_comp2_light: #e4cec3;
 
 $gold:#7f6b00;
+
+
 
 // The page text color.
 $body-color: $theme_main_dark;
@@ -88,5 +92,18 @@ p {
   font-size: 1rem;
 }
 
-$navbar-dark-hover-color:           "#ff6700" !default;
-$navbar-light-hover-color:          "#ff6700" !default;
+//.nav-link {
+//  color: $darkred_light;
+// }
+//
+
+// footer background
+.nav-footer {
+  background-color: $theme_related1_light;
+}
+
+// footer link
+.nav-footer a {
+  color: $theme_related1;// #515c61;
+}
+

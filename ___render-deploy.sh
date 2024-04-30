@@ -1,3 +1,9 @@
+# ====== Font Awesome Extension for Quarto
+quarto add quarto-ext/fontawesome # https://github.com/quarto-ext/fontawesome#readme
+#quarto install extension shafayetShafee/bsicons # https://icons.getbootstrap.com/#icons
+quarto install extension schochastics/academicons # https://jpswalsh.github.io/academicons/
+#quarto add mcanouil/quarto-iconify
+
 #=========================================== (Render site Locally) ================================================#
 
 # ====== RENDER the entire site
@@ -48,7 +54,7 @@ fi
 git commit -m "$msg"
 
 		# git commit -m "README.MD"
-		# git commit -m "migration of 2 blogs from lulliter  🤛🏻 "
+		# git commit -m "migration of 1 blogs from lulliter  🤛🏻 "
 		# git commit -m "revision + addition of DRAFT post"  -m "01_... + 00_carico_tab-contesto.qmd "
 
 # Push source and build repos.

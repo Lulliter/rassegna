@@ -1,6 +1,6 @@
 ---
 title: "Luisa M. Mimmi"
-image: images/stack.jpeg
+image: images/lagochiaretto.jpg
 description: |
   *"E’ la verità che ci possiede, è qualcosa di vivente! Noi non siamo suoi possessori, bensì siamo afferrati da lei. Solo se ci lasciamo guidare e muovere da lei, rimaniamo in lei, solo se siamo, con lei e in lei, pellegrini della verità, allora è in noi e per noi."* (Benedetto XVI)
 about:
