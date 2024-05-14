@@ -1,5 +1,5 @@
 ---
-title: "rassegnina del 14 maggio 2024"
+title: "Micro-rassegna del 14 maggio 2024"
 subtitle: ""
 description: ""
 author: ""
@@ -8,7 +8,7 @@ image: ""
 image-alt: ""
 categories: [ITA 🇮🇹, rassegna]
 date-modified: "2024-05-14"
-draft: TRUE
+draft: FALSE
 ---
 
 # Leggere
