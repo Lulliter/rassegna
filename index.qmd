@@ -1,5 +1,5 @@
 ---
-title: "Mini-sito per rassegna stampa a cura di [Luisa M. Mimmi](https://lulliter.github.io/rassegna/about.html)"
+title: "Mini-sito per rassegna stampa a cura di Luisa M. Mimmi"
 # listing:
 #   - id: posts-en
 #     contents: posts/**/en/*.qmd
@@ -52,7 +52,7 @@ comments: false
 toc: true
 ---
 
-> spunti per sollevare lo sguardo dalla simulazione 
+> Spunti per sollevare lo sguardo dalla simulazione 
 
 ![](images/matrix.jpg)
 

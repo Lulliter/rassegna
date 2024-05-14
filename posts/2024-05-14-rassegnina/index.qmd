@@ -1,0 +1,41 @@
+---
+title: "rassegnina del 14 maggio 2024"
+subtitle: ""
+description: ""
+author: ""
+date: "2024-05-14"
+image: ""
+image-alt: ""
+categories: [ITA 🇮🇹, rassegna]
+date-modified: "2024-05-14"
+draft: TRUE
+---
+
+# Leggere
+
+- Di **Luca D'Auria** - articolo di Visione [D’Auria, L. (2024, March). *“La tua loquela ti fa manifesto”: La mirabilia del linguaggio tra sturm und drang e la morte di Dio.* **Visione un altro sguardo sul mondo**, XI, 178–184.](Citazione.pdf)
+
+> Il linguaggio è un fatto performativo, (...) parlare (e scrivere) è molto di più che dire qualcosa; esprimersi con il linguaggio significa "fare" nel senso più concreto e materiale del termine. (...) Il linguaggio colora, deforma, produce la realtà.  
+> Anche il linguaggio è sotto attacco a causa di due istanze uguali e contrapposte:
+	1. la prima devianza (alimentata dal mondo *social*) asseconda il volto piu aggressivo, irrispettoso e volgare;
+	2. la seconda devianza ("politicamente corretto") formalista e fintamente inclusiva, apparentemente "buonista" e grondante di pseudo-etica non fa altro che giocare una partita contrpposta e ugualmente spregiudicata e antiestetica.
+ 
+> *“La tua loquela ti fa manifesto”* dice Farinata degli Uberti a Dante (Canto X dell'Inferno), cosí identificando l linguaggio come un elemento determinante per comprendere le origini e il pensiero del proprio interlocutore. **In effetti, il linguaggio, proprio per le sue capacità performative, è, al contempo, uno strumento divisivo perchè, nel momento in cui e' in grado di categorizzare è anche capace di di separare.** (...) Da Aristotele in poi, la scienza (anche in senso generale di *conoscenza*) vive, appunto, di categorie e categorie anche linguistiche che devono distinguere e correttamente individuare le caratteristiche ontologiche di ciò di cui si parla. 
+
+# Guardare
+
+-   ...
+
+# Ascoltare
+
+-   ...
+
+# Ricordare
+
+-   ...
+
+<!-- # Istruzioni -->
+
+<!-- + **FOOTNOTES** I am going to insert a footnote here[^1]. -->
+
+<!-- [^1]: Here is the associated footnote, which will appear at the bottom of my document in a "Footnotes" section. -->

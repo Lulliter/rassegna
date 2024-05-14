@@ -1,5 +1,5 @@
 ---
-title: "Rassegnina del 21 Marzo 2024"
+title: "Micro-rassegna del 21 Marzo 2024"
 description: |
   nuova rassegna stampa
 author: Luisa M. Mimmi

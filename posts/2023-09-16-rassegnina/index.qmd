@@ -1,5 +1,5 @@
 ---
-title: "Rassegnina 16 sett 2023"
+title: "Micro-rassegna 16 sett 2023"
 # subtitle: "test new post"
 ## [Description compare in listing page ]
 description:  |

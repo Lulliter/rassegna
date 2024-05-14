@@ -12,7 +12,7 @@ image-alt: ""
 date: 2016-11-15
 toc: TRUE
 draft: FALSE
-categories: [ideas, ITA 🇮🇹]
+categories: [spunti, ITA 🇮🇹]
 ---
 
 

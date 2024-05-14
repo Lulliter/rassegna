@@ -34,14 +34,16 @@ website:
     search: true
     right:
       - text: "Blog"
-        file: posts.qmd
+        icon: cup-hot-fill	# https://icons.getbootstrap.com/?q=home
+        href: posts.qmd
 # # MUST HAVE feed:true in posts
 #       - icon: rss
 #         href: posts.xml
       # - text: "Resources"
       #   file: static/resources/resources.qmd
       - text: "About"
-        file: about.qmd
+        icon: person-fill # https://icons.getbootstrap.com/?q=home
+        href: about.qmd
       # - icon: github
       #   href: https://github.com/Lulliter/rassegna
       # - icon: twitter
@@ -66,7 +68,7 @@ format:
     code-link: true
     anchor-sections: true
     fig-cap-location: margin
-    reference-location: margin
+    reference-location: document
     mainfont: "Lato"
     monofont: "Fira Mono"
     footnotes-hover: true

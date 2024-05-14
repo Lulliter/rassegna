@@ -53,7 +53,7 @@ fi
 # ... Commit Those changes.
 git commit -m "$msg"
 
-		# git commit -m "README.MD"
+		# git commit -m "theme 🎨"
 		# git commit -m "migration of 1 blogs from lulliter  🤛🏻 "
 		# git commit -m "revision + addition of DRAFT post"  -m "01_... + 00_carico_tab-contesto.qmd "
 

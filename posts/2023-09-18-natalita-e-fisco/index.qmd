@@ -7,7 +7,7 @@ description:  |
 author: ""
 date: "2023-09-18" # Published
 #date-modified: "2023-09-07" # Modified
-categories: [spunti, ITA 🇮🇹] # [Quarto, R, MEDS]
+categories: [spunti, sussidiarietà, ITA 🇮🇹] # [Quarto, R, MEDS]
 image: "stack.jpg"
 image-alt: ""
 # citation: 
