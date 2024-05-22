@@ -48,7 +48,12 @@ Ora quell'autorizzazione temporanea e incompleta è stata revocato su richiesta 
 
 # Ricordare
 
--   ...
+- **Benjamin Abelow**, storico americano - intervista de *La Verità* del 21 maggio 2024  [Putin non è il nuovo Hitler o Stalin. Ha reagito alla minaccia degli USA](Abelow_21mag2024.pdf) 
+
+> Gia nel 1997, 50 tra i piu importanti esperti di politica estera delgi Stati niti inviarono una [lettera pubblica](https://www.armscontrol.org/act/1997-06/arms-control-today/opposition-nato-expansion) al presidente Bill Clinton che lo avvertiva che l'espansione della Nato sarebbe stata un errore di politica espera di "proporzioni storiche". 
+
+![Espansione NATO mappa](nato.jpeg)
+![Espansione NATO timeline](nato_timeline.png)
 
 <!-- # Istruzioni -->
 
