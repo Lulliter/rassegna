@@ -9,7 +9,9 @@ MADE WITH QUARTO
 
 # Notes
 
-+ ✅ Per creare un nuovo post ho salvato una funzione apposta in `_R/new_post.R` creata  e condivisa da [Tom Mock](https://themockup.blog/posts/2022-11-08-use-r-to-generate-a-quarto-blogpost/) 🙌
++ ✅ Per creare un nuovo post :
+	+ ho salvato una funzione apposta in `_R/new_post.R` creata  e condivisa da [Tom Mock](https://themockup.blog/posts/2022-11-08-use-r-to-generate-a-quarto-blogpost/) 🙌
+	+ oppure da `Addins`
 
 # TO DO (content)
 
