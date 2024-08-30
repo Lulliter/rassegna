@@ -1,7 +1,7 @@
 ---
 title: "Micro-rassegna del 30 nov 2023"
-description: |
-  nuova rassegna stampa
+# description: |
+#   nuova rassegna stampa
 author: Luisa M. Mimmi
 date: 2023-11-30
 draft: false

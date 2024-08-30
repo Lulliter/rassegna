@@ -1,22 +1,22 @@
 ---
-title: "Luisa M. Mimmi"
+#title: "Benvenuti!"
 image: images/lagochiaretto.jpg
-description: |
-  *"E’ la verità che ci possiede, è qualcosa di vivente! Noi non siamo suoi possessori, bensì siamo afferrati da lei. Solo se ci lasciamo guidare e muovere da lei, rimaniamo in lei, solo se siamo, con lei e in lei, pellegrini della verità, allora è in noi e per noi."* (Benedetto XVI)
+# description: |
+#   *"E’ la verità che ci possiede, è qualcosa di vivente! Noi non siamo suoi possessori, bensì siamo afferrati da lei. Solo se ci lasciamo guidare e muovere da lei, rimaniamo in lei, solo se siamo, con lei e in lei, pellegrini della verità, allora è in noi e per noi."*  (Benedetto XVI)
 about:
-  template: trestles #solana
+  template: broadside #solana
   # image-width: 15em
   # image-shape: round
-  links:
-    - icon: envelope
-      text: Email
-      href: mailto:lmm76@georgetown.edu
-    - icon: linkedin
-      text: Linkedin
-      href: https://www.linkedin.com/in/luisa-m-mimmi//
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/lulliter
+  # links:
+  #   - icon: envelope
+  #     text: Email
+  #     href: mailto:lmm76@georgetown.edu
+  #   - icon: linkedin
+  #     text: Linkedin
+  #     href: https://www.linkedin.com/in/luisa-m-mimmi//
+  #   - icon: twitter
+  #     text: Twitter
+  #     href: https://twitter.com/lulliter
     # - icon: github
     #   text: Github
     #   href: https://github.com/lulliter
@@ -30,11 +30,13 @@ toc: FALSE
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
+>  *"E’ la verità che ci possiede, è qualcosa di vivente! Noi non siamo suoi possessori, bensì siamo afferrati da lei. Solo se ci lasciamo guidare e muovere da lei, rimaniamo in lei, solo se siamo, con lei e in lei, pellegrini della verità, allora è in noi e per noi."*  
 <br>
-<br>
+(Benedetto XVI)
 
-# Benvenuti!  
+
+
+## Di cosa si tratta 
 
 Il proposito di questo sito è raccogliere articoli, idee e spunti di riflessione critica su realtà e attualità: insomma fissare quelle sollecitazioni che fanno alzare la testa dalla "simulazione" in cui siamo spesso immersi...  
 

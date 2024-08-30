@@ -30,7 +30,10 @@ draft: FALSE
 
 # Ricordare
 
- 
+> “To see what is in front of one's nose needs a constant struggle.”
+  — George Orwell
+
+
 <!-- # Istruzioni -->
 
 <!-- + **FOOTNOTES** I am going to insert a footnote here[^1]. -->
