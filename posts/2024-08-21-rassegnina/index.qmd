@@ -1,12 +1,12 @@
 ---
-title: "Micro-rassegna del 21 Agosto 2024"
+title: "Micro-rassegna Agosto/Settembre 2024"
 subtitle: ""
 description: ""
 author: ""
 date: "2024-08-21"
 image: ""
 image-alt: ""
-categories: [ITA 🇮🇹, rassegna]
+categories: [ITA 🇮🇹,ENG 🇺🇸, rassegna]
 date-modified: "2024-08-21"
 draft: FALSE
 ---
@@ -22,7 +22,10 @@ draft: FALSE
 
 # Guardare
 
--   ...
+- From **ALL-IN SUMMIT Podcast**, on 10 September 2024, **Jeff Sachs** and **John J. Mearsheimer** discussed international politics with the hosts of ALL-IN podcast.  
+[John Mearsheimer & Jeffrey Sachs ](https://youtu.be/uvFtyDy_Bt0)
+
+> (on Ukraine) JS: even if we define it as "defending from an invasion" it is about American power projection into the former Soviet Union.
 
 # Ascoltare
 
