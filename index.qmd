@@ -56,6 +56,9 @@ toc: true
 
 ![](images/matrix.jpg)
 
+> *“To see what is in front of one's nose needs a constant struggle.”* (George Orwell)
+
+
 <!-- ## Recent posts / Posts recentes -->
 
 <!-- ::: {#posts} -->

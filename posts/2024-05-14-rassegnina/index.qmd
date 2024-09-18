@@ -6,7 +6,7 @@ author: ""
 date: "2024-05-14"
 image: ""
 image-alt: ""
-categories: [ITA 🇮🇹, rassegna]
+categories: [ITA 🇮🇹, rassegna, NATO]
 date-modified: "2024-05-14"
 draft: FALSE
 ---

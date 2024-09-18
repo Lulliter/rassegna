@@ -38,8 +38,6 @@ git add -u # tracked
 git add posts/*
 git add docs/* # specific
 git add images/*
-git add         .nojekyll
-git add  ReadMe.md
 
 
 

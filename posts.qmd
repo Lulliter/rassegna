@@ -24,7 +24,6 @@ title-block-banner: false
 
 <!-- <a rel="me" href="https://fosstodon.org/@thomas_mock"></a> -->
 
-
 ```{r write-redirects}
 #| echo: false
 # list names of post folders, 
