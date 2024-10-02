@@ -1,0 +1,24 @@
+
+
+# Leggere
++ Who  ["what, date"]() 
+> Quote  
+--- by Author
+
+# Guardare 
++ Who  ["what, date"]() 
+> Quote  
+--- by Author
+
+# Ascoltare 
++ Who  ["what, date"]() 
+> Quote  
+--- by Author
+
+
+# Ricordare 
+> Quote  
+--- by Author
+
+
+ 

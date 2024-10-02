@@ -1,0 +1,34 @@
+---
+title: 'Micro-rassegna del 2024-10-02'
+categories: ['ENG 🇺🇸', 'ITA 🇮🇹', 'rassegna']
+date: 2024-10-02
+toc: TRUE
+draft: FALSE
+image: ""
+image-alt: ""
+---
+
+# Leggere
++ Sergio Giraldo su *La Verita* ["La profezia di Marchionne sui disastri verdi, 2 Ottobre, 2024"](marchionne.pdf)
+
+> I limiti dell'elettrico, non sono soltanti i costi, l'autonomia, i tempi di ricarica o la rete di rifornimento, ma il fatto che la produzione di energia eletttrica a livello globale deriva da fossili per due terzi. "Dobbiamo essere realisti, le auto elettriche possono sembrare una meraviglia tecnologica, soprattutto per abbattere i livelli di emissioni nei centri urbani, ma si tratta solo di un'arma a doppio taglio. Forzare l'introducione dell'elettrico su scale globale, senza prima risolvere il problema di come produrre l'energia da fonti pulite e rinnovabili" (nel 2017 a Trento)  
+
+<!-- --- by Author -->
+
+<!-- # Guardare  -->
+<!-- + Who  ["what, date"]()  -->
+<!-- > Quote   -->
+<!-- --- by Author -->
+
+<!-- # Ascoltare  -->
+<!-- + Who  ["what, date"]()  -->
+<!-- > Quote   -->
+<!-- --- by Author -->
+
+
+# Ricordare 
+> One man's propaganda is another man's point of view.  
+--- by Karthik Dinakar
+
+
+ 

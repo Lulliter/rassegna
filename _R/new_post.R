@@ -1,120 +1,76 @@
+# Function to create a new Quarto post  -----
+create_quarto_post <- function(categories, template_file = here::here("_R","template.qmd")) {
 
-# Pckgs -------------------------------------------------------------------
-library(rstudioapi) # interface for interacting with the RStudio IDE
-library(stringr)	  # easy string manipulation
-library(glue)  	  # easy adding of string together
-library(fs)    	  # easy file manipulation
-library(cli)   	  # easy and beautiful messages/warnings
-library(yesno) 	  # easy binary decision prompts
+	# Get the current date and format it as yyyy-mm-dd
+	current_date <- format(Sys.Date(), "%Y-%m-%d")
+	title <- paste(current_date, "rassegnina", sep = "-")
+	title_post <- paste0("Micro-rassegna del ", current_date)
 
-# Function 2 create post  -------------------------------------------------
-new_post <- function(
-		title,
-		file = "index.qmd",
-		description = "",
-		author = "Luisa M. Mimmi",
-		date = Sys.Date(),
-		draft = FALSE,
-		title_limit = 40,
-		open_file = TRUE
-){
+	# Generate a valid slug for the post directory based on the title
+	slug <- gsub(" ", "-", tolower(title))
+	post_dir <- file.path("posts", slug)
 
-	# ----  TITLE
-	# convert to kebab case and remove non space or alphanumeric characters
-	title_kebab <- stringr::str_to_lower(title) |>
-		stringr::str_remove_all("[^[:alnum:][:space:]]") |>
-		stringr::str_replace_all(" ", "-")
+	# Check if the post directory already exists
+	if (dir.exists(post_dir)) {
+		index_qmd_path <- file.path(post_dir, "index.qmd")
 
-	# warn if a very long slug
-	if(nchar(title_kebab) >= title_limit){
-		cli::cli_alert_warning("Warning: Title slug is longer than {.val {title_limit}} characters!")
-	}
-
-	# generate the slug as draft, prefix with _ which prevents
-	# quarto from rendering/recognizing the folder
-	if(draft){
-		slug <- glue::glue("posts/_{date}-{title_kebab}")
-		cli::cli_alert_info("Appending a '_' to folder name to avoid render while a draft, remove '_' when finished.")
+	# Check if index.qmd already exists
+		if (file.exists(index_qmd_path)) {
+			stop("A file 'index.qmd' already exists in the folder: ", post_dir,
+				  ". Stopping to prevent overwriting.")
+		}
 	} else {
-		slug <- glue::glue("posts/{date}-{title_kebab}")
+		dir.create(post_dir, recursive = TRUE)
 	}
 
-	# ----  FOLDER
-	# create and alert about directory
-	fs::dir_create(
-		path = slug
-	)
-	cli::cli_alert_success("Folder created at {.file {slug}}")
+	# Format the categories as a YAML list
+	formatted_categories <- paste0("[", paste(shQuote(categories), collapse = ", "), "]")
 
-	# ----  BLOG POST
-	# wrap description at 77 characters
-	description <- stringr::str_wrap(description, width = 77) |>
-		stringr::str_replace_all("[\n]", "\n  ")
-
-	# start generating file
-	new_post_file <- glue::glue("{slug}/{file}")
-
-	# ----  YAML
-	# build yaml core
-	new_post_core <- c(
-		"---",
-		glue::glue('title: "{title}"'),
-		"description: |",
-		glue::glue('  {description}'),
-		glue::glue("author: {author}"),
-		glue::glue("date: {date}")
-	)
-
-	# add draft if draft
-	if(draft){
-		new_post_text <- c(
-			new_post_core,
-			"draft: true",
-			"---\n"
-		)
+	# Create the index.qmd file from the template
+	index_qmd_path <- file.path(post_dir, "index.qmd")
+	if (file.exists(template_file)) {
+		# Read the content from the template
+		content <- readLines(template_file)
+		# Write the new index.qmd with dynamically inserted YAML
+		writeLines(c(
+			"---",
+			paste("title:", shQuote(title_post)),
+			paste("categories:", formatted_categories),
+			paste("date:", current_date),  # Directly insert the current date
+			"toc: TRUE",
+			"draft: FALSE",
+			'image: ""',
+			'image-alt: ""',
+			"---",
+			"",
+			content  # Add the template content after YAML
+		), index_qmd_path)
 	} else {
-		new_post_text <- c(
-			new_post_core,
-			"---\n"
-		)
+		# Create a basic file if template.qmd doesn't exist
+		writeLines(c(
+			"---",
+			paste("title:", shQuote(title)),
+			paste("categories:", shQuote(categories)),
+			"date: `r Sys.Date()`",
+			"toc: true",
+			"draft: false",
+			'image: ""',
+			'image-alt: ""',
+			"---",
+			"",
+			"# Introduction",
+			"",
+			"Write your content here..."
+		), index_qmd_path)
 	}
 
-	# finalize new post text
-	new_post_text <- paste0(
-		new_post_text,
-		collapse = "\n"
-	)
-
-	# create file and alert
-	fs::file_create(new_post_file)
-	cli::cli_alert_success("File created at {.file {new_post_file}}")
-
-	# print new post information
-	cat(new_post_text)
-
-	if(yesno::yesno2("Are you ready to write that to disk?")){
-		writeLines(
-			text = new_post_text,
-			con = new_post_file
-		)
-
-		rstudioapi::documentOpen(new_post_file, line = length(new_post_text))
+	# Open the index.qmd file in RStudio (if using RStudio)
+	if (interactive()) {
+		rstudioapi::navigateToFile(index_qmd_path)
 	}
 
+	message("Quarto post created at: ", post_dir)
 }
 
-
-
-# # Example use function  ---------------------------------------------------
-new_post(
-	"Rassegnina del 21 Marzo 2024",
-	description = "nuova rassegna stampa",
-	draft = TRUE
-)
-
-# # Example 2 use function  ---------------------------------------------------
-# new_post(
-# 	"Revisione libro: Il Sistema invisibile, di Marcello Foa del 15 Novembre 2023",
-# 	description = "libri",
-# 	draft = TRUE
-# )
+# Example usage ----
+create_quarto_post(categories = c("rassegna", "ENG 🇺🇸", "ITA 🇮🇹"))

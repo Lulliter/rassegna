@@ -52,7 +52,7 @@ fi
 git commit -m "$msg"
 
 		# git commit -m "theme 🎨"
-git commit -m "small upd"
+git commit -m "posts/2024-08-21-rassegnina/index.qmd"
 		# git commit -m "revision + addition of DRAFT post"  -m "01_... + 00_carico_tab-contesto.qmd "
 
 # Push source and build repos.
