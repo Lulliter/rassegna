@@ -10,7 +10,6 @@ quarto install extension schochastics/academicons # https://jpswalsh.github.io/a
 # quarto preview
 quarto preview
 
-
 # ====== RENDER the entire site
 quarto render
 
@@ -38,7 +37,7 @@ git add -u # tracked
 git add posts/*
 git add docs/* # specific
 git add images/*
-
+git add _R/template.qmd
 
 
 =======
@@ -52,7 +51,7 @@ fi
 git commit -m "$msg"
 
 		# git commit -m "theme 🎨"
-git commit -m "posts/2024-08-21-rassegnina/index.qmd"
+git commit -m "new function _R/new_post.R 💪🏻"
 		# git commit -m "revision + addition of DRAFT post"  -m "01_... + 00_carico_tab-contesto.qmd "
 
 # Push source and build repos.
