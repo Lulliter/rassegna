@@ -51,8 +51,8 @@ fi
 git commit -m "$msg"
 
 		# git commit -m "theme 🎨"
-git commit -m "new function _R/new_post.R 💪🏻"
-		# git commit -m "revision + addition of DRAFT post"  -m "01_... + 00_carico_tab-contesto.qmd "
+git commit -m "small changes"
+# git commit -m "revision + addition of DRAFT post"  -m "01_... + 00_carico_tab-contesto.qmd "
 
 # Push source and build repos.
 #cd .
