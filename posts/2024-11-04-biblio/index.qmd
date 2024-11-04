@@ -24,14 +24,14 @@ D'altra parte, questo documento (e altri attinenti) include anche l'idea che la 
 
 > *"Urgent steps are needed to limit extreme rates of population growth. (...) But this is not just a demographic issue; providing people with facilities and education that allow them to choose the size of their families is a way of assuring - especially for women - the basic human right of self-determination."* [@world_commission_on_environment_and_development_brundtal_1987, p. 18]
 
-+ **MITIGAZIONE dei cambiamenti climatici** presuppone che: 1) abbiamo capito esattamente quali sono le cause e 2) è in nostro potere fare qualcosa per ridurli. Due cose che però non sono affatto dimostrate. Ad esempio:
++ **MITIGAZIONE dei cambiamenti climatici** presuppone che: 1) abbiamo capito esattamente quali sono le cause e 2) è in nostro potere fare qualcosa per ridurli. Due cose che però non sono affatto dimostrate. ESEMPI:
   - Riduzione delle emissioni di gas serra (GHG) per rallentare il riscaldamento globale. 
   - Sempre per ridurre le emissioni di gas serra, sostituire le fonti energetiche fossili (efficienti e accumulabili) con fonti rinnovabili (intermittenti e difficili da stoccare e trasportare e quindi costosissime).
   - Sostituire i mezzi di trasporto a combustione interna con elettrici (che però hanno pur con ridotte emissioni hanno un impatto ambientale maggiore, se consideriamo l'intero ciclo di vita del veicolo).  
   
-+ **ADATTAMENTO ai cambiamenti climatici** presuppone che: 1) i cambiamenti climatici siano in corso e 2) non possiamo fare nulla per ridurli, ma possiamo investire risorse per prevedere ed difenderci dai rischi. Ad esempio:
++ **ADATTAMENTO ai cambiamenti climatici** presuppone che: 1) i cambiamenti climatici siano in corso e 2) non possiamo fare nulla per ridurli, ma possiamo investire risorse per prevedere ed difenderci dai rischi. ESEMPI:
   - Gestire boschi e foreste con manutenzione e pulizia
-  - Gestire il rischio idrogeologico (esondazioni e frane) con opere di ingegneria civile e idraulica
+  - Gestire il rischio idrogeologico (siccità, esondazioni e frane) con opere di ingegneria civile e idraulica
   - Pianificare la città in modo da ridurre il rischio di inondazioni.
   - Sfruttare le risorse naturali in modo sostenibile (utilizzo e ri-utilizzo di acqua depurata, rigenerazione falde acquifere), limitazione della urbanizzazione e impermeabilizzazzione del suolo.
   - Investire nella manutenzione ordinaria e straordinaria delle infrastrutture vulnerabili per via del cambiamento climatico e delle calamità naturali. Cosi tra l'altro si spende solo una frazione di quello che costa la ricostruzione post-disastro.
