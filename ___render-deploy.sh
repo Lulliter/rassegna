@@ -58,6 +58,7 @@ git commit -m "added posts/2024-10-29-svil-sost/ ✍🏻"
 #cd .
 git push origin master
 
+git add -u && git commit -a -m "small rev" && git push origin master
 
 #=========================================== FIle pubblico  ================================================#
 # https://quarto.org/docs/publishing/quarto-pub.html
