@@ -54,6 +54,16 @@ toc: true
 
 > ***Spunti per sollevare lo sguardo dalla simulazione***
 
-![](images/matrix.jpg){width="554"}
+<!-- ![](images/matrix.jpg){width="554"} -->
+
+<div class="tenor-gif-embed" data-postid="4011236" data-share-method="host" data-aspect-ratio="1.86667" data-width="60%">
+	<a href="https://tenor.com/view/the-matrix-reloaded-matrix-reloaded-neo-keanu-reeves-gif-4011236">Neo Re-materializing - The Matrix Reloaded GIF
+	</a>
+	from
+	<a href="https://tenor.com/search/the+matrix+reloaded-gifs">The Matrix Reloaded GIFs</a>
+</div> 
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+
 
 > *"To see what is in front of one's nose needs a constant struggle."* (George Orwell)
