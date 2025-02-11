@@ -1,0 +1,56 @@
+---
+title: 'Spunti su EDCTP del 2025-02-11'
+categories: ['spunti', 'EDCTP', 'UE', 'health', 'ENG 🇺🇸', 'ITA 🇮🇹']
+date: 2025-02-11
+toc: TRUE
+draft: FALSE
+image: ""
+image-alt: ""
+---
+
+# What it is 
++ [**European & Developing Countries Clinical Trials Partnership (EDCTP)**](https://www.edctp.org/about-us/) 
+> EDCTP) is a public-public partnership between countries in Europe and sub-Saharan Africa, supported by the European Union.
+ 
+It is supported by the European Union and aims to accelerate the development of new or improved drugs, vaccines, microbicides and diagnostics against HIV/AIDS, tuberculosis and malaria as well as other poverty-related and neglected infectious diseases in sub-Saharan Africa, with a focus on phase II and III clinical trials.
+
+It has 45 members (30 African and 15 European countries) & 305 participating entities from 56 countries
+ 
+![EDCTP members](EDCTP.png) 
+ 
+# Occasion
+Global Health EDCTP3 Info Day 2025, took place on 11 February from 09:00 to 12:30, Brussels time, to discuss the upcoming **EDCTP3** programme.
+
+![Scientific staff Speakers](Speakers.png) 
+
+
+# Calls for proposals 
+
++Budget: 45.9 M€
+...malaria, tuberculosis, and neglected tropical diseases (NTDs), fellowship programs in AFRICA ...
+
+![Calls for proposals](calls.jpg)
+
+## Horizon-JU-GH-EDCTP3-2025-01-TB-01-two-stage
+
+## Horizon-JU-GH-EDCTP3-2025-01-MALARIA-02-two-stage
+
+## Horizon-JU-GH-EDCTP3-2025-01-NTD-03-two-stage
++Budget: 45.9 M€ neglected tropical diseases (NTDs)
+
+## Horizon-JU-GH-EDCTP3-2025-02-FELLOWSHIP-01-two-stage
+
+## Horizon-JU-GH-EDCTP3-2025-02-NETWORKS-01-two-stage
+
+## Horizon-JU-GH-EDCTP3-2025-02-CH-01-two-stage
+
+Tackling diarrhoeal diseases in the context of climate and health
++Budget: 30.6 M€
+
+## Horizon-JU-GH-EDCTP3-2025-02-ACCESS-02-two-stage
+
+# Application process for the calls 
+
+![Application process two stage logic](application_1.png)
+
+![Application process timeline](application_2.png)

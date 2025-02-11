@@ -75,5 +75,7 @@ create_quarto_post <- function(categories, template_file = here::here("_R","temp
 # Example usage ----
 create_quarto_post(categories = c("rassegna", "ENG 🇺🇸", "ITA 🇮🇹"))
 create_quarto_post(categories = c("rassegna", "climate change", "sostenibilità","ENG 🇺🇸", "ITA 🇮🇹"))
+create_quarto_post(categories = c("spunti", "EDCTP", "UE","health","ENG 🇺🇸", "ITA 🇮🇹"))
+
 create_quarto_post(categories = c("lexicon",  "ITA 🇮🇹"))
 #

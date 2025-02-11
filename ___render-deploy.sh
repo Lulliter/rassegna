@@ -51,7 +51,7 @@ fi
 git commit -m "$msg"
 
 		# git commit -m "theme 🎨"
-git commit -m "added posts/2024-10-29-svil-sost/ ✍🏻"
+git commit -m "added gif 🎥 "
 # git commit -m "revision + addition of DRAFT post"  -m "01_... + 00_carico_tab-contesto.qmd "
 
 # Push source and build repos.
