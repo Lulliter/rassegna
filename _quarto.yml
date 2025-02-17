@@ -18,11 +18,12 @@ website:
   page-footer:
     left: |
       Luisa M. Mimmi {{< fa brands creative-commons >}} 2024  <br>
-      [{{< fa envelope >}} Email ](mailto:lmm76@georgetown.edu)
-    right: |
+    center: |
       License [{{< fa brands creative-commons >}}{{< fa brands creative-commons-by >}}
-      {{< fa brands creative-commons-nc >}}{{< fa brands creative-commons-sa >}}](https://creativecommons.org/licenses/by-nc-sa/4.0/)  <br>
-      [{{< fa brands github >}} Source Code ](https://github.com/Lulliter/rassegna)
+      {{< fa brands creative-commons-nc >}}{{< fa brands creative-commons-sa >}}](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+    right: |
+      [{{< fa envelope >}}](mailto:lmm76@georgetown.edu)
+      [{{< fa brands github >}}](https://github.com/Lulliter/rassegna)
   navbar:
     search: true
     right:

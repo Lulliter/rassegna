@@ -1,6 +1,6 @@
 ---
 title: 'Micro-rassegna del 2025-02-17'
-categories: ['disinformation', 'democracy','Europe', 'ENG 🇺🇸', 'ITA 🇮🇹']
+categories: ['rassegna', 'disinformation', 'democracy','Europe', 'ENG 🇺🇸', 'ITA 🇮🇹']
 date: 2025-02-17
 toc: TRUE
 draft: FALSE
