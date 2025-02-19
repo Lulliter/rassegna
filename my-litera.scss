@@ -27,8 +27,9 @@ $darkgray: #7a7a7a;
 
 $nav_head_bckg: #3881a5;   //    #b78a92	#72aed8
 $nav_foot_bckg: #BDD5E1;	//			  #e7d8da	#e3eff7
-// Schema 
+// Schema
 $theme_main_dark: #0a222e;
+$theme_main_darkish: #19516d;
 $theme_main: #23749b;
 $theme_main_light: #BDD5E1;
 $theme_main_extralight:#f6f9fb;
@@ -77,16 +78,14 @@ p {
 }
 
 // Navs
-
 .navbar-brand {
   font-family: "Fira Mono", mono;
   font-size: 1.4rem;
   font-weight: 900;
-  color: black;
+  color: $theme_main_extralight,//black;
 }
 
 // Navbar
-
 .navbar {
   font-family: "Fira Mono", mono;
   font-size: 1rem;
@@ -107,3 +106,21 @@ p {
   color: $theme_related1;// #515c61;
 }
 
+// more visible bold font text (ONLY paragraphs, list items, and other body text elements
+p strong, p b,
+li strong, li b,
+td strong, td b {
+  font-family: "Fira", sans-serif;;
+  font-weight: 900;
+  color: $theme_main_darkish;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); // Light shadow for depth
+}
+
+//strong, b {
+//  font-weight: 900; // Strongest bold weight
+//  color: $theme_main_darkish;  // Use your existing dark red for emphasis
+//  //text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); // Adds subtle shadow for depth
+//  //background-color: #bdd5e1; // Light background for contrast
+//  padding: 2px 4px; // Adds small padding
+//  border-radius: 3px; // Softens background
+//}
