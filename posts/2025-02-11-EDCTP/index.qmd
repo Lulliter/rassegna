@@ -8,6 +8,7 @@ image: ""
 image-alt: ""
 ---
 
+
 # What it is 
 + [**European & Developing Countries Clinical Trials Partnership (EDCTP)**](https://www.edctp.org/about-us/) 
 > EDCTP) is a public-public partnership between countries in Europe and sub-Saharan Africa, supported by the European Union.
