@@ -20,10 +20,10 @@ quarto render $(find "$PWD" -name '*.qmd' -mtime -1)
 quarto render $(find . -name '*.qmd' -newerct "yesterday")
 
 #=========================================== (Push to Github repo) ================================================#
-# check status
+# --- Check status
 git status
 
-# Add changes to git Index.
+# --- Add changes to git Index.
 git add -A # ALL
 git add -u # tracked
 git add posts/*
@@ -32,23 +32,16 @@ git add images/*
 git add _R/template.qmd
 
 
-=======
-
-# Create Std commit "message"....
-msg="rebuilt on `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
-fi
-# ... Commit Those changes.
-git commit -m "$msg"
+# --- git commit
 # git commit -m "theme 🎨"
-git commit -m "2025-02-17-rassegnina/" && git push origin master
 
-
-# Push source and build repos.
-#cd .
+# # --- git push
 git push origin master
 
+# --- git commit + push
+git commit -m " posts/2025-02-13-spunti-ac/*" && git push origin master
+
+# --- git add u + commit + push
 git add -u && git commit -a -m "small rev" && git push origin master
 
 #=========================================== FIle pubblico  ================================================#
