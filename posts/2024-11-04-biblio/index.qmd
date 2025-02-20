@@ -1,6 +1,6 @@
 ---
 title: "Raccolta spunti *green* del 2024-11-04"
-categories: ["rassegna", "climate change", "sostenibilita", "ENG 🇺🇸" , "ITA 🇮🇹"]
+categories: ['spunti',"climate change", "sostenibilità", "ENG 🇺🇸", "ITA 🇮🇹"]
 date: 2024-11-04
 toc: TRUE
 draft: FALSE

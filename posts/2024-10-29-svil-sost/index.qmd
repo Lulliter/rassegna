@@ -3,7 +3,7 @@ title: 'Sviluppo sostenibile'
 subtitle: ""
 description: |
   [lessico addomesticato]
-categories: ['lexicon',"sostenibilita", 'ITA 🇮🇹']
+categories: ['lexicon',"sostenibilità", 'ITA 🇮🇹']
 date: 2024-10-29
 draft: FALSE
 image: SDGs.jpg
@@ -11,7 +11,7 @@ image-alt: ""
 toc: true
 lang: it
 number-sections: false
-bibliography: ../slogan_copia.bib
+bibliography: ../slogan.bib
 citation: false
 ---
 

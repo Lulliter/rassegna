@@ -12,20 +12,12 @@ quarto preview
 
 # ====== RENDER the entire site
 quarto render
-
-# render a single file only
-project:
-  render:
-    - section1.qmd
-    - section2.qmd
-    - "*.qmd"
-    - "!ignored.qmd"
-    - "!ignored-dir/"
-
-# ====== PUBLISH
-# quarto publish  # quasto stronzo mi crea la git branch "gh-pages" -->  FIX delete branch
-			#git branch -d branch_to_delete # { not allowed IF I am on it}
-			#git branch -D branch_to_delete # { -D if you have changes that are not merged and STILL delete}
+# 1a find files that have been *modified* in the last 24 hours
+find . -name '*.qmd' -mtime -1 -exec ls -l {} \;
+# 1b render only those files (absolute path)
+quarto render $(find "$PWD" -name '*.qmd' -mtime -1)
+# 2.a render only files that have been *created* in the last 24 hours
+quarto render $(find . -name '*.qmd' -newerct "yesterday")
 
 #=========================================== (Push to Github repo) ================================================#
 # check status
