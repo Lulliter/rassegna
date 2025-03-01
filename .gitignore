@@ -36,10 +36,8 @@ images/piazzze.jpg
 /_site/
 /_freeze/
 
-slides/*.pdf
-slides/*.html
-slides/**/*_cache/*
-projects/*.zip
+# PRIVATO O FUORI CONTESTO
+#_slides/*
 
 # knitr and caching stuff
 **/*_files/*

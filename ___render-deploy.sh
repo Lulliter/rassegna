@@ -19,7 +19,7 @@ quarto render $(find "$PWD" -name '*.qmd' -mtime -1)
 # 2.a render only files that have been *created* in the last 24 hours
 quarto render $(find . -name '*.qmd' -newerct "yesterday")
 
-#=========================================== (Push to Github repo) ================================================#
+#===========================  (Push to Github repo)  ================================#
 # --- Check status
 git status
 
@@ -34,7 +34,7 @@ git add _R/template.qmd
 
 # --- git commit
 # git commit -m "theme 🎨"
-
+git commit -m " boh "
 # # --- git push
 git push origin master
 
