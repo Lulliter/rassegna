@@ -34,7 +34,7 @@ git add _R/template.qmd
 
 # --- git commit
 # git commit -m "theme 🎨"
-git commit -m " boh "
+git commit -m "_slides/*AC.qmd "
 # # --- git push
 git push origin master
 

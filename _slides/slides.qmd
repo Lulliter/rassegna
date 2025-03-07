@@ -1,0 +1,566 @@
+---
+title: "_Sia invece il vostro parlare: “Sì, sì”; “No, no”_ <br><br>  
+  ...spunti di riflessione sul lessico delle <br>organizzazioni internazionali"
+subtitle: "Incontro promosso da Azione Cattolica (Pavia) per il ciclo <br> _“I Care: Emergere dall'emergenza”_"  
+#author: "Luisa M. Mimmi | [https://luisamimmi.org/](https://luisamimmi.org/)"
+date: "6 Marzo 2025"  # trick in .scss to get <Place, date> !!! 
+date-format: long
+code-link: true
+format:
+  revealjs:
+    math: mathjax
+    smaller: true
+    scrollable: false
+    theme: slidesLula.scss # QUARTO LOOKS IN SAME FOLDER 
+    css: styles.css
+#    logo: imgs_slides/mitgest_logo.png
+    footer: '[Luisa M. Mimmi]( {{ < var websites.lulas_site > }} ) | 2025'
+#    footer: <https://lulliter.github.io/R4biostats/lectures.html>
+## ------------- x salvare come PDF 
+    standalone: false
+    ## -------Produce a standalone HTML file with no external dependencies,
+    embed-resources: true
+    transition: fade
+    background-transition: fade
+    highlight-style: ayu-mirage
+    slide-number: true
+    fig-cap-location: top
+    # fig-format: svg
+    pdf-separate-fragments: false
+    fig-align: center
+execute:
+  # Quarto pre code blocks do not echo their source code by default
+  echo: true
+  include: true
+  freeze: auto
+lang: it
+bibliography: ../posts/slogan.bib
+#csl: ../../bib/apa-6th-edition.csl 
+suppress-bibliography: false
+nocite: |
+  @foa_il_2022, @un_report_1972-1, @world_commission_on_environment_and_development_brundtal_1987, @the_economist_esg_2022, @cirillo_quando_2021, @boeri_pnrr_2023
+---
+
+## [1) Banca Mondiale e 2) Banca Inter-Americana dello Sviluppo]{.r-fit-text}
+
+   <!--  λεξικόν (leksikon) =  Ellipsis of λεξικὸν βιβλίον (lexikòn biblíon) -- literally “a book of or pertaining to words”. -->
+   <!--  + Formally a Neuter substantive of adjective λεξικός (lexikós),  -->
+   <!-- 		- from λέξις (léxis), “a saying, speech, word”,  -->
+   <!-- 			- from λέγω (légō) “I speak”,  -->
+   <!-- 				- ultimately from Proto-Indo-European *leǵ- (“to gather, collect”).  -->
+   
+I miei vecchi uffici in downtown Washington D.C. 😉
+
+![](pics/DC_map.jpg){fig-align="center"}
+
+::: {.notes}
+Io la prenderò un po’ alla lontana ma preferisco parlare di qualcosa che ho vissuto da dentro e per questo proporrò qualche riflessione a margine della mia esperienza di circa 13 anni in cui ho lavorato a Washington DC per Banca Mondiale e Banca Inter-Americana dello Sviluppo.
+
++ **BMdS**
+Le **banche multilaterali di sviluppo** forniscono finanziamenti sotto forma di prestiti (a condizioni favorevoli), sovvenzioni, investimenti, garanzie e assistenza tecnica per progetti che mirano a ridurre la povertà, a migliorare le infrastrutture e a promuovere la crescita economica.
+
+<!-- Solo nell'AF 2024, la BM ha mobilitato/impegnato 117,5 miliardi di dollari e SPESO 89 miliardi  -->
++ **IO**
+Il mio ruolo, li dentro, era misurare i risultati di quete operazioni: 1) sia armonizzando database di dati su progetti diversi sia 2) con studi un po' piu approfonditi --la valutazione dell'impatto di progetti PARTICOLARMENTE INTERESSANTI (PROG. pilota o che presentavano aspetti innovativi da CALIBRARE sperimentalmente). 
+
+In pratica ho sempre lavorato con dati e i numeri, ma essendo una persona a cui piacciono le parole a un certo punto sono rimasta molto colpita da un'osservazione...
+:::
+
+## [_Slogan_ ricorrenti alla Banca Mondiale]{.r-fit-text}
+
+
+```{r}
+#| echo: false
+#| output: false
+#| fig.width: 16
+#| fig.height: 9
+#| out.width: "100%"
+#| out.height: "85vh"
+#| column: screen-inset-shaded
+
+library(wordcloud2)
+
+set.seed(123)
+# create a data frame
+df <- data.frame(word = c("SDGs",			
+								  "ESG", 
+								  "sustainable dev.", 
+								  
+								  "PforR", # Program for Results
+								  "MFD", 
+								  "PPP", 
+								  
+								  "green growth", 
+								  "resilience",
+								  "global warming",
+								  
+								  "result-based fin.",
+								  "gender mainstreaming",
+								  "evidence-based"), 
+					  freq = c(12, 10,10,
+					  			7,7,7,
+					  			6, 6,6,
+					  			4, 5, 5))
+# plot
+wordcloud2(data = df, size = 0.4, color = "random-light", 
+			  fontFamily = "Roboto", fontWeight = "bold",
+			  backgroundColor = "black", 
+			  shape = "star", 
+			  rotateRatio = .7)
+```
+
+![](pics/wordcloud.jpg){fig-align="center"}
+
+::: {.notes}
+In una occasione precisa (poi magari vi posso raccontare... ) mi sono fatta questa domanda _"Ma com'è possibile che in un ente che ha oltre 20,000 dipendenti (consulenti esclusi) e che opera in 100 paesi, di colpo tutti cominciano a ripetere le stesse parole?"_
+
++ Questa immagine mostra parole e frasi che erano davvero ricorrenti nel **mio lavoro** (con anche i rispettivi acronimi che gli americano amano tantissimo!!)
+
++ Mi colpiva il fatto che di colpo e poi per qualche tempo queste idee **comparivano e tu cominciavi a ritrovarle ovunque**: nei discorsi del presidente, nelle pubblicazioni settoriali, nelle proposte di progetto, ecc.
+
++ Va tenuto in considerazione: in queste istituzioni le **parole** dette e scritte spesso segnalano le **priorità** e l'indirizzo strategico, che quindi si riflettono in dove andranno i **finanziamenti**.
+
++ Ho cominciato a interrogarmi se tali espressioni fossero scelte deliberatamente o se si diffondano quasi involontariamente, diventando scorciatoie convenienti per concetti complessi. 
+
++ quello che provo a riferirvi è il mio tentativo di capire **perché**  e **come** emergono e si diffondono queste parole e frasi
+::: 
+
+
+## [Cosa è uno "slogan"?]{.r-fit-text}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+::: {style="font-size: 90%;"}
+Dalle parole in gaelico di Scozia:    
+
+<!-- 1500   -->
+1. ***sluagh*** = "esercito, moltitudine" +    
+2. ***ghairm*** = "grido, richiamo"
+ 
+$\hspace{3cm}$ ⬇  
+<!-- 1700   -->
+ 
+- ***slughon*** = massima, motto, parola d'ordine
+ 
+$\hspace{3cm}$ ⬇  
+<!-- 1900   -->
+
+- ***slogan***  (utilizzo odierno in ambito pubblicitario, elettorale, aziendale, ecc.)
+<!-- "Proletari di tutto il mondo unitevi" oppure, 
+al campo commerciale, "Dove c’è Barilla, c’è casa".  -->
+ 
+:::
+:::
+
+::: {.column width="60%"}
+
+<br>
+
+![_**Alba gu bràth!**_ = "Scozia per sempre!"](pics/braveheart.jpg){fig-align="center"}
+:::
+
+::::
+
+> = raccolta *simbolica* e *sintetica* di idee chiave, obiettivi, aspirazioni, ecc. pensata per promuovere una causa, persuadere, mobilitare
+
+
+::: {.notes}
++ ***etimologia di slogan***:
++ Lo so che le arti della retorica, della persuasione e la propaganda sono state sempre presenti nella storia umana -- non è che le OI abbiano inventato niente di nuovo -- ma a me ha colpito sorprendere questi meccanismi in atto dal di dentro del mio stesso lavoro e trovarmi io stessa impregnata (un po' _inconsapevolmente_) di questa retorica nello scrivere un report o fare una presentazione.
+<!-- (Perché, come penso tanti di voi, anche chi fa un lavoro magari piu tecnico e incentrato sui numeri, alla fine deve **raccontare** i risultati e convincere qualcuno a fare qualcosa) -->
+<!-- + non voglio neanche suggerire che cii sia necessariamente un *contenuto* o un *uso* negativo, solo che occorre secondo me un discernimento ...per altro  -->
+
+:::
+
+## [World Development Report (BM)]{.r-fit-text}
+
+::: { layout-nrow=2}
+![WDR 2004 Services](pics/WDR2004.png){width=45%}
+
+![WDR 2010 Climate](pics/WDR2010.png){width=45%}
+
+![WDR 2012 Gender](pics/WDR2012.png){width=45%}
+
+![WDR 2015 Behavioral](pics/WDR2015.png){width=45%}
+
+![WDR 2021 Data](pics/WDR2021.png){width=45%}
+
+![WDR 2023 Migrants](pics/WDR2023.png){width=45%}
+:::
+
+
+<!-- ![WDR 2004](pics/WDR2004.png){width=50%}   -->
+<!-- [WDR 2004: Making Services Work for Poor People]{style="font-size: 50%; text-align: left;"}   -->
+<!-- $\hspace{0.5cm}$ -->
+
+<!-- ![WDR 2010](pics/WDR2010.png){width=50%}   -->
+<!-- [WDR 2010: Development and Climate Change]{style="font-size: 50%; text-align: left;"}    -->
+<!-- $\hspace{0.5cm}$ -->
+
+<!-- ![WDR 2012](pics/WDR2012.png){width=50%}   -->
+<!-- [WDR 2012: Gender Equality and Development]{style="font-size: 50%; text-align: left;"}    -->
+
+<!-- ![WDR 2015](pics/WDR2015.png){width=50%}   -->
+<!-- [WDR 2015: Mind, Society, and Behavior]{style="font-size: 50%; text-align: left;"}    -->
+<!-- $\hspace{0.5cm}$ -->
+
+<!-- ![WDR 2021](pics/WDR2021.png){width=50%}   -->
+<!-- [WDR 2021: Data for Better Lives]{style="font-size: 50%; text-align: left;"}    -->
+<!-- $\hspace{0.5cm}$ -->
+
+<!-- ![WDR 2023](pics/WDR2023.png){width=50%}   -->
+<!-- [WDR 2023: Migrants, Refugees, and Societies]{style="font-size: 50%; text-align: left;"}    -->
+
+<!-- ::: -->
+
+
+::: {.notes}
+Non sempre si sa che istituzioni come la BM fanno molto di piu che prestiti e assistenza tecnica, c'e' infatti un lavoro di ricerca sperimentale, di studio e di divulgazione che per me era entusiasmante.
+
+Qui vedete alcuni titoli del WDR...
+in particolare io ricordo quello del **2015 su Behavioral economics**... Behavioral economics è uno studio che cerca unire le conoscenze della psicologia umana allo studio delle decisioni economiche, e come queste possono essere influenzate 
+	+ e.g. **heuristics** (scorciatoie mentali) ci servono per prendere decisioni velocemente, ma possono portare a errori sistematici
+
+::: 
+
+## [_Sviluppo sostenibile_: andando all'origine]{.r-fit-text}
+
+::::: {.columns}
+
+::: {.column width="30%"}
+
+<br><br><br><br>
+
+![Gro Harlem Brundtland, 1987](pics/brundtland.jpg){fig-align="center"} 
+:::
+
+::: {.column width="70%"}
+:::{style="font-size: 80%;"}
++ **1972**: la _Conferenza ONU sull' "Ambiente Umano"_ (Stoccolma, 5-16 giugno) -- mette a tema la `conservazione dell'ambiente` e la `gestione delle risorse naturali`
+	+ [_Dichiarazione della Conferenza delle Nazioni Unite sull'ambiente umano_](https://digitallibrary.un.org/record/523249/files/A_CONF.48_14_Rev.1-EN.pdf) 
+	
+<!-- con 7 proclami e 26 Principi, ed anche un "Action Plan" completo di 109 raccomandazioni. [@un_report_1972-1] -->
+
++ **1987**: la _Commissione Mondiale sull'Ambiente e lo Sviluppo_ -- introduce il concetto di `sviluppo sostenibile`
+	+ [_Rapporto "Our Common Future"_ ](https://sustainabledevelopment.un.org/content/documents/5987our-common-future.pdf) (anche noto come "Rapporto Brundtland")
+
+> **"uno sviluppo che soddisfi i bisogni del presente senza compromettere la capacità delle generazioni future di soddisfare i propri bisogni"** 
+
++ **1992**: la _Conferenza ONU sull'Ambiente e lo Sviluppo_ (Rio de Janeiro, 3-14 giugno) -- istituzionalizza a livello globale una strategia per lo `sviluppo sostenibile` 
+	+ [_Dichiarazione di Rio sull'Ambiente e lo Sviluppo_](https://www.un.org/en/development/desa/population/migration/generalassembly/docs/globalcompact/A_CONF.151_26_Vol.I_Declaration.pdf) 
+	
+	<!-- [@un_report_1987] -->
+:::
+:::
+::::
+
+
+::: {.notes}
+Tornando alle nostre parole ricorrenti non potevo non partire dalla definizione di **sviluppo sostenibile**, attorno a cui ruotava tutto il nostro lavoro. 
+
+Qui ho cercato di andare a vedere da dove viene questa idea (che peraltro è un concetto complesso e articolata). 
+
++ Generalmente si fa risalire la definizione al 1987, con il famoso "Rapporto Brundtland" (dal nome della presidente della commissione che lo ha redatto, Gro Harlem Brundtland).
+
+
++ **Lezione appresa**: il ritorno alla fonte, origine di una parola o di una espressione, consente di disporre di un valido aiuto per scoprire i principi e i riferimenti che sono alla base di quanto si trova intorno a noi, in modo da individuare le loro radici, le origini, o anche la semplice provenienza, comprenderli a fondo e confrontarli con a realtà. [@fioravanti_pedagogia_2006, p. 207]
+
+		+ (anche "artificial intelligence" era un esempio interessante)
+
+::: 
+
+## [_Sviluppo sostenibile_: un concetto complesso]{.r-fit-text}
+
+:::{style="font-size: 85%;"}
+
+Il concetto definito nel Rapporto "Our Common Future" (1987):
+
++ **`premesse positive`**: 
+	+ custodire le risorse naturali "affidate" all'umanità
+	+ lavorare insieme su sfide comuni
+
++ **`implicazioni negative`**: 
+	+ imporrebbe strategie diverse da paese a paese
+	+ la crescita della popolazione  (<u>in certi luoghi!</u>) è superiore alle risorse disponibili... quindi va limitata
+
+> **<u>Urgent steps are needed to limit extreme rates of population growth.</u> (...)** <br><br>
+> **Governments <u>that need to do so</u> should develop long-term, multifaceted population policies and a campaign to pursue broad demographic goals: to strengthen social, cultural, and economic motivations for family planning, and to provide to all who want them the education, contraceptives, and services required.** <br>
+[Brundtland, 1987, cap. IV "Population and Human Resources"]
+:::
+
+::: {.notes}
+Qui facciamo riferimento a un documento che ha inciso moltissimo nella retorica e nella strategia delle OI, e che ha introdotto un concetto che è diventato centrale nella politica internazionale e nella cooperazione allo sviluppo.
+
+Io però leggendo questo documento fondativo ho trovato aspetti molto condivisibili e altri molto preoccupanti
+
+- *Positivi*:
+
+	- uno sguardo che considera le generazioni future e si impegna alla conservazione delle risorse, il che è giusto, perchè prima si vedeva la crescita economica come qualcosa di continuo e illimitato. 
+	- l'idea (costitutiva nelle UN) che si debba coordinare risposte comune se trattiamo di questioni che riguardano l'intero pianeta (*managing the commons*)
+
+- *Negativi*:
+
+	- D'altra parte, questo documento (e altri attinenti) include anche l'idea che la crescita della popolazione (almeno in certi luoghi) sia superiore alle risorse disponibili... quindi invita i governi (più o meno implicitamente) a limitare la crescita demografica. Qualcosa che contraddice la concezione cristiana di sviluppo che mette l'uomo al centro. 
+
+::: 
+
+## [_Cambio climatico_ al centro]{.r-fit-text}
+
+![Conferenza del G20 a Presidenza italiana, luglio 2021](pics/venezia_climatechange.png){fig-align="center"}
+
+::: {.notes}
+Facendo un po' un salto in avanti quello che vedete e' il programma della "_Conferenza internazionale sul cambio climatico_" che si e' tenuta a Venezia a luglio 2021, a margine del G20.  
+
++ Ora, oltre al fatto che quell'evento fosse organizzato all'interno del filone finanza del G20 (quello in mano a MEF e BI) mi colpi che anche i relatori appartenesse al mondo dell'economia e della finanza (C. Lagarde, K. Georgieva, Larry Fink e tutti i presidenti di Banche di sviluppo e di investimento).
+
+:::
+
+## [_Cambio climatico_ ancora da capire 1/2]{.r-fit-text}
+
+![Var. temperatura 1880-2021](pics/clima1880_2020.jpg){width=45%}  
+
+
+::: {.notes}
+... in realtà si parlò anche un po di spiegare il cambiamento climatico, ma in afforntato da economisti (la mia brutta razza) e in modo molto superficiale.
+
++ in pratica, in questi consessi viene spesso mostrata questa immagine che mostra la variazione variazione della temperatura media globale degli ultimi 50 anni e che in genere è la giustificazione per la riduzione dei gas serra nell'atmosfera. 
+ 
+<!-- William **Nordhaus**, who noticed `very limited improvement in decarbonization `and pointed out three factors that are currently hampering climate action: (1) the price of carbon remains too low (there should be a more than tenfold increase, according to conservative estimates) and only covers a portion of global emissions; (2) public investment in research and development for low-carbon technologies is insufficient; and (3) non-binding international agreements leave room for free riding and vacillating behaviour that hampers concrete action to reduce greenhouse gas (GHG) emissions.  **As a consequence, international agreements have so far failed to fulfil their promises in terms of GHG reductions.** -->
+
+<!-- - price on carbon -->
+<!-- - green investments (sustainable infrastructure) -->
+<!-- - policies to mitigate climate change -->
+
+:::
+
+
+## [_Cambio climatico_ ancora da capire 2/2]{.r-fit-text}
+
+![Var. temperatura 0-2000](pics/clima_2000.png){width=45%}  
+
+::: {.notes}
+... a parte il fatto che, mostrare questo periodo non rende ragione della ciclicita della temperatura che anche solo negli ultimi 2000 e' stata rilevata da fonti varie ... 
+:::
+
+
+## [Gestire il cambio climatico: un obiettivo da _spacchettare_]{.r-fit-text}
+
+<br>
+
++ **mitigazione** dei cambiamenti climatici = **Ridurre le cause** del `cambiamento climatico`, ovvero le emissioni di gas serra nell'atmosfera che sono ritenute responsabili del riscaldamento globale.
+  + abbattimento emissioni gas serra, transizione verso fonti rinnovabili, efficienza energetica, riforestazione, cattura CO2  <br><br> <!-- [^2] -->
+
++ **adattamento** ai cambiamenti climatici = **Gestire gli effetti** del `cambiamento climatico`, in particolare i danni causati da eventi metereologici estremi 
+  + infrastrutture resistenti, agricoltura adattiva, gestione delle risorse idriche, pianificazione urbana migliore in zone a rischio
+
+::: {.notes}
+Posto che i cambiamenti climatici ci sono da sempre (e da ben prima che noi riuscissimo a fare qualche tentativo di spiegarli) va riconosciuto che il consenso sulle cause antropogeniche del cambiamento climatico e sulla nostra capacità di mitigarlo è tutt'altro che unanime. 
+
+Lungi da me adesso volermi addentrare in questo tema, ma anche se non ho la formazione di un fisico o di un climatologo, ho studiato abbastanza statistica per capire che stabilire un nesso causale LINEARE ( ↑↑ gas serra - ↑↑ temperatura) è molto ma molto complesso, soprattutto quando voglio spiegare un fenomeno che dipende da piu variabili, tra cui alcune latenti <!-- [^1]  --> e non osservabili (cicli solari, variazioni orbitali, eruzoni vulcaniche, nubi) dati incompleti non rappresentativi per fenomeni ciclici che si verificano su scala temporale molto lunga. Di fatto i modelli di simulazione della "greenhouse theory" non hanno replicato i cambi climatici del passato.
+
++ A me sembra (e lo ho toccato con mano a quella conferenza) che si sia spinto troppo e in modo troppo ideologico sul fronte "mitigazione" che -- non e' affatto detto -- sia alla portata delle nostre capacità tecnologiche e finanziarie.
+
++ dall'altra parte, l'adattamento ai cambiamenti climatici -- mi sembra che non abbia ricevuto la stessa attenzione -- nonostante si possa fare in misure concrete e alla portate delle nostre capacita ingegneristiche, idrogeologiche e urbanistiche con risultati certi e tangibili anche nel breve o medio termine.
+
+[^1]: variabili latenti = Sono concetti teorici non direttamente osservabili, ma inferibili da altre variabili misurate (indicatori). Es. intelligenza variabile latente di abilita.
+
+[^2]: "The total projected human addition to the carbon budget is about 5% (Energy Information Administration, 1998), of which industrialized world contribution is about 60%." [@gerhard_climate_2004]
+
+::: 
+
+
+## [_European ~~New~~ Green Deal_... & figli]{.r-fit-text}
+
+:::{style="font-size: 80%;"}
++ `European Green Deal`: presentato dalla Commissione EU l'11 dicembre 2019 come "tabella di marcia" per rendere sostenibile l'UE/Europa entro il 2050 
+<!-- (_"il primo continente a impatto climatico zero entro il 2050"_ e _"almeno il 55% in meno di emissioni di gas serra entro il 2030 rispetto ai livelli del 1990"_)  -->
++ Il Piano Nazionale di Ripresa e Resilienza (`PNRR`) è il principale strumento di attuazione del Green Deal in Italia
+	+ La missione **M2 "Rivoluzione verde e transizione ecologica"** assorbe € 59 mld (~40% del totale)
+	+ ... chissà perchè da noi lo si chiamava `Recovery Fund`?
++ Soldi a **debito** o **sovvenzione**? 
+
+:::
+
+<br> 
+
+::: {.table .table-striped}
+
+|Fonti PNRR (mld €)             | A debito | A fondo perduto | Totale     |
+|-------------------------------|----------|-----------------|------------|
+|EU (NGEU + ReactEU)            |      123 |         83[^2]  |     206    |
+|Italia (Piano Complementare)   |          |         31      |      31    |
+|**Totale**                     |  **123** |      **114**    |   **237**  |
+
+
+[^2]: Anche gli € 83 mld a fondo persone, in realtà sono solo € 42 mld netti se si tiene conto che l’UE si finanzia indebitandosi col mercato o aumentando i contributi che i membri pagano annualmente.
+
+:::
+
+
+::: {.notes}
+C'è un altro strumento retorico-narrativo di cui dobbiamo essere coscienti ed è l'utilizzo della **cornice concettuale** (_framing_), di cui secondo me possiamo vedere un esempio qui. 
+(per altro in questo caso c'e' una grossa responsabilita non solo dei governi in carica ma anche dei media)
+
++ il Covid e' stata l'occasione, ma non non e' il fine... (che e' la transizione verde)
+	+ limite pari al 37% delle risorse richieste da ciascun Stato membro deve essere finalizzato alla transizione verde; 
+	+ non deve essere prevista alcuna misura che possa essere idonea a generare, determinare conseguenze negative sull’ambiente (DNSH) discipinato nel Regolamento Tassonomia[13] 
+	
++ l'ammontare altissimo all'Italia era una vittoria o un fallimento? (il piu vasto perche eramo messi peggio (PIL e disoccupazione))
++ Questa narrazione non ha favorito una discussione critica e razionale di quanto e come utilizzare questo strumento in principio molto promettente 
+
+
+Il PNRR e':
+
+	+ result based 
+	
+	+ Anche gli € 83 Mld A FONDO PERDUTO, in realtà sono solo € 42 Mld netti se si tiene conto che l’UE 	si finanzia indebitandosi col mercato o aumentando i contributi che i membri pagano annualmente.
+	 
+	+ perche prendere cosi tanto? (solo 10 paesi hanno accetta to i prestiti e di questi solo 3 (Grecia, 	Romania e Italia) hanno chiesto il massimo) 
+	
+::: 
+
+
+## [_ESG_: un _amalgama_ di concetti]{.r-fit-text}
+
+::::{.columns}
+
+:::{.column width=50%}
+![Speciale Economist su "Sustainable Investment",<br> luglio 2022](pics/ESG.jpg){width=75%}  
+:::
+
+:::{.column width=50%}
+
++ **ESG** = **E**nvironmental, **S**ocial and **G**overnance
+
+> **Although ESG is often well-meaning it is deeply flawed.** It risks setting conflicting goals for firms, fleecing savers and distracting from the vital task of tackling climate change. (...) <br> 
+**It is an unholy mess that needs to be ruthlessly streamlined.** <br><br>
+[The Economist, 2022]
+:::
+
+:::
+
+::: {.notes}
+giusto per restare in tema, mi ricordo come mi aveva colpito questo speciale dell'Economist sull'"investimento sostenibile" che metteva in luce le contraddizioni interne dell'approccio ESG.
+
++ problema di misurazione (finalizzata a valutare gli investimenti), con indici non armonizzati ... ognuno si fa il suo diverso 
++ una difficolta che discende da voler accorpare concetti molto diversi e potenzialmente contradditori tra di loro. 
+	+ lo stesso Economist raccomandava di piantarla di pretendere di misurare con degli indici le 3 cose insieme!!! 
+		+ cosa che e' una legge fondamentale per cih fa il mio lavoro... gli indicatori devono riflettere realta piu granulari possibile
+	
+<!-- The idea is that investors should  evaluate firms based not just on their commercial performance but also  on their environmental and social record and their governance, typically using numerical scores.  -->
+
+<!-- + the link between virtue and financial outperformance is suspect. in reality, returns depend on how ESG is measured and on correlation with sector (like high in big tech when it was gaining). -->
+::: 
+
+
+## [La "mistica del metodo"]{.r-fit-text}
+
+:::{style="font-size: 80%;"}
+
+> Si deve fare i conti con la **"mistica del metodo"** [...] : messi al bando **i grandi perché** della vita umana, tutti gli sforzi si concentrano sulle **metodologie** di ogni tipo e genere [...] Si moltiplicano quindi gli **strumenti** [...], i quali però, senza riferimento ai **principi**, rischiano di rendere le azioni sempre più ristrette e sconnesse da una prospettiva unitaria. **La prospettiva cambia radicalmente quando si antepone i principi al metodo** [@fioravanti_pedagogia_2006, p. 197]
+
+:::
+
+ 
+![](pics/fioravanti.png){fig-align="center"}
+ 
+
+
+::: {.notes}
+Un'altro spunto di riflessione sul mio lavoro mi e' venuto da questa frase di Giuseppe Fioravanti: lui in realtà parlava di pedagogia, ma quando l'ho letta mi sono sentita molto soggetta a questo rischio 
+
++ per altro, molti degli slogan che vi ho mostrato all'inizio (Result-based ..., Evidence-based ..., MFD, PPP, ecc) si riferiscono a degli strumenti per lo sviluppo, ma non ai principi che dovrebbero guidare la nostra azione.
+::: 
+
+
+
+
+## [Buone notizie!]{.r-fit-text}
+
+
+ <br><br>
+
+
+>  *"E’ la verità che ci possiede, è qualcosa di vivente! Noi non siamo suoi possessori, bensì siamo afferrati da lei. Solo se ci lasciamo guidare e muovere da lei, rimaniamo in lei, solo se siamo, con lei e in lei, pellegrini della verità, allora è in noi e per noi."*  
+<br>
+--- Benedetto XVI, Omelia, 2 settembre 2012
+
+<br><br>
+<br><br>
+
+::: {.notes}
+Forse queste riflessioni possono generare un po' di sconforto  (almeno per me è capitato questo rischio) però intanto questa frase di Benedetto XVI serve a mettere in prospettiva: noi possiamo 
+solo essere pellegrini della verità, tendere ad essa.
+
+Però, come lui stesso ci ha insegnato abbiamo questo anelito insopprimibile alla verità, che ci permette anche di riconoscere (per quanto in modo imperfetto) cosa corrisponde a questo desiderio.  
+
+Per altro, come lui stesso ha detto, e' proprio questo incontro tra la fede biblica, la rivelazione di un Dio-logos e l'interrogarsi filosofico della cultura greca che costituisce il fondamento dell'Europa e della sua cultura.
+::: 
+
+
+## [PPP = Piccoli Passi Possibili (1/2)]{.r-fit-text}
+
+Nel `conoscere e giudicare`: 
+
+1. Tornare ad **amare le parole**
+	<!-- + almeno quelle del nostro settore di lavoro, tanto più se abbiamo la  responsabilità di pubblicare, insegnare, ecc. -->
+	
+2. **Giudicare criticamente le idee** facendoci domande:
+	+ Andare alle radici di un'idea
+	+ Capire il significato vero (magari implicito) delle parole 
+
+3. Riscoprire il **dialogo** come stimolo di crescita
+	+ tra persone (meglio che via social!) 
+	
+4.	Accorgersi della (nostra e altrui) **cornice valoriale** e di come inquadra le informazioni che ci scambiamo
+
+::: {.notes}
+We need:
+
++ media literacy
++ critical thinking skills
++ a deep understanding of how language works, how it can be used to manipulate, and how to resist such manipulation.
+
+Or, the way I see it: 
+
+1. **Giudicare le idee** facendosi domande // habit of critical thinking / curiosity
+	i. Ma proprio proprio questa parola cosa vuol dire?
+	ii. Ma questa idea da dove arriva (e come si è trasformata e/o deviata)?
+		 - Esempi: "sviluppo sostenibile" in *Our common good*
+	iii. Confrontarsi con le idee altrui e ascoltare le ragioni di chi la pensa diversamente
+3. Connettere i puntini
+	i. Esempi...
+ 
+4. Diventare consapevoli della cornice valoriale usata nella comuncazione
+	i. Esempi...
+	
+	> For example, describing a government program as "tax cuts for the wealthy" versus "incentives for job creators" evokes vastly different responses, even though the underlying policy is the same.
+
+:::
+
+
+## [PPP = Piccoli Passi Possibili (2/2)]{.r-fit-text}
+
+Nell'`agire` (professionale e non):
+
+1. Chiarire i **principi** che guidano la nostra azione prima di buttarsi su **obiettivi**, **metodi**, e **strumenti**
+	<!-- + Io che sono molto nerd, sono un soggetto molto a rischio perche mi appassiono facilmente a strumenti e metodi, e mi dimentico dei principi. -->
+
+2. Ristabilire il **primato della realtà sulle idee e sulle opinioni** 
+	+ quando si disegna un progetto...
+	+ quando si valuta un problema 
+	+ anche gli errori sono un pezzo molto istruttivo della realtà
+	
+
+::: {.notes}
+Speaker notes go here.
+::: 
+
+
+
+## [Letture per approfondire]{.r-fit-text}
+
+:::{style="font-size: 80%;"}
+
+:::

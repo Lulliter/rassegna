@@ -20,7 +20,7 @@ $table-font-family: "Fira Mono", monospace;
 $presentation-title-slide-text-align: "left";
 $presentation-subtitle-slide-text-align: "left";
 $code-block-font-size: 0.6em;
-$presentation-h2-font-size: 1.4em;
+// $presentation-h2-font-size: 1.4em;
 $primary: #42009b; // #8facb4;
 $presentation-heading-color: #00589b; //Pantone 19
 $code-color: #d02e4c; /* #5f5f5f; */
@@ -96,26 +96,34 @@ $code-color: #d02e4c; /* #5f5f5f; */
   background: #ccddeb;
 }
 
+
 /* -------- Lula's additions -------- */
 // make h1 title of slide adjust dynamically to fit in one line
-.reveal .slide.fit-title h1 {
-  font-size: calc(1.5vw + 1em); /* Adjust the size dynamically */
-  white-space: nowrap;
-  max-width: 100%;
-  font-size: 3em;
-  line-height: 1.2;
-  text-align: center;
+// Remove .r-fit-text override and simplify h1/h2 styling
+.reveal h1 {
+  font-size: clamp(0.8em, 3.5vw, 1.6em);
+  white-space: normal;
+  max-width: 95%;
+  margin: 0.5em auto;
+  line-height: 1.3;
+  text-align: left;
   display: block;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
-// make h2 title of slide adjust dynamically to fit in one line
+/* -------- Slide Titles -------- */
 .reveal h2 {
-  font-size: clamp(0.5em, 5vw, 1.4em);
-  white-space: nowrap;
+  font-size: 0.9em !important;  // Fixed size instead of clamp
+  white-space: normal;
   width: 100%;
-  margin: 0 auto;
+  max-width: 95%;
+  margin: 0.1em auto;
   text-align: left;
   line-height: 1.2;
+  display: block;
+  padding: 0 0.8rem;  // Slightly less padding than h2
+  overflow-wrap: break-word;  // Better word wrapping for PDF
 }
 
 // change default font
@@ -147,11 +155,20 @@ $code-color: #d02e4c; /* #5f5f5f; */
   z-index: 100;    // Ensure it stays on top
 }
 
-// make the bold text more visible (also with color)
-.reveal .slide b, strong {
-  color: #0b3e65; //rgba(12, 54, 84, 0.777); //rgba(51, 51, 51, 0.85); //#004a82;
+// // make the bold text more visible (also with color)
+// .reveal .slide b, strong {
+//   color: #0b3e65; //rgba(12, 54, 84, 0.777); //rgba(51, 51, 51, 0.85); //#004a82;
+//   font-weight: 600;
+//   //font-family: "Source Sans Pro", Helvetica, sans-serif;
+// }
+
+// make the bold text more visible (only in regular text)
+.reveal .slide > p b,
+.reveal .slide > p strong,
+.reveal .slide > div > p b,
+.reveal .slide > div > p strong {
+  color: #0b3e65;
   font-weight: 600;
-  //font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 // change the color and font family of the latex equations
@@ -170,6 +187,16 @@ $code-color: #d02e4c; /* #5f5f5f; */
   font-size: 0.75em;
   line-height: 1.3;
   letter-spacing: -0.02em;
+
+  // Align numbers right in table cells
+  td:not(:first-child) {
+    text-align: right;
+  }
+  
+  // Keep first column (usually text) left-aligned
+  td:first-child {
+    text-align: left;
+  }
 }
 
 .reveal .slide table thead th {
@@ -194,14 +221,60 @@ $code-color: #d02e4c; /* #5f5f5f; */
   color: #009b43; //#2276b3;  // Lighter color
   text-decoration: none;
   transition: color 0.15s ease;
-  
+
   &:hover {
     color: #007c36; //#00589b;  // Darker on hover
     text-decoration: underline;
   }
 }
 
+// Style blockquotes more compactly
+.reveal blockquote {
+  border-left: 4px solid #00355d;
+  margin: 0.2em 0;  // Reduced vertical margins
+  padding: 0 0 0 1em;  // Remove vertical padding, keep left padding
+  font-family: "Meslo";
+  font-style: italic;
+  background: #e6eef5;
+  //box-shadow: 2px 2px 5px rgba(0, 88, 155, 0.2); //
+  box-shadow: none;
+  width: fit-content;  // Make container fit content
+  display: inline-block;  // Prevent full-width block
+
+  // Remove extra spacing and default quotes
+  &::before,
+  &::after {
+    content: none;
+  }
+
+  // Remove any default reveal.js styles
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Style blockquotes with their own bold formatting
+.reveal blockquote b,
+.reveal blockquote strong {
+  color: inherit;  // Keep the blockquote text color
+  font-weight: 700;  // Can be bolder within quotes
+}
 // replicate the CSS for a callout box with a custom title, icon, and default appearance
 // FROM https://github.com/melissavanbussel/YouTube-Tutorials/blob/main/quarto_custom_callouts/custom.scss
 // ...
 
+/* -------- Bibliography Styling -------- */
+.reveal .refs-list,
+.reveal #refs,
+.reveal .references {
+  font-size: 0.8em;  // Smaller font size
+  line-height: 1.2;  // Tighter line height
+  margin-top: 1em;
+  
+  // Style the bibliography entries
+  .csl-entry {
+    margin-bottom: 0.5em;
+    text-align: left;
+  }
+}
