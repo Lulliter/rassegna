@@ -1,14 +1,12 @@
 ---
-title: 'Micro-rassegna del 2025-02-17'
+title: 'Micro-rassegna del 2025-03-19'
 categories: ['rassegna', 'disinformation', 'democracy','Europe', 'NATO', 'ENG 🇺🇸', 'ITA 🇮🇹']
-date: 2025-02-17
+date: 2025-03-19
 toc: TRUE
 draft: FALSE
 image: ""
 image-alt: ""
 ---
-
-
 
 # Leggere & guardare
 + J.D. Vance  ["Conferenza sulla Sicurezza di Monaco, 14 febbraio 2025"](https://www.centromachiavelli.com/2025/02/15/jd-vance-discorso-munich-security-conference-in-italiano/) 
@@ -47,17 +45,11 @@ Se state scappando per paura dei vostri stessi elettori, non c’è nulla che l�
 The European Union should be the main trading partner of Russia. Europe and Russia have complementary economies. The fit for mutually beneficial trade is very strong. By the way, if anyone would like to discuss how the U.S. blew up Nord Stream, I’d be happy to talk about that too.  
 The Trump administration is imperialist at heart. Trump obviously believes that the great powers dominate the world. The U.S. will be ruthless and cynical, and yes, also vis-à-vis Europe. Don’t go begging to Washington. That won’t help. It would probably spur the ruthlessness. Instead, have a true European foreign policy.
 
-# Ascoltare 
-+ Who  ["what, date"]() 
++ Francesco Cravedi nel suo articolo *"I codiddetti "valori europei"* su **Il ticino** completa la questione
 
-> Quote  
---- by Author
+> Chi in questo agglomerato confuso di Stati denominato UE si doscosta dal progressismo è un populista, un sovranista, e, in definitiva, un fascista.
 
 
-# Ricordare 
 
-> Quote  
---- by Author
-
-
+![Cravedi, 20 marzo2025](cravedi_20mar2025.jpg)
  

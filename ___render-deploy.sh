@@ -31,10 +31,9 @@ git add docs/* # specific
 git add images/*
 git add _R/template.qmd
 
-
 # --- git commit
 # git commit -m "theme 🎨"
-git commit -m "_slides/*AC.qmd 👇🏻"
+git commit -m "posts/2025-02-17-rassegnina/"
 # # --- git push
 git push origin master
 
