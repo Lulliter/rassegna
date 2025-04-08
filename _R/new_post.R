@@ -88,7 +88,7 @@ create_quarto_post <- function(title = NULL, title_post = NULL, categories,
 # Example usage ----
 
 # Use default title and title_post
-create_quarto_post(categories = c("disinformation", "Europe","ENG 🇺🇸", "ITA 🇮🇹"))
+create_quarto_post(categories = c("disinformation", "Jay Bhattacharya",  "ENG 🇺🇸", "ITA 🇮🇹"))
 
 # Specify custom title and title_post
 create_quarto_post(title = "custom-title", title_post = "Custom Post Title", categories = c("rassegna", "spunti","climate change", "sostenibilità","ENG 🇺🇸", "ITA 🇮🇹"))

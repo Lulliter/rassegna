@@ -33,7 +33,7 @@ git add _R/template.qmd
 
 # --- git commit
 # git commit -m "theme 🎨"
-git commit -m "posts/2025-02-17-rassegnina/"
+git commit -m "posts/2025-02-17-rassegnina/ add"
 # # --- git push
 git push origin master
 
