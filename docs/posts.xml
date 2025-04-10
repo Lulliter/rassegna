@@ -22,22 +22,29 @@
 
 
 <section id="leggere" class="level1">
-
+<h1>Leggere</h1>
 <ul>
-<li>Jay Bhattacharya <a href="Bhattacharya.pdf">“intervista su La Verità, 2 april 2025”</a> &gt; Quote<br>
-— by Author</li>
+<li>Jay Bhattacharya <a href="Bhattacharya.pdf">“intervista su La Verità, 2 aprile 2025”</a></li>
 </ul>
-<!-- # Guardare  -->
-<!-- + Who  ["what, date"]()  -->
 <!-- > Quote   -->
 <!-- --- by Author -->
+</section>
+<section id="guardare" class="level1">
+<h1>Guardare</h1>
+<ul>
+<li>Dr.&nbsp;Panagis Polykretis <a href="">“Il mio discorso al Parlamento giapponese sulle reazioni infiammatorie autoimmuni causate dai vaccini genetici COVID-19, 17 Ottobre 2024”</a></li>
+</ul>
+<blockquote class="blockquote">
+<p>Insieme agli altri partecipanti al Congresso, siamo stati invitati per informare il pubblico e i legislatori giapponesi sui pericoli dei vaccini genetici contro il COVID-19, nel tentativo di impedire che il vaccino a mRNA ARCT-154 (chiamato Replicon vaccine) venisse introdotto nel sistema sanitario nazionale giapponese a ottobre. — Dalla Conferenza International Crisis Summit 6, tenutasi a Tokyo, dal 24 al 28 settembre 2024.</p>
+</blockquote>
 </section>
 <section id="ascoltare" class="level1">
 <h1>Ascoltare</h1>
 <ul>
-<li><em>Jay Bhattacharya Was ‘Dangerous.’ Now He Leads the NIH.</em> <a href="https://www.thefp.com/p/jay-bhattacharya-nih-fauci">“Honestly podcast with Bari Weiss, , 2 april 2025”</a> &gt; Quote<br>
-— by Author</li>
+<li><em>Jay Bhattacharya Was ‘Dangerous.’ Now He Leads the NIH.</em> <a href="https://www.thefp.com/p/jay-bhattacharya-nih-fauci">“Honestly podcast with Bari Weiss, , 2 april 2025”</a></li>
 </ul>
+<!-- > Quote   -->
+<!-- --- by Author -->
 <!-- # Ricordare  -->
 <!-- > Quote   -->
 <!-- --- by Author -->
@@ -48,6 +55,7 @@
  ]]></description>
   <category>disinformation</category>
   <category>Jay Bhattacharya</category>
+  <category>Covid19</category>
   <category>ENG 🇺🇸</category>
   <category>ITA 🇮🇹</category>
   <guid>https://lulliter.github.io/rassegna/posts/2025-04-08-rassegnina/</guid>
@@ -626,9 +634,9 @@ World Commission on Environment and Development. 1987. <span>«[<span>Brundtal R
 <blockquote class="blockquote">
 <p>A tre anni e mezzo di distanza dall’avvio delle campagne vaccinali contro il Covid-19, arriva anche l’ammissione dell’Agenzia italiana del farmaco italiana (AIFA): nessuno dei vaccini anti-Covid approvati e distribuiti in Italia è in grado di prevenire il contagio e quindi la diffusione del virus. L’AIFA lo ha messo nero su bianco in una risposta inviata all’associazione Arbitrium PSG, che a giugno aveva interpellato l’Agenzia avanzando una richiesta di accesso agli atti amministrativi.</p>
 </blockquote>
-<pre><code>- La lettera citata di AIFA e' [questa](RispostaAIFA_ad_Arbitrium.pdf)</code></pre>
 <ul>
-<li>Da <strong>Il Sussidiario</strong> - intervista a Paolo Bellavite <a href="Sussid_Bellavite.pdf">(4 giugno 2024)</a>. Molto bella e chiara e a 360 gradi (aspetti scientifici, etici, politico-economici).</li>
+<li><p>La lettera citata di AIFA e’ <a href="RispostaAIFA_ad_Arbitrium.pdf">questa</a></p></li>
+<li><p>Da <strong>Il Sussidiario</strong> - intervista a Paolo Bellavite <a href="Sussid_Bellavite.pdf">(4 giugno 2024)</a>. Molto bella e chiara e a 360 gradi (aspetti scientifici, etici, politico-economici).</p></li>
 </ul>
 <blockquote class="blockquote">
 <p>… ora c’è da preoccuparsi di una sorta di generale destabilizzazione del sistema immunitario, per cui assistiamo all’esplosione di infezioni comuni e anche assai rare, malattie autoimmuni (…) Molti oncologi segnalano una inconsueta accelerazione o risveglio di tumori, mentre i ginecologi osservano una grande diffusione di disordini mestruali, anche in ragazze molto giovani. Per non parlare del significativo aumento della mortalità generale durante il periodo degli inoculi, le cui cause ancora sfuggono.</p>

@@ -1,6 +1,6 @@
 ---
 title: 'Micro-rassegna del 2025-04-08'
-categories: ['disinformation', 'Jay Bhattacharya', 'ENG 🇺🇸', 'ITA 🇮🇹']
+categories: ['disinformation', 'Jay Bhattacharya', 'Covid19','ENG 🇺🇸', 'ITA 🇮🇹']
 date: 2025-04-08
 toc: TRUE
 draft: FALSE
@@ -11,19 +11,22 @@ image-alt: ""
 
 
 # Leggere
-+ Jay Bhattacharya   ["intervista su La Verità, 2 april 2025"](Bhattacharya.pdf) 
-> Quote  
---- by Author
++ Jay Bhattacharya   ["intervista su La Verità, 2 aprile 2025"](Bhattacharya.pdf) 
 
-<!-- # Guardare  -->
-<!-- + Who  ["what, date"]()  -->
 <!-- > Quote   -->
 <!-- --- by Author -->
 
+# Guardare
++ Dr. Panagis Polykretis  ["Il mio discorso al Parlamento giapponese sulle reazioni infiammatorie autoimmuni causate dai vaccini genetici COVID-19, 17 Ottobre 2024"]()
+
+> Insieme agli altri partecipanti al Congresso, siamo stati invitati per informare il pubblico e i legislatori giapponesi sui pericoli dei vaccini genetici contro il COVID-19, nel tentativo di impedire che il vaccino a mRNA ARCT-154 (chiamato Replicon vaccine) venisse introdotto nel sistema sanitario nazionale giapponese a ottobre.
+--- Dalla Conferenza International Crisis Summit 6, tenutasi a Tokyo, dal 24 al 28 settembre 2024. 
+
 # Ascoltare 
 + *Jay Bhattacharya Was ‘Dangerous.’ Now He Leads the NIH.*  ["Honestly podcast with Bari Weiss, , 2 april 2025"](https://www.thefp.com/p/jay-bhattacharya-nih-fauci) 
-> Quote  
---- by Author
+
+<!-- > Quote   -->
+<!-- --- by Author -->
 
 
 <!-- # Ricordare  -->
