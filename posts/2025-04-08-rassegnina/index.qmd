@@ -1,6 +1,6 @@
 ---
 title: 'Micro-rassegna del 2025-04-08'
-categories: ['disinformation', 'Jay Bhattacharya', 'Covid19','ENG 🇺🇸', 'ITA 🇮🇹']
+categories: ['disinformation', 'totlitarianism','Jay Bhattacharya', 'Covid19','ENG 🇺🇸', 'ITA 🇮🇹']
 date: 2025-04-08
 toc: TRUE
 draft: FALSE
@@ -11,6 +11,21 @@ image-alt: ""
 
 
 # Leggere
+
++ *The New Face of Tyranny: Hannah Arendt, Technology, and Modern Control*  ["Post of PHILOSOPHEASY on substack, 31 march 2025"](https://www.philosopheasy.com/p/the-new-face-of-tyranny-hannah-arendt?r=7roap&triedRedirect=true)
+Shows how the Arendt's book *The Origins of Totalitarianism* is still incredibly relevant today, as her warnings about the erosion of human freedom, the dangers of all-encompassing ideology, the power of isolation, and the nature of evil resonate with disturbing clarity in our technologically saturated 21st century.
+
+> Today, while we may not face state-enforced ideologies like Nazism or Stalinism in liberal democracies, quasi-totalizing thought patterns emerge online and in certain political movements. Online discourse often demands ideological purity, punishing dissent with public shaming or "cancellation." Complex issues are reduced to simplistic binaries, and nuanced discussion is drowned out by outrage. Algorithms, designed for engagement rather than truth, amplify extreme voices and conspiracy theories, further entrenching ideological divides and eroding the shared reality necessary for a functioning public sphere. 
+
+--- *[Totalitarianism, Ideology in the Algorithm Age]*
+
+and again
+
+> Arendt's concept of the *banality of evil* – evil committed out of thoughtlessness and conformity rather than malice – finds unsettling parallels today. Decisions are made based on protocols, efficiency metrics, or opaque processes, potentially ignoring ethical considerations. Furthermore, the increasing reliance on algorithms for critical decisions – in areas like lending, hiring, policing, and social welfare – introduces a new layer of potential thoughtlessness. These systems, often inscrutable even to their creators, can perpetuate and scale biases without critical oversight or human judgment. 
+
+--- *[Bureaucracy, Thoughtlessness, and Algorithms]*
+
+
 + Jay Bhattacharya   ["intervista su La Verità, 2 aprile 2025"](Bhattacharya.pdf) 
 
 <!-- > Quote   -->
