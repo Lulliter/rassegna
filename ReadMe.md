@@ -7,6 +7,14 @@ title: "README"
 
 MADE WITH QUARTO
 
+
+# 🌟 Extra cool 🌟
+
+-repo portato su server VPS Aruba link [http://94.177.201.108/rassegna/](http://94.177.201.108/rassegna/) e PROTETTO con Basic Authentication (user: ####, password: ####) 🙌 
+
+- istruzioni in `~Github/Aruba_VPS/*`
+
+
 # Notes
 
 + ✅ Per creare un nuovo post :
