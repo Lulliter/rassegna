@@ -47,3 +47,6 @@ images/piazzze.jpg
 files/incomplete-reports.zip
 
 /.luarc.json
+.positai
+
+**/*.quarto_ipynb

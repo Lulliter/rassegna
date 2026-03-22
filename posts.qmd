@@ -44,5 +44,5 @@ slugs <- stringr::str_remove(posts, "\\d{4}-\\d{2}-\\d{2}-(?!\\d)")
 redirects <- paste0("/", slugs, " ", "/posts/", posts)
 
 # write the _redirect file
-writeLines(redirects, here::here("_site", "_redirects"))
+writeLines(redirects, here::here("docs", "_redirects"))
 ```
